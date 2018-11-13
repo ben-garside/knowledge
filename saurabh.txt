@@ -1,0 +1,175 @@
+
+
+Harish Negi - 120357
+V Ramanathan - 89966
+Shivani Patwal - 567963
+===============================
+Install below on Ubuntu:
+
+
+Postman Tool
+Google Drive
+
+
+Outlook Plugin
+
+Targus software for ubuntu
+
+* COnfigure SUBLIME for PHP
+* confugure virtual host
+* install magento enterprize
+* Webex
+* Show netbeans in open with
+
+
+-> install elasticsearch engine on local (configure cluster)
+
+Installed:
+------------
+GIT
+Skype
+Netbeans 8.0
+google chrome
+sublime text3
+screen
+terminator (multi)
+Shutter
+YED editor
+
+Linux Hints done:
+-------------------
+		/usr/share/applications
+
+sudo ln -s /opt/Postman/Postman /usr/local
+sudo ln -s /opt/Postman/Postman /usr/share/applications
+
+==================================
+To flush chrome browser dns cache:
+chrome://net-internals/#dns
+==================================
+
+---------------------------------
+---------------------------------
+
+Make a magenbto page for sridhar to monitor import + cron run
+
+-----------------------------------
+Install Magento Enterprise
+Install Vagrant ()
+
+---------- tasks for Weekend --------
+
+-> check QA5 for REST API Integration
+
+-> Inform UMA about system crash -> and No data recovered due to encryption
+Check sheroz's script from mail
+
+SSO
+
+To check QA4 (Joshita)
+Deploy Latest importexport extension - sajid
+Deploy DEVQA to New QA
+* Prepare PPD
+
+Re-indexing on Staging
+Import on staging - IMP
+
+
+apt-get install php7.0-cli php7.0-common php7.0-json php7.0-opcache php7.0-mysql php7.0-mbstring php7.0-mcrypt php7.0-zip php7.0-fpm
+
+----------------
+Implement Build hooks as per ticket: https://support.magento.cloud/hc/en-us/requests/14686?
+
+-----------------------
+http://staging-standards.bsigroup.com/cron.php?group=default
+-----------------------
+
+Additional Tools for Ubuntu:
+https://askubuntu.com/questions/922377/how-to-install-fiddler-on-ubuntu
+
+Install Screenrecorder on Ubuntu:
+https://itsfoss.com/record-screen-ubuntu-simplescreenrecorder/
+
+-------------- LINUX Commands ----------------------
+Remove/Delete backup files before X days:
+find /path/to/files* -mtime +5 -exec rm {} \;
+find ./ -mtime +5 -exec rm {} \;
+Eg: find ./ -mtime +0 -exec rm {} \;   [For records earlier than yesterday]
+
+Screen commands:
+screen -D    [Detach currently attached screen]
+screen -D 1636.pts-21.hostname [Detach specific screen]
+To enter in detached screen: screen -r 1636.pts-21.hostname
+To display all screens: screen -ls
+Create a new screen: screen -S new_screen
+
+------------
+
+Sort folder/files by size:
+du -h --max-depth=1 ./ | sort -h
+[du -h --max-depth=1 <folder-to-check> | sort -h]
+*********************************************************************************
+
+*****************************************
+Windows Softwares (list given on 5 Jun 2018):
+
+Postman tool (https://www.getpostman.com/apps -> Postman for Windows)
+WinMerge (http://winmerge.org/downloads/)
+NetBeans 8.2 (https://netbeans.org/downloads/start.html?platform=linux&lang=en&option=php&bits=x64)
+Mozilla Firefox (https://www.mozilla.org/en-GB/firefox/new/)
+Xampp Server (https://www.apachefriends.org/xampp-files/7.0.30/xampp-linux-x64-7.0.30-0-installer.run)
+Sublime text /Notepad ++ (Editor) (https://download.sublimetext.com/Sublime%20Text%20Build%203176%20Setup.exe)
+Screen Capture tool (https://github.com/greenshot/greenshot/releases/download/Greenshot-RELEASE-1.2.10.6/Greenshot-INSTALLER-1.2.10.6-RELEASE.exe & https://www.techsmith.com/download/jing/​)
+GIT Bash and GIT GUI (for accessing magento cloud through GIT command line) (https://git-scm.com/download/win & https://gitforwindows.org/)
+Filezilla (for accessing static files from magento cloud) (https://filezilla-project.org/download.php?platform=win64)
+
+*****************************************
+
+
+Local Magento2 Setup:
+
+Setup PHP environment: https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
+Install/Setup supporting packages like Microsoft Azure Storage Explorer, phpmyadmin, FileZila, Meld, Mysql-workbench, sublime text
+Go to /var/www and run below command to get local copy of code:
+"git clone --branch staging 7redg7uykvdko@git.eu.magento.cloud:7redg7uykvdko.git staging"
+Export and configure Database: Download a latest UAT copy from azure - scr/TCS-Internal-Dumps/db_dump_staging_sp9_uat_03Sep18_1524pm_wo_triggers.sql.gz
+Change base_urls from core_config_data table after DB export
+Change DB credentials in app/etc/env.php
+Update php.ini settings as required for order migration
+run "composer update"
+
+*****************************************
+
+
+======================
+VI Editor Commands:
+
+Search & Replace string:
+:%s/<search_str>/<replace_str>/g
+======================
+Localhost Mysql Conf File:
+/etc/mysql/mysql.conf.d/mysqld.cnf
+==============================================================================
+
+Websites:
+https://ebuyer.com  [Azham]
+=========================
+
+Ecom API:
+
+- wrapper code will be same as CDS
+- Checkout
+
+=========================
+INSERT INTO `catalog_category_product_index` (`category_id`, `product_id`, `position`, `is_parent`, `store_id`, `visibility`) SELECT `cc`.`entity_id` AS `category_id`, `ccp`.`product_id`, ccp.position + 10000 AS `position`, 0 AS `is_parent`, 1 AS `store_id`, IFNULL(cpvs.value, cpvd.value) AS `visibility` FROM `catalog_category_entity` AS `cc`
+ INNER JOIN `temp_catalog_category_tree_index_436971b4` AS `cc2` ON cc2.parent_id = cc.entity_id AND cc.entity_id NOT IN (1)
+ INNER JOIN `catalog_category_product` AS `ccp` ON ccp.category_id = cc2.child_id
+ INNER JOIN `catalog_product_entity` AS `cpe` ON ccp.product_id = cpe.entity_id AND (cpe.created_in <= '1517922000' AND cpe.updated_in > '1517922000')
+ INNER JOIN `catalog_product_website` AS `cpw` ON cpw.product_id = ccp.product_id
+ INNER JOIN `catalog_product_entity_int` AS `cpsd` ON cpsd.row_id = cpe.row_id AND cpsd.store_id = 0 AND cpsd.attribute_id = 97
+ LEFT JOIN `catalog_product_entity_int` AS `cpss` ON cpss.row_id = cpe.row_id AND cpss.attribute_id = cpsd.attribute_id AND cpss.store_id = 1
+ INNER JOIN `catalog_product_entity_int` AS `cpvd` ON cpvd.row_id = cpe. row_id AND cpvd.store_id = 0 AND cpvd.attribute_id = 99
+ LEFT JOIN `catalog_product_entity_int` AS `cpvs` ON cpvs.row_id = cpe.row_id AND cpvs.attribute_id = cpvd.attribute_id AND cpvs.store_id = 1
+ INNER JOIN `catalog_category_entity_int` AS `ccad` ON ccad.row_id = cc.row_id AND ccad.store_id = 0 AND ccad.attribute_id = 54
+ LEFT JOIN `catalog_category_entity_int` AS `ccas` ON ccas.row_id = cc.row_id AND ccas.attribute_id = ccad.attribute_id AND ccas.store_id = 1 WHERE (cpw.website_id = '1') AND (IFNULL(cpss.value, cpsd.value) = 1) AND (IFNULL(cpvs.value, cpvd.value) IN (2, 3, 4)) AND (IFNULL(ccas.value, ccad.value) = 1) AND (cc.created_in <= '1517922000') AND (cc.updated_in > '1517922000') ORDER BY `cc`.`entity_id` ASC
+ LIMIT 286000 OFFSET 500 ON DUPLICATE KEY UPDATE `category_id` = VALUES(`category_id`), `product_id` = VALUES(`product_id`), `position` = VALUES(`position`), `is_parent` = VALUES(`is_parent`), `store_id` = VALUES(`store_id`), `visibility` = VALUES(`visibility`)
