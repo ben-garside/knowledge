@@ -1,0 +1,186 @@
+
+**********************************************************************************
+Technical Support:
+The number to call is 0203 147 4966 option 2 and ask to be put through to Ramilo.
+**********************************************************************************
+
+- Payment Methods
+- 
+
+
+ASk Richa / Victoria:
+	-> Default Payment Method -> Ingenico (written confirmation)
+
+
+==================================
+
+Ingenico Payment Failed for Master Card - No transaction history in Ingenico Backend // CFT-2018-542768
+
+
+
+==================================
+Change status to Deferred -> priority should be 'Low'
+==================================
+
+
+Credit Card Numbers -> First 6 characters
+	-> To get the country
+
+---------------
+CARLOS:
+
+Card is not loading
+Can we use different templates for different environments
+Order is already created
+
+3d secure
+--------------
+	26 June 2018:
+		
+
+-----------
+#Ingenico Questions:
+
+- Select card exception
+- How to use different template
+
+- How the credit card payment
+- What types of cards are provided by Ingenico
+
+- To save the customer's CARD Number
+
+
+============================================
+Support -> User Guides -> Error Codes
+
+* To get Customer Card IP and Country:
+	CCCTY Credit card Country
+	IPCTY Customer IP Country
+
+============================================
+14 June 2018:
+ Ingenico response via email:
+ 	The 3DSecure application has been added in your back office account and tested as green, so you should now see that.
+	The Ingenico PayID is a 10 digit number.
+	A list of Payment status’ can be found here
+
+============================================
+23 Jan 2018:
+
+	- Can we get Card data (first 6 digit number) before placing an order
+	- Is it possible if we add the VAT / Order total after Ingenico authorise the payment?
+	- instead of submit on their iframe we need review order and submit later
+	- Can we save customer card data: [To check SELF]
+
+Ingenico Responses:
+	- Pre-auth for LIVE account in Ingenico  [We can't do the testing environment]
+============================================
+We have enabled below Parameters on Ingenico account:
+
+- Configuration >> Technical information >> Transaction feedback:
+	Make sure that they added under Dynamic e-Commerce parameters, Dynamic parameters on Alias gateway and Tokenization, and on Dynamic parameters on DirectLink
+	
+	Dynamic parameters on Alias gateway and Tokenization:
+	BIN
+	CARD.CARDHOLDERNAME
+	CARD.CARDNUMBER
+	
+	Dynamic parameters on DirectLink:
+	BIN
+	ECOM_BILLTO_POSTAL_COUNTRYCODE
+	ECOM_SHIPTO_POSTAL_COUNTRYCODE
+
+====================
+
+Prod account login?
+
+
+=====================================================
+INGENICO Contact:
+The number to call is 0203 147 4966 option 2 and ask to be put through to Ramilo.
+
+Live Ingenico Account (password changed on 08 Aug 2018):
+https://secure.ogone.com/Ncol/Prod/BackOffice/home/index?CSRFSP=%2fncol%2fprod%2fbackoffice%2fpassword%2fchange&CSRFKEY=A90733F03AA11BBBC2D28FC79EAB5850899BAE5B&CSRFTS=20180808123238&MenuId=4
+
+
+Login as PSPId: BSIstandards
+Password: B51login£&@
+
+Live API User: BSIstandardsAPIUat
+Pwd: 1}d2r]qHkV
+
+
+Magento setting:
+(Admin -> Sales -> Payment Services -> Ingenico)
+
+Update below for Live ingenico:
+
+Environment: Prod
+PSPID: BSIstandards
+API User: BSIstandardsAPIUat
+Password: 15Blogin£&@		(old: )1}d2r]qHkV)
+SHA-In: 0xRFFvKv0Gpnt882
+SHA-Out: 0xRFFvKv0Gpnt882
+
+
+===========================================================
+[Refer below block]
+Test account password: M2n1...@@
+
+
+=====================================================
+
+
+git commit -m "Sprint 10 - Drop 4 - defect fixes"
+
+Givekotak@#$5
+
+============================================
+Ingenico Test Account (BSI):
+https://secure.ogone.com/ncol/test/backoffice/
+
+
+My UserID: SaurabhVerma
+Password: 
+
+
+ Old pwd: 
+ 	bsiuat: cJ{r91!rmF
+ 	BSI UAT: o1y1Efw\%R  (SajidPatel - sau742@gmail.com)
+
+- UserID Uma Ramakrishnam
+- PSPID BSIstandards
+		[Pwd: 0xRFFvKv0Gpnt&88]
+
+
+		Sajid: ba]EI88rv/    [22 Feb]
+		
+New Ingenico SHA-1: 0xRFFvKv0Gpnt882
+
+BSIstandardsAPIUat : M2n1shlko@    (created on 28 Apr 2018 - for Staging UAT)
+
+BSIstandardsAPIPPD : M2n1shlko@	   (created on 18 Sep 2018 - for Staging PPD)
+
+New BSIstandardsAPI Password: 0xRFFvKv0Gpnt88@3   (old: 0xRFFvKv0Gpnt88@2)
+============================================
+Case Num (Ingenico): CST-2018-462370  	(call on 11 Jan 2018)
+
+
+Magento settings:
+
+- Alias Manager -> No (Yes => for saving credit card info), Alias ID
+---------------------------------------------------
+
+
+
+
+-----------------------------
+
+Stores -> Payment Methods -> Ingenico CC -> HTTP Template
+
+Default Configuration TAB is missing:
+
+(23 Feb 2018)
+Case Ref: # CFT 2018 479056
+
+Send email to support.

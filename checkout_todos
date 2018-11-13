@@ -1,0 +1,28 @@
+
+========= Checkout to dos ============
+
+When selecting hard-copy: Quote does not get saved, also js error in below file:
+
+
+/var/www/staging_local/extensions/Bsigroup/AccordionCheckout/src/view/frontend/web/js/view/summary/item/details.js
+itemProduct => no value
+
+
+​
+-----------------------------------------------
+
+Files to deploy:
+/var/www/staging_local/extensions/Bsigroup/AccordionCheckout/src/view/frontend/web/js/view/billing-address.js
+
+---------------------------------------------
+if (itemProduct.product_type === "bundle") {
+                quoteItem.options = "[{\"value\":\"Event\"}]";
+              } else if((itemProduct.is_virtual === "1") && (itemProduct.product_type !== "bundle")) {
+                quoteItem.options = "[{\"value\":\"PDF download\"}]";
+              } else if ((itemProduct.product_type == 'simple') && (itemProduct.is_virtual !== "1")) {
+                quoteItem.options = "[{\"value\":\"Hard Copy\"}]";
+              } else if ((itemProduct.sku.indexOf(window.checkoutConfig.bsi_product_constants.membership_identifier) != -1) || (itemProduct.product.attribute_set_id == window.checkoutConfig.bsi_product_constants.renew_mem_attrsetid)) {
+                // if ((itemProduct.name.indexOf('Membership') != -1) || (itemProduct.name.indexOf('Renew Membership') != -1)) {
+                // Saurabh Trick: To show format=Subscription for Membership and Renew Membership. Note: We should actually use bsi_product_type value here.
+                quoteItem.options = "[{\"value\":\"Subscription\"}]";
+              }

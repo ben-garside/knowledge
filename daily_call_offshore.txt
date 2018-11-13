@@ -1,0 +1,833 @@
+TO Do:
+	Pardot
+	Google
+	Subscription pages (Mohan)
+
+	CMS (ACM2 analysis): check latest req sheet + ACM2
+	
+	Sanjib New Module for EVENT: app/code/EventAdd/AddToCart/Controller/Index/editdelegate.php
+------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------
+
+
+	>> Send mail to Azham: BSI Essential: to apply same logic as KIT (multiple titles)
+
+	My Profile:
+	ECom-36: AC14, 15
+	ECom-17: AC85
+	
+	
+	============================================
+	Files for fatal error (30 nov):
+	
+	/Controller/Rewrite/Cart/UpdateItemOptions.php  | 
+	
+	============================================
+
+
+	
+--------------------------- 13 Nov ------------
+UAT fixes (dev team):
+	- Remove the success msgs from products details page when adding to basket 
+
+	- [Done] Copyright info (text change) need to change on all pages
+	- [Done on 16 Nov 2017] Product Detail accordian open --> mohan
+	- Tooltip text with popup box (UI) – as per the provided tooltip popup
+	- Same Ordering of basket and mini basket items
+	- Order detail -> To do for "Download your Document" - PDF Expiry logic ....Download All not showing (working fine as order created on 10 oct)
+	
+	UAT Date 2:
+	- Not able to Delete Delivery Address (check with Richa profile - check magento exception logs as well) 
+	
+	- If possible can we recreate all old customer profiles => As Address logic has changed
+
+Saurabh to check:
+	=> To check DEV setup => prepare for Sprint2 QA
+	=> Email reminder 
+	
+	=> Azham clarification -> BSI Essential
+	=> Update DWH sheet (with phani queries)
+	
+	=> Exception logs for Berengere error (Ask Richa - for issue)
+	=> Check with Berengere profile (change password giving error - As Prefix is blank)
+	
+	=> ** Work with Chirag: For SCR XML Maping with Magento product Data (also check for Cross-ref, replaces, kit product multiple title links to be built -> we can provide some web-service from Magento to return the actual links of the products)
+	=> **** Setup CRON for Reminder Email, 
+	=> DWH (Update sheet and send to Richa):
+		What fields we need to update and what to insert (upsert - update and insert)?
+		Which is the primary key for customer records, also
+		Only delta records will come from DWH or complete data
+		Some of the fields are required by magento but they are blank in DWH sheet data eg: Street Name required for customer address import
+	=> Check GA with the Raunak
+	=> ** Check Pardot & GA script on DEVQA
+	=> ** CMS ACM2 analysis sheet (read AC for CMS- pdf AC)
+	=> 
+	
+		
+	
+	=> Events => Group or Bundle?
+	=> Check GA for Raunak
+	=> Prepared DEVQA for Sprint2
+
+	
+QA3:
+	attribute.phtml
+	list.phtml
+	
+	cross-ref: 
+	
+	*****************************************************************************
+	SAJID: Logging
+	
+	move Trello for SCR Reqs
+	
+	Pranav: 
+		SEND MAIL -> pending requirements (things have been better 03 jan 2018)	
+				4 points to do from offshore
+	Progress:
+			CMS, SCR, Search
+			Sorting is working - custom plugin is developed, Ticket is raised with Magento Cloud
+			Elastic Search => Blank search (Collection load time)
+			Team has done
+			
+			Team knows this is a defect
+			
+			We had to setup another environment as INT is down
+			
+			Inform the things which are not feasible.
+			
+	Offshore:
+		- these can be the achieved before this time
+		
+		-> send mail to Pranav: For the pending requirements in Search (these 4-5 things to be done before sometime)
+			Withdrawn products are not showing
+			
+		--> search ka % -> 2-3 blockers are dependant upon Magento elastic search
+	
+	Complexity => 
+	Automation => joshita -> QA2 (pending with Sajid)
+	
+	* Search attribute -> to check self
+	
+	*****************************************************************************
+	
+	-----------------------------
+	
+	Message: 
+		-> Sorting -> Custom module
+	
+----------------------------------------------------
+16/11:
+Azham to confirm:
+
+Need wireframe of Membership Benefits
+Wireframe for My Profile -> Order History -> "Download All" and "Download Your Document", Also need the expiry notice text to be shown
+Url for Free product with Download Now option 
+Show Subscription pages to Azham
+----------------------------------------------------
+
+17/11: Clarifications for Offshore:
+	What will be the Order Status when order contains only PDF softcopy items. As discussed with Azham, order statuses will be In-Process/Shipped (by default In-Process after creation of order and Shipped when processed from SAP BAPI)
+	17/11: Order statuses will be In Progress and Completed
+	
+	
+
+-----------------------------------------------------
+Action Items:
+
+....................
+27/11:
+	Azham -
+	Event Landing: How to show price, what are upcoming and past events. Also, wireframe is different from standards
+	What page will appear when user clicks on "Buy Standards & Events"
+	
+	--------------------------- 11 Dec 2017 ------------
+	Action Items: 
+	Elastic search access => support ticket (Saurabh)
+
+	[Richa to confirm below]
+	Download PDF - PDF renaming will be handled in CDS?
+	Sprint2 - Basket: AC04 - popup conditions for single format
+	Sprint2 - PDF Download link to disable: Richa to confirm about the notice text, and color scheme for disabled button
+	Sprint3 - What all CMS Pages to built using Bulefoot, Subscription Product Pages eg: BSOL, CN etc.
+	Sprint3 - Below requirements are not updated in trello (mentioned by Sukamal). Also, when will CDS API related requirements be done (sprint)?
+			Ecom-57 & 58, ECom-12 (AC3 & 5), ECom-18 (AC86)
+			
+	--------------------------- 12 Dec 2017 ------------
+	DEVQA: update Code to INT
+	
+	--------------------------- 02 Jan 2017 ------------
+	Saurabh to check:
+		- Export QA3 Database to INT for Sanjib to check search filters
+		- QA3 - Image issue (images are not showing)
+		- Support ticket for restricting Auto-complete results from Elastic Search -- Done
+	
+	--------------------------- 03 Jan 2017 ------------
+	=> Product detail page : Spacing for absent rows
+	
+	Few Imp points:
+		Customer Service: We need to use magento customer attribute for storing 'Notes', use of magento default logger entry for audit log of Notes added/edited by Customer Service
+					Also, to implement changes for read-only billing address for Members (To be done in Admin for customer service)
+		QA2 will be the environment for Sprint 4 testing (contains Sprint3 drop 1 changes also)
+		Team need to change logic for Billing address flag (is_membership_address) and is_member  these will be magento customer/customer address attributes  Sajid to confirm after deploying changes on cloud
+		Sajid: To offload UI stuffs to team related with checkout
+
+	
+	Pranabesh:
+		- Sprint4 - Reponsiveness UI (in progress fir all sprint1,2 pages)
+		
+	Suvradip:
+		- Sprint 4: CMS
+		- [To do later after Sprint 4] Tier price for bundle product (events)
+
+	Mohan:
+		- Sprint 4: Look Inside/CDS API  -- 16-01-18
+
+	Sanjib:
+		- To send checkout template/xml files to Sajid - KT of checkout functionality [Sanjib/Pranabesh worked earlier] -- 08-01-18
+		- Sprint 4: CMS
+
+	Debajyoti:
+		- Blank Search r & d as per magento cloud response -- 16-01-18
+		
+	Raunak
+		- Customer service ACs - Notes section
+		
+	Sajid:
+		- Checkout (in progress)
+		- [To be taken up after checkout] SCR Import: Maintain Logger for missing xml products
+	
+	Saurabh:
+		- Update DEV & QA2 with QA3 DB and INT Code (for Sajid R & D)
+		- Automation: to check issue for joshita (email) - pending with Sajid (04-01-18)
+		- Cross Ref hyperlinks issue on detail page - Done & updated on INT & QA3
+		- Trello - check and update the CMS defect/observations
+		- Check elasticsearch console access -- done and given to team
+		
+		- Subhrateja -> check trello, video upload
+
+	TO DO NOW:
+	Phani -> DWH sheet for order status (Richa)
+	Send Debajyoti -> Ingenico queries
+	-> Richa -> performance screenshots for GA scripts (pingdom)
+		
+		
+	============== OLD Logs of Action Items =================
+	Pranabesh:
+		- Sprint3 - Defects, Azham demo feedbacks
+		- CMS Sector Pages issues on QA3 -- Done
+		- Bluefoot -> Rendering  products from Commerce->ProductList, Product section  CSS changes on frontend for showing add products data from bluefoot and showing scrollbar/view more after certain products -- Done (its feasible)
+		
+	Suvradip:
+		- Sprint4 - Requirements (04-01-18)
+		- Tier price for bundle product (events) -- 04-01-18
+		- Replace member price with magento Tier price (sajid is storing tier price via SCR import so that member price could reflect everywhere as per customer group)-- To confirm about Bundled Products (eg: Events) -- [To do later after sprint4: Event basket]
+		- Sprint 3: Changes for Date format etc.
+
+	Phani:
+		- Sprint 4: 
+		- Attribute related changes on templates (eg: Product detail) -- 03-01-18 (Done but having issues with some values like Replaces, Status='No')
+
+	Sanjib:
+		- Sprint 4: Requirement clarification
+		- CMS search for sector pages (based on CMS Keyword) -- 03-01-18 (Done)
+
+	Debajyoti:
+		- Sprint4 - Requirements (04-01-18)
+		- Search filter (R & D) in magento -- 04-01-18
+		
+	Sajid:
+		- Fix SCR issues/changes discussed by Azham/Offshore - Cross Ref (" " search) - 03-01-2018
+		- Import more products on QA3, Staging. Also fix import issue on QA2 for automation -- 04-01-2018
+	
+	Saurabh:
+		- Update DEV & QA2 with QA3 DB and INT Code (for Sajid R & D)
+		- Automation: to check issue for joshita (email) - pending with Sajid (04-01-18)
+		- Cross Ref hyperlinks issue on detail page - Done & updated on INT & QA3
+		- Trello - check and update the CMS defect/observations
+		- Check elasticsearch console access -- done and given to team
+	=========================================================
+		
+	=> SELF TO DO:
+		Synonym for BSEN => check on qa3
+		https://qa3-xrqjsfa-7redg7uykvdko.eu.magentosite.cloud/pid-000000000030202068 [check for replaces]
+	
+	=> check stock
+	=> Check Tier Price
+	=> Cross ref in QA3 (TO CHECK)
+	=> R & D: Tier price in case of Bundled products
+		
+		
+-> Sprint4:
+	- CMS Import - for newsfeed
+	- To check if we can configure 
+	
+	- Customer service (sheet to send everyone)
+	
+	
+	Ingenico Queries:
+	---------------------
+	- PCI Compliance - for storing Credit Card Info
+....................
+
+To check with Azham: Paid Event (Venue font is different on both wireframes)
+
+
+Phani: To check and confirm the Images, Logos etc. for Email Templates
+Mohan: To create products (subscription, events etc) on DEV from DEVQA
+* Saurabh: TO check DB entry for Customer table for additional DWH fields ==> No values present
+Saurabh/Sajid: Abondoned basket (ECom-07 AC27) - clear cart after 31 days
+Saurabh: Cron Setting for PDF expiry Email reminder, abondoned basket etc.
+Saurabh: Deployment from DEVQA to DEV (Sprint2)
+Saurabh: Delete Address for existing customer (to check region_id value in database and email to phani)
+Sajid: To send the link for disable cache for a specific block/phtml
+Richa: Priority of tasks for Sajid (Checkout - Sprint4, Multilayered search - Sprint3, CMS -Sprint3, SCR XML Import features - Sprint 3)
+
+
+To Do:
+	- put the videos
+	- Update trello with ECom-51 user stories
+
+Shatabdi: Performance
+18/01 - 
+	
+	
+* TO DO:
+- Send mail to Sanjib for Postcode lookup
+- 
+	
+Saurabh:
+	INT and DEVQA is very slow
+	
+Subhrateja:
+31/01 - Sprint 4 - Testing
+30/01 - Sprint 4 - Testing
+29/01 - Sprint 4 - Testing
+23/01 - Sprint 4 - Testing
+22/01 - Sprint 4 - Testing
+20/01 - Sprint 4 - Testing
+19/01 - Sprint 4 - Testing
+18/01 - Sprint 4 - Testing
+17/01 - Sprint 4 - Testing
+16/01 - Sprint 4 - Testing, <Queries to Ask with Sridhar/Saurabh>
+15/01 - Sprint 4 - test cases preparation
+12/01 - Sprint 4 - test cases preparation
+11/01 - Sprint 4 - test cases preparation
+10/01 - Sprint 4 - test cases preparation
+09/01 - Sprint 4 - test cases preparation
+08/01 - Sprint 3 - Testing, Sprint 4 - Testing
+05/01 - Sprint 3 - Testing
+04/01 - Sprint 3 - Testing
+03/01 - Sprint 3 - Testing
+02/01/18 - Sprint 3 - Testing (SCR, Search)
+01/01/18 - Sprint 3 - testing
+27/12 - Sprint 3 - testing
+26/12 - Sprint 3 - testing (CMS Page)
+23/12 - Sprint 3 - testing (CMS Page)
+22/12 - Sprint 3 - testing (CMS Page)
+19/12 - Sprint3 test cases
+18/12 - Sprint3 test cases
+15/12 - Staging sanity, Sprint3 test cases
+14/12 - Sprint3 test cases
+13/12 - Sprint3 test cases
+12/12 - Sprint2 testing, Sprint3 test cases
+11/12 - On Sick Leave
+08/12 - Sprint2 testing
+06/12 - Sick Leave
+05/12 - Sick Leave
+04/12 - Sprint2 testing
+01/12 - Sprint2 tetsing
+30/11 - Sprint2 testing
+29/11 - Sprint2 testing
+28/11 - Sprint2 testing
+27/11 - Sprint2 testing
+24/11 - Sprint2 testing
+23/11 - Sprint2 testing
+22/11 - Sprint2 testing
+21/11 - Sprint2 testing
+20/11 - Test cases for Sprint2 done except....CM02, CM19 - <to discuss with Saurabh>, Sprint 2 testing, <saurabh to share the Sprint2-QA-environment today>
+17/11 - Test cases for Sprint2, Testing CMS related stories,
+16/11 - Test cases for Sprint2
+15/11 - Test cases for Sprint2, <Sarabjit to discuss the UAT defect sheet, Sarabjit to confirm about the path to keep test cases>
+14/11 - on sick leave
+13/11 - Continue testing (Firefox testing for Sprint 1)
+10/11 - Continue testing
+09/11 - Products tested on IE, Edge. Some issues being fixed working fine on Chrome but not on IE, IE Edge.
+
+Debajyoti:
+31/01 - Sprint 4 - Newsfeed xml feasibility to import in cms page
+30/01 - Sprint 3 - Left side search filter
+29/01 - Sprint 3 - Left side search filter
+23/01 - Sprint 3 - Left side search filter
+22/01 - Sprint 3 - Left side search filter
+20/01 - Sprint 3 - Left side search filter, ICS filter issue (to show ICS sub-categories as a filter in left)
+19/01 - Sprint 3 - Left side search filter, ICS filter issue (to show ICS sub-categories as a filter in left)
+18/01 - Sprint 4 - CMS ACs, Sprint 3 - Left side search filter, ICS filter issue (to show ICS sub-categories as a filter in left)
+17/01 - Sprint 4 - CMS ACs, Sprint 3 - Left side search filter, ICS filter issue (to show ICS sub-categories as a filter in left)
+16/01 - Sprint 4 - CMS ACs - Related products UI on frontend (with vertical scrolling), <Debajyoti to show the demo of Related products, Also search issues 'BSI' to check on Staging>
+15/01 - Sprint 4 - CMS ACs, Sprint 3 - search
+13/01 - Sprint 4 - Blank Search
+12/01 - Sprint 4 - blank search
+11/01 - Sprint 4 - Promo code Rules, blank search
+10/01 - Sprint 3 - blank search, Sprint 4 - Promo code Rules
+09/01 - Sprint 4 - Ingenico module already uploaded on the DevQA Environment.
+08/01 - Sprint 3 - Defects on UAT (Richa & Sridhar issues on staging - Search attributes), Sprint 4 - AC Assigment (pranabesh to confirm - Ingenico)
+05/01 - Sprint 3 - Left side filter r & d
+04/01 - Sprint 3 - Search, Sprint 4 - Requirements analysis
+03/01 - Sprint 3 - CMS sector page search, Sprint 4 - Requirements analysis
+02/01/18 - Auto Complete - limit result via JS (search attribute setting to check for filter)
+01/01/18 - On Leave
+29/12 - Sprint 3 - Elastic Search - Filter condition
+28/12 - Sprint 3 - Elastic Search (Blank Search), <saurabh to update support ticket: To open match_all function from elastic search module>
+27/12 - Sprint 3 - Elastic Search (Blank Search)
+26/12 - Sprint 3 - Elastic Search (Blank Search)
+23/12 - Sprint 3 - Elastic Search (Blank Search)
+22/12 - Sprint 3 - Elastic Search (Blank Search)
+19/12 - Sprint3 - Elastic Search
+18/12 - Sprint3 - Elastic Search
+15/12 - Sprint3 - Elastic Search
+14/12 - Sprint3 - Elastic Search
+13/12 - Sprint3 - Elastic Search
+12/12 - Sprint3 - Elastic Search
+11/12 - Sprint3 - Elastic Search
+
+Sanjib:
+31/01 - 
+30/01 - Sprint 4 - Customer service - address customization
+29/01 - Sprint 4 - Customer service - address customization
+23/01 - Sprint 4 - DWH integration with Events (with Raunak)
+22/01 - Sprint 4 - DWH integration with Events (with Raunak)
+20/01 - Sprint 4 - Postcode lookup extension (craftyclicks)
+19/01 - Sprint 4 - Postcode lookup extension (craftyclicks)
+18/01 - Sprint 4 - Customer Notes
+17/01 - Sprint 4 - Customer Notes (showing inside Customer View section)
+16/01 - Sprint 4 - Customer Notes, <merge basket to check from Azham>
+15/01 - Sprint 2 - Merge Basket for events, Helping Raunak for customer service
+13/01 - Sprint 2 - Merge Basket  <to send doc for Merge basket>
+12/01 - Sprint 2 - Merge Basket  <to send doc for Merge basket>
+11/01 - Merge Basket, <to send doc for Merge basket>
+10/01 - Working in Merge basket functionality
+09/01 - Working in Merge basket functionality, validating sprint:4 ACs
+08/01 - Sprint 3 - Defects on UAT (Richa & Sridhar issues on staging - misc issues), Sprint 4 - AC Assigment (pranabesh to confirm)
+05/01 - Sprint 3 defects
+04/01 - CMS search for sector pages, defect fixes + azham
+03/01 - CMS search for sector pages - logic
+02/01/18 - Sprint 3 - Blank Search (Not feasible using custom magento collection, so we will use Elastic search - pending with magento cloud), CMS search for sector pages
+01/01/18 - Sprint 3 - CMS search for sector pages <logic: CMS sector pages will be shown based on its ‘Keyword’ value as per the searched text>
+29/12 - Sprint 3 - Search filter
+28/12 - Sprint 3 - Search sort by model/block override
+27/12 - Sprint 3 - Search sort by model/block override
+26/12 - Sprint 3 - On leave
+23/12 - Sprint 3 - Search sorting, filter issue in elastic search
+22/12 - Sprint 3 - Search sorting, filter issue in elastic search
+19/12 - Sprint3 - Search 
+18/12 - Sprint3 - Search (sorting based on product type/status), creating document for merge basket
+15/12 - Merge Basket issue, Sprint3 - Search 
+14/12 - Add to cart from search result (with suvradip), Sprint3 - Search
+13/12 - On sick leave
+12/12 - Sprint2: Issues with Event, Format popup conditions
+11/12 - Sprint2 defects
+08/12 - Sprint2 defects
+06/12 - Event landing page, sprint2 defect fix
+05/12 - Event landing page
+04/12 - Breadcrumb issue, Event landing page
+01/12 - Sprint2 defects for events
+30/11 - Sprint2 Defect fixes
+29/11 - Sprint2 Defect fixes
+28/11 - Event booking fix -> redirect to home page
+27/11 - On Leave
+24/11 - Planned Leave
+23/11 - Planned Leave
+22/11 - Planned Leave
+21/11 - Planned Leave
+20/11 - Planned Leave
+17/11 - ECOM - 06 ACs - Book event functionality to be done, integration with UI (pranabesh/raka), Basket - Suvradip, Mini Basket - Pranabesh
+16/11 - ECOM - 06 ACs
+15/11 - ECOM - 06 ACs (Mini-basket, basket need to be checked for Bundle - 15/10: Checked by Suvradip for Basket)
+14/11 - ECOM - 06 ACs
+13/11 - ECOM -06 ACs
+10/11 - Events implementation to continue, POC for abandoned shopping basket 30 mns POC, abandon basket should have once started checkout – POC done on this concept
+09/11 - POC done on events > can be achieved using group products 
+08/11 - Event - feasibility on the basket, event page.
+
+Pranabesh:
+31/01 - Sprint 4: Checkout UI
+30/01 - Sprint 4: Checkout UI
+29/01 - Sprint 4: Checkout UI conflict
+23/01 - To confirm
+22/01 - On Leave
+20/01 - Working on UI Changes for Checkout page (EOD 24/01) – Leave on Mon & Holiday on Tuesday
+19/01 - Responsiveness of login/logout feature
+18/01 - Responsiveness of Basket Page (event basket issue)
+17/01 - Responsiveness of Basket Page
+16/01 - Responsiveness of Basket Page
+15/01 - Responsiveness of Basket Page, Search left side filters
+13/01 - Responsive of My profile Page  - done
+12/01 - Responsiveness of My Profile
+11/01 - Responsiveness for login/register page, feasibility
+10/01 - Responsiveness for login/register page
+09/01 - Fixed issue # 14, 15 and 18 identified by Sridhar in Staging. Pushed the code in INT and devQA both., Responsive UI wirefrafes
+08/01 - Sprint 3 - Defects on UAT (Richa & Sridhar issues on staging), Sprint 4 - AC assigment
+05/01 - Sprint 3 - Azham's feedback changes, defects
+04/01 - Sprint 3 - Azham's feedback changes
+03/01 - Sprint 3 - CMS Page - Sector Pages, Azham's feedback (bluefoot products widget -> CSS feasibility)
+02/01/18 - Sprint 3 - Search result customization for Subscription product type <saurabh: check subscription products>, CMS Pages - sector pages issue
+01/01/18 - On Leave
+29/12 - Sprint 3 - Defects
+29/12 - Sprint 3 - Defects by Sridhar from QA3
+28/12 - Sprint 3 - search page mini basket issue, Defects by Sridhar from QA3
+27/12 - Sprint 3 - search page mini basket issue
+26/12 - Sprint 3 - search page mini basket issue
+23/12 - Sprint 3 - search page mini basket issue
+22/12 - Sprint 3 - seach filter, submenu, helped suvradip for search format popup
+19/12 - To confirm
+18/12 - Sprint3 - Blank search box, Search results popup, (hide filter with 0 results)
+15/12 - Sprint3 - autocomplete search (pushed to INT), UI changes
+14/12 - Sprint3 - autocomplete search
+13/12 - Sprint3 - CMS bluefoot for contact us
+12/12 - Internal audit
+11/12 - Sprint2 defects - Event page scrolling
+08/12 - Sprint2 defects
+06/12 - Sprint2 defects
+05/12 - Sprint2 defects
+04/12 - Sprint2 defects for event delegate, Munl Popup
+01/12 - Sprint2 Defect fixes (IE issues for delegate page)
+30/11 - Sprint2 Defect fixes (deletegates page)
+29/11 - Sprint2 Defect fixes
+28/11 - Sprint2
+27/11 - Mini Basket for Event, <to send the snapshot of mini basket differences>
+24/11 - Mini Basket for Event
+23/11 - Mandatory training, Mini Basket for Event
+22/11 - UAT defects, Events - Google map integration, <Pranabesh to share: Google Map account details to get from BSI>
+21/11 - UAT Defects - tooltip etc.
+20/11 - Edit Event Delegate Page UI + merging with Sanjib Event code, DEVQA command run and git push (for vendor library dependency)
+17/11 - Edit Event Delegate Page UI + merging with Sanjib Event code
+16/11 - Event Delegate Page UI - javascript changes for add/remove delegates, merging code with Sanjib
+15/11 - Subscription Page submenu pages for all request a quote products, Event Delegates Page (with Sanjib)
+14/11 - Subscription Page submenu pages for all request a quote products
+13/11 - Subscription Page submenu pages for all request a quote products, PDF can not be added twice – As per Sukamal's suggestion, Suvradip will work on this - merged with EC0m-01 - AC04,  Not Required => Sprint2: Saurabh V > Pardot iframe responsiveness 
+10/11 - PDF not to be added twice – in progress
+            Mini Basket double icon – fix
+            Space issue, Title issue – to start the fix
+09/11 - Mini basket icon to be removed from Basket page - don't do it 
+      - removing item from mini basket -> should update the basket as well > fix pushed to QA
+-Double Mini basket and alignment of price on cart 
+08/11 - IE issues > Mini basket animation
+      - Mini Basket - *, Scroll bar for 5 items
+      - double mini basket icon > increased the delay
+      - QA 2 to tomorrow
+
+Suvradip:
+31/01 - Sprint 4: Defect fixes - basket bundle page for tier page
+30/01 - Sprint 4: Defect fixes, basket bundle page for tier page
+29/01 - Sprint 4: Basket page event issue (DEVQA), promotional rules - space issue in 272 configuration
+23/01 - Sprint 4: Promotional Rules
+22/01 - Sprint 4: Promotional Rules
+20/01 - Sprint 4: Promotional Rules, all will be completed except PLUS rule
+19/01 - Sprint 4: Promotional Rules
+18/01 - Sprint 4: Promotional Rules (272 products, ICS code condition)
+17/01 - Sprint 4: Promotional Rules, <DEVQA: for demo to Azham>
+16/01 - Sprint 4: Promotional Rules
+15/01 - Sprint 4: Promotional Rules
+13/01 - Sprint 3: Changes for tier price/member_price <Saurabh to deploy code on QA2/QA3>
+12/01 - Member Price issue on INT, <Saurabh to deploy code on Sprint3,Sprint2>
+11/01 - Sprint 3 - Members' Price correction based on Tier Price Logic - basket page
+10/01 - Sprint 3 - Members' Price correction based on Tier Price Logic, Sprint 4 - Promo code Rules
+09/01 - Sprint 3 - Members' Price correction based on Tier Price Logic
+08/01 - Sprint 3 - Defects on UAT (Richa & Sridhar issues on staging), Sprint 4 - AC Assigment (pranabesh to confirm)
+05/01 - Sprint 3 - tier price - bundled products
+04/01 - Sprint 3 - price on search pages, merging issues from QA5 to INT
+03/01 - Sprint 3 - Defects (tier price)
+02/01/18 - Sprint 3 - Attribute changes for Tier Price (Member price)
+01/01/18 - Sprint 3 - Defects
+29/12 - Sprint 3 - popup condition for search
+28/12 - Sprint 3 - warning message for adding same product (simple product - single format) in basket (from product detail), <in progress> popup condition for search
+27/12 - Sprint 3 - search popup for KIT Product, warning message for adding same product (simple product also) in basket
+26/12 - Sprint 3 - search popup
+26/12 - Sprint 3 - sprint2 - format conditions
+22/12 - Sprint 3 - popup from search page, sprint2 - format conditions
+19/12 - Sprint3 - Search results, popup of format selection, <Show format selection as on detail>
+18/12 - Sprint3 - for popup of format selection 
+15/12 - Sprint3 - for popup of format selection, popup condition box 
+14/12 - Sprint3 - for popup of format selection
+13/12 - Sprint3 - for popup of format selection
+12/12 - Sprint3 - CMS Pages
+11/12 - Sprint3 - CMS Pages
+08/12 - Sprint2 defects
+06/12 - Sprint2 defects
+05/12 - Sprint2 defects
+04/12 - Event alignment basket issue, Product warning popup conditions (KIT, BIP etc.), <To confirm with Azham: Suvradip mail for popup conditions>
+01/12 - Planned Leave
+30/11 - Sprint2 Defect fixes
+29/11 - Event basket new wireframe done
+28/11 - Sprint2 Defect fixes
+27/11 - Event basket changes, Defect fix for caching issue in KIT product condition, <Azham: When Event title is bigger -> how to accomodate in wireframe?>
+24/11 - Event Basket page, ECom 01-AC04 (conflict with Enterprise), <Sajid: to send the link for disable cache for a specific block/phtml>
+23/11 - Mandatory training, Event Basket page
+22/11 - KIT Products - ECom 01-AC04 (conflict with Enterprise), UAT defects - Tooltip, ordering of basket (like mini basket) 
+21/11 - Issue fix for ECom 01-AC04 (conflict with Enterprise), Ordering of Mini Basket & Basket
+20/11 - ECOM 01 - AC 04 (ajax logic to finish)
+17/11 - On sick leave
+16/11 - ECOM 01 - AC 04 (ajax logic),  <To Do Later: Ordering of basket to descending order same as on Mini-basket>
+15/11 - ECOM 01 - AC 04 (creation of popup for add to basket and ajax logic), POC for basket event 
+14/11 - ECOM 01 - AC 04 (to fetch all cart items in a popup)
+13/11 – ECOM 01 - AC 04 (POC for KIT products - in progress)
+10/11 – Ordering of Basket should be same as mini basket – finish today and keep on local and then Home page – latest standard blocks for green filter (TBD)
+                Disable Success message from basket page
+09/11 - POC continue, 
+            Events basket page is different from standards - Richa to check
+            Publication status field changes complete
+            Format popup fix to be done for IE
+            Events Basket/ Mini Basket > multiple items will come > > Suvradip to share the screen shot
+08/11 - POC of basket page for event
+          - Change format, basket header, error message overlapping, Change on IE for update basket
+
+Mohan:
+31/01 - Sprint 4 - Customer also bought products
+30/01 - Sprint 4 - Defect fix, customer also bought products
+29/01 - Sprint 4 - Product detail page loading
+23/01 - Sprint 4 - To confirm
+22/01 - Sprint 3 - Member price chages
+19/01 - Sprint 4 - Customer also bought widget, Event integration
+18/01 - Sprint 4 - Customer also bought widget (To discuss with Azham + Mohan to confirm for its feasibility)
+17/01 - Sprint 4 - Related Products widget UI - to be deployed on DEVQA today
+16/01 - Sprint 4 - CDS API Integration 
+15/01 - Sprint 4 - CDS API (Look Inside) - Azham suggestions for preview changes
+13/01 - Sprint 4 - CDS API (Look Inside)
+12/01 - Sprint 4 - CDS API (Look Inside), <Saurabh to check: BS 8888: 2017 on DEVQA>
+11/01 - Sprint 4 - tier price/member_price, 
+10/01 - Sprint 4 - Member price change for detail pages, Checked CDS API urls for look inside
+09/01 - Sprint 4 - Optimisation of attributes.phtml based on Saurabh's suggestions
+08/01 - Sprint 3 - Defects on UAT (Richa & Sridhar issues on staging - custom widget, CMS pages, Event landing page), Sprint 4 - AC Assigment (pranabesh to confirm)
+05/01 - On Leave
+04/01 - On Leave
+03/01 - On Leave
+02/01/18 - Sprint 3 - Attribute related changes (SCR and Search) on templates files (product detail)
+01/01/18 - Sprint 3 - Attribute related changes (SCR and Search) on templates files
+29/12 - Sprint 3 - Admin changes for Search defects (Sridhar), Attribute changes on details page
+28/12 - To confirm
+27/12 - On Leave
+26/12 - On Leave
+22/12 - Sprint 3 - On Leave
+19/12 - Sprint3 - CMS sector pages
+18/12 - Sprint3 - CMS sector pages using page hierarchy, <Saurabh: vendor folder code from enterprize (mohan need to confirm)>
+15/12 - Staging - configuration changes, Sprint3 - Product widgets for CMS page
+14/12 - Sprint3 - CMS Pages
+13/12 - Search result customization for Buy Now button, Sprint3 - CMS Pages
+12/12 - Sprint2 - Bundle product issue of auto JS scrolling
+11/12 - Sprint2 defects - Convert simple product (To discuss with Richa before starting)
+08/12 - Sprint2 defects
+06/12 - Sprint2 defects
+05/12 - Event landing page, Setup scripts
+04/12 - Event landing page, Creation of event data on QA2, setup scripts
+01/12 - Sprint2 defects - show price on event detail page (eg: price text like..."From.."), showing multiple titles on essentials
+30/11 - Sprint2 Defect fixes (subscription pages)
+29/11 - Sprint2 Defect fixes (subscription pages)
+28/11 - Sprint2 defect fixes
+27/11 - Edit Delegate page of Event
+24/11 - Abondoned basket (ECom-07 AC27) - clear cart after 31 days, <Saurabh to check this, Cron>
+23/11 - Delegate Page, Abondoned basket, <Richa: Email template for Abondoned Cart>
+22/11 - Free Event, Delegate page
+21/11 - Event product detail, creation of setup scripts
+20/11 - Event product detail, <creation of setup scripts is needed for event related attributes>
+17/11 - Giving mandatory exams
+16/11 - Accordian defect (UAT) done, Free product detail page, MUNL license from basket, Subscription submenu <Saurabh to check for Governance page on DEVQA>, <mohan to check for products of Sprint2 to configure>
+15/11 - Subscription detail pages,
+14/11 - Pardot Marketing Pages
+13/11 – Ecom-59: AC77 (Marketing cms pages setup using pardot forms), Invoice conversion to pdf (if in scope)
+10/11 – Sprint 2 > completed Subscription page, Saurabh V to check and confirm back
+-              Admin changes done for PAS on QA2 , QA4, 
+09/11 - KIT products changes , defects for Essentials and PAS completed
+08/11 - BSI Essentials Products changes, PASS is done and move to QA - Richa to test
+
+Phani -
+31/01 - Sprint 4 - Customer Address attribute logic change
+30/01 - Sprint 4 - Customer Address attribute logic change
+29/01 - Sprint 4 - Defect fix - order confirmation template (redirect)
+23/01 - Sprint 4 - CDS integration for Download All, Download PDF
+22/01 - Sprint 4 - Order history email template, <Saurabh to check: checkout>
+19/01 - On Leave
+18/01 - On Leave
+17/01 - On Leave
+16/01 - On Leave
+15/01 - On Leave
+13/01 - On Leave
+12/01 - Order confirmation email template
+11/01 - Sprint 4 - Order status, Order confirmation email template
+10/01 - Sprint 4 - Order status, Order confirmation email template
+09/01 - Sprint 4 - Started working on Status Changes for hard copy products. And working on setup script for importing data from dwh file. DWH files pending from onshore team.
+08/01 - Sprint 3 - Defects on UAT (Richa & Sridhar issues on staging), Sprint 4 - AC Assigment (pranabesh to confirm)
+05/01 - Sprint 3 - Defects
+04/01 - Sprint 3 - CMS search for sector pages - issue with blank result (showing slider)
+03/01 - Sprint 3 - CMS search for sector pages
+02/01/18 - Attribute related changes (SCR and Search) on templates files (product detail)
+01/01/18 - Sprint 3 - Attribute related changes (SCR and Search) on templates files 
+29/12 - Sprint 3 - Virtual product changes for PDF Downloads
+28/12 - Sprint 3 - cron script for storing cross ref etc., Virtual product changes for PDF Downloads
+27/12 - Sprint 3 - CMS Defects, cron script for storing cross ref etc.
+26/12 - Sprint 3 - cms issues - image, tooltip
+23/12 - Sprint 3 - SCR - create hyperlinks for Cross-ref and Replaces via magento
+22/12 - Sprint 3 - Search filter tooltip, search result sorting, To Start: SCR - create hyperlinks for Cross-ref and Replaces via magento
+19/12 - Sprint 3 - CMS page, My profile bottom blocks
+18/12 - Sprint 3 - CMS Page (create navigation bar on top menu), Email template for Abandoned Basket on QA2, <phani to check: Abandoned basket email reminder for showing Basket contents in email>
+15/12 - Sprint 3 - About standards - CMS Pages (submenu page), <saurabh to check: Cron setting for Email Reminder>
+14/12 - Sprint 3 - About standards - CMS Pages
+13/12 - Sprint 3 - About standards - CMS Pages (<saurabh: how to create rows within column>)
+12/12 - Sprint 3 - CMS Pages
+11/12 - Sprint 3 Task: To confirm
+08/12 - Sprint2 defects
+06/12 - Sprint2 defects
+05/12 - To convert custom DB queries into magento format
+04/12 - To convert custom DB queries into magento format, <to check: Deletion of users on QA2 and check the DWH>
+01/12 - Member benefits, DWH
+30/11 - Sprint1 defect fixes (delete address), <ash paul/DWH: we need to map region_id with magento regions>
+29/11 - Sprint2 defect fixes
+28/11 - Sprint2 defect fixes
+27/11 - DWH error on QA2, Delete Address for existing customer, <to send all cron scripts files references for cron setup>
+24/11 - My Profile tabs issue, <Saurabh: Delete Address for existing customer (to check region_id value in database)>
+23/11 - 13 days pdf expiry email reminder email, <phani: To check and confirm the Images, Logos etc.>
+22/11 - 13 days pdf expiry email reminder email - issues, Membership benefits (wireframe)
+21/11 - Membership benefits (wireframe)
+20/11 - 13 days pdf expiry email reminder email, <Saurabh: To check the error while pushing>, <Saurabh: To highlight DWH related queries for Membership benefits integration> <Richa to confirm: The invoice template>
+17/11 - 13 days pdf expiry email reminder email with configurable template (should be configurable from admin)
+16/11 - DWH - import customer data - exception logging
+15/11 - DWH - import customer data, <To deploy code on DEVQA, Exception handling for data (log into a file containing unprocessed)>
+14/11 - DWH > members data User story (DWH - import customer data)
+13/11 – DWH > members data User story (Membership Benefits Integration with DWH)
+10/11- Sprint 2 > DWH Integration > POC done: inserted data into magento from xls
+09/11 - DWH integration jobs for Order data – in progress
+08/11 - expiry link - date should be configurable <-> QA testing to be done again
+
+Raka:
+31/01 - Sprint 4 - Responsiveness
+30/01 - Sprint 4 - Responsiveness
+29/01 - Sprint 4 - Responsiveness 
+23/01 - Sprint 4 - Responsiveness
+22/01 - Sprint 4 - Responsiveness
+20/01 - Sprint 4 - Responsiveness of Product detail, Login/logout/Registration 
+19/01 - Sprint 4 - Responsiveness of Product detail, login/logout link change for mobile view
+18/01 - Sprint 4 - Responsiveness of Product landing widget
+17/01 - Sprint 4 - Responsiveness of Basket Page (CSS part, JS handled by Pranabesh)
+16/01 - Sprint 4 - Responsiveness -Product Detail, Basket
+15/01 - Sprint 4 - Responsiveness -Product Detail
+13/01 - Sprint 4 - Responsiveness - My Profile, Product Detail started
+12/01 - Sprint 4 - Responsiveness - My Profile (accordian to be done by Pranabesh)
+11/01 - Sprint 4 - Responsiveness - Product & event landing page, event delegate page (done)
+10/01 - Sprint 4 - Responsiveness - Product & event landing page
+09/01 - No update
+08/01 - On Leave
+05/01 - On Leave
+04/01 - On Leave
+03/01 - On Leave
+02/01/18 - Sprint 3 - To confirm
+01/01/18 - On Leave
+29/12 - To confirm
+28/12 - On Leave
+27/12 - On Leave
+26/12 - On leave
+23/12 - Sprint 3 - CMS Page
+22/12 - Sprint 3 - Azham feedback for search UI, CMS - role of bsi etc
+19/12 - Sprint3 UI - CMS Pages (sector landing page)
+18/12 - Sprint3 UI - CMS Pages (role of bsi)
+15/12 - Sprint3 UI - CMS Pages
+14/12 - Sprint3 UI - CMS Pages
+13/12 - Sprint3 UI - accordian changes, CMS page - Help page UI changes
+12/12 - Sprint3 - Search page UI changes or accordian filter
+11/12 - Sprint2 defects - mini basket button alignment, Sprint3 - Search page UI changes
+08/12 - Sprint2 defects
+06/12 - Sprint2 defects
+05/12 - On Leave
+04/12 - Event Landing page
+01/12 - Sprint2 defects - Event delegates, IE issues
+30/11 - Sprint2 defects - Event delegates, IE issues
+29/11 - Sprint2 defects - Event delegates, IE issues
+28/11 - Event Landing page (with pranabesh)
+27/11 - Event delegate page changes for Addresses
+24/11 - To confirm (with Mohan, Pranabesh)
+23/11 - Subscription submenu styling, defects of register page (captcha section etc.), Forgot password UI changes
+22/11 - Event Landing Page - Subscription submenu styling
+21/11 - Event Landing Page
+20/11 - Event Delegate Page
+17/11 - Event Delegate Page
+16/11 - Event Delegate Page
+15/11 - Submenu UI changes, Events page UI changes for wireframe 2 (delegate page)
+14/11 - Events page UI changes for wireframe 2 (delegate page)
+13/11 - Sub-menu option 
+10/11 – on sick leave
+09/11 – On sick leave 
+08/11 – Not in the call
+
+Raunak:
+31/01 - Defect fix
+30/01 - Sprint 4 - Customer service - address customization
+29/01 - Sprint 4 - Customer service - address customization
+23/01 - Sprint 4 - DWH integration with Events
+22/01 - Sprint 4 - DWH integration with Events
+19/01 - Order history pages changes for Downloadable product change to Virtual product
+18/01 - Customer service ACs - Notes section
+17/01 - Customer service ACs - Notes section
+16/01 - Customer service ACs - Notes section
+15/01 - Customer service ACs - Notes section
+13/01 - Customer service ACs - Notes section
+12/01 - Customer service ACs - Notes section
+11/01 - Customer service ACs - Notes section
+10/01 - Customer service ACs
+19/12 - 
+18/12 - 
+15/12 - Sprint3 - CMS Page (Home)
+14/12 - Sprint 3 - CMS Page(Home)
+13/12 - 
+12/12 - 
+11/12 - 
+05/12 - 
+04/11 - Sprint2 defects
+01/11 - Email error on event delegate page
+23/11 - To confirm
+
+
+
+
+To check:
+	<Saurabh to check: Sanjib Merge basket issue>
+	<saurabh to check: Cron setting for Email Reminder>  -- 15 dec
+	- CMS - Anchor with hyperlink
+	- Adding product from search: select format -> remain on search page
+	- INT - test widget (check mohan's widget) - sector-landing
+
+To Self:
+	Version control -> Ask Azham about approval
+	setup scripts: attributes with multiple dropdown
+
+====================
+
+=> Phani => Email is not available in DWH
+
+Scope for Sprint 2:
+
+	[‎13/‎11/‎2017 11:57] Richa Rana: 
+	CM-19	1	
+	2	
+	3	
+	4	 
+	ECom-36	12	
+	13	
+	14	
+	15	 
+	ECom-56	 	
+	ECom-59	77	 
+	  EC0m-01 - AC 4
+	ECom-02	7	 
+	[‎13/‎11/‎2017 11:58] Richa Rana: 
+	ECom-06	26	
+	27	
+	28	
+	29	 
+	ECom-07	30	
+	31	 
+=====================
+
+UI Notes location:
+	From BSI -> Sprint1 -> Preliminary Wireframe Notes

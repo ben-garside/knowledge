@@ -1,0 +1,8 @@
+DRM?
+DWH?
+SFDC? => Salesforce (Contact Us)
+
+
+All user transactions will happen on Magento and data will be synced to other back-end applications in an asynchronous way.
+
+Section 5: Detailed Integration Design

@@ -1,0 +1,1741 @@
+Please connect to VPN using  https://vpn.bsiuat.com/
+
+vermas@oscar.local 
+
+User: vermas 			[vermas@oscar.local]
+Password is London!2012
+
+BSI Guest Password: 
+	saurabhverma - 5ebmp5  		(22-Sep-2018 15:45)
+
+-----------------------------------
+
+BSI Landline No:
+020-8996-3728
+------------------------------------
+
+
+System login: M2n1....@
+Sky login: bsi-global\vermasa  (M2n1...@@)
+
+BSI Domain user name: bsiglobal\vermasa
+
+
+Subhrateja testing user:
+ SStest_user@tcs.com  /  Test@1234
+
+---------------------- Magento Cloud -----------------
+https://account.magento.com/
+username: saurabh.verma@bsigroup.com  (Password@)
+
+Ticket: https://support.magento.com/hc/en-us/requests
+
+
+Have an appointment at PTI on 3rd Apr 2:30PM
+
+Dependants travelling for VISA Stamping
+
+Warning: fopen(/var/www/staging_local/pub/media/CDS_Images/pid-000000000030273524-preview-1.jpg): failed to open stream: No such file or directory in /var/www/staging_local/app/design/frontend/Bsi/Shop/Magento_Catalog/templates/product/view/gallery.phtml on line 235
+
+
+
+Balel Husain: 07530436225
+
+*****************************************************
+Magento-DESS-Onsite: 2811866
+*****************************************************
+
+******************** Ingenico Logins ****************
+0xRFFvKv0Gpnt882
+
+******************** BSI Imp Detail *****************
+orderconfirmation@bsigroup.com
+
+General Contact
+Sales Representative: eg. sales@bsigroup.com
+Customer Support
+Custom Email (If any)
+*****************************************************
+
+**************** Customer Logins *****************
+Sharmilee Login: sharmibbsr2030@gmail.com   (Apr@2018)
+				 sharmibbsr2018@gmail.com   (Mar@2018) -- Member
+
+				 Sharmileemohapatra@gmail.com/June@2018
+
+
+user name: pranabeshkala@hotmail.com
+password: Magento123
+
+----------------- Dummy GA account (Raunak) --------------
+Url: https://analytics.google.com/
+Account name: dummaccforga@gmail.com    
+password: dummy@123
+----------------------------------------------------------
+
+BSI Offshore Team:
+suvradip.dutta@tcs.com
+sanjib.d2@tcs.com
+Phani Tummala <phani.tummala@tcs.com>
+m.mohan5@tcs.com
+
+-------------------------------------------------------------------------------------------------
+Webex Detail (Pranav):
+
+Pranav.G   /  One4all@282018    [old: One4all@28, P@ssw0rd, Pran@080709]
+
+Meeting No: 571 285 032 
+
+Host Access Code: 59559359
+Pin: 1427
+
+Participant Access Code: 59491326
+
+https://tcsglobal.webex.com/join/Pranav.G
+
+
+UK Toll free : 08000315359
+
+India Toll Free : 18002660247
+-------------------------------------------------------------------------------------------------
+
+----------------------
+BSI SSO Help Manual:
+
+http://shopssoqa.bsiuat.com/Help/Api/POST-api-Order-CreateOrder
+http://bsigroup-auth.azurewebsites.net/Help
+-----------------------
+Knowmax Links:
+https://knowmax3.ultimatix.net/relnsites/bsi/shop/Shared%20Documents
+
+Debajyoti Nath <d.nath-external@tcs.com>
+
+
+============================================================================
+Useful Sites:
+https://www.ebuyer.dcom/
+http://www3.next.co.uk/
+============================================================================
+
+============================================================================
+https://support.aitoc.com/
+Registered Email: saurabh.verma@bsigroup.com
+Password: qoc0qczvo3
+============================================================================
+
+Microsoft Azure Access:
+Use this in SAS Url (Admin access): https://cmtoshop.blob.core.windows.net/scr?sv=2015-12-11&si=scr-admin&sr=c&sig=SRnDOOzgSyi3F%2FZ4pFSW%2BrzaWxy0Hj6QrRNq4HTpmV4%3D
+
+	[scr]
+	https://cmtoshop.blob.core.windows.net/scr?sv=2015-12-11&si=scr-admin&sr=c&sig=SRnDOOzgSyi3F%2FZ4pFSW%2BrzaWxy0Hj6QrRNq4HTpmV4%3D
+
+	[Dwh]
+	https://cmtoshop.blob.core.windows.net/dwh?sv=2017-04-17&si=dwh-admin&sr=c&sig=QtPKuup2vOZ9%2FzSUSNVCdEyDx%2BqIFzMz96fWYNzs938%3D
+
+	[SCR readonly]
+	https://cmtoshop.blob.core.windows.net/scr?sv=2017-04-17&si=scr-read&sr=c&sig=ycfRLgsAxpZ9ZIRUNLoEBpq%2B2RdajZRMTbWdPKO2EYc%3D
+
+------------
+SSH Key
+C:\Users\vermasa\.ssh\id_rsa.ppk
+----------
+
+
+
+******************************************************
+01 Oct 2018:
+
+
+On Page load => Additional API call with fake address
+Prmo code - without
+
+------------------------------
+NEWRELIC:
+------------------------------
+
+New Relic License Key: 5c132fc8bc53e3556b4b8b198dbb567b125fb4f5
+   
+
+---------------
+ 
+Linux Alternatives for Magento2: VAGRANT (sau sri): https://www.vagrantup.com/downloads.h
+		https://github.com/paliarush/magento2-vagrant-for-developers
+		https://github.com/rgranadino/mage2_vagrant
+		
+
+Google Analytics Account (Provided by Alex on 21 Nov)
+1)	New – UA-84364433-2  [confirmed on 07 Dec 2017 - to be used on Staging]
+2)	Legacy  - UA-7970902-2
+
+Test GA Account: 
+		UA-115990057-1   (Debajyoti)
+		UA-109486491-4  (Raunak - OLD)
+
+GOogle Map Key (7 Dec 2017): AIzaSyDR3Xge_RKj0XiHUuyl3S7_ya8dh5Nd2QU
+		eg: https://www.google.com/maps/embed/v1/place?key=AIzaSyDR3Xge_RKj0XiHUuyl3S7_ya8dh5Nd2QU&q=Space+Needle,Seattle+WA
+		https://maps.googleapis.com/maps/api/staticmap?center=40.714%2c%20-73.998&zoom=12&size=400x400&key=AIzaSyDR3Xge_RKj0XiHUuyl3S7_ya8dh5Nd2QU
+		
+		Pranabesh test key: AIzaSyAtQPpLP-R3wzC3YwbsREHWREVQv3DJCbs
+			https://www.google.com/maps/embed/v1/place?key=AIzaSyAtQPpLP-R3wzC3YwbsREHWREVQv3DJCbs&q=Space+Needle,Seattle+WA
+		
+
+	TO Check Azure access:
+		https://mage2.pro/t/topic/3825  [perhaps not for folder access]
+			
+	========================
+	http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html
+
+	http://repo.magento.com
+	vermasa   /  M2n...@   [Email: saurabh.verma4@tcs.com]
+
+	https://www.mageworx.com
+	saurabh.verma@bsigroup.com   [Man2...@]
+
+	Public Key: 	268d79a79e945eb434af4380b104f445     	[username]
+	Private Key:	6460c6324b39259a88485f0fd38ebb10  		[password]
+
+	Magento Developer Url: https://developer.magento.com/customer/account/edit/    [Note: Same login will work as above]
+
+	[Provided by Sirous on 20 feb 2018]
+	Client_id: 21fc5714f2ae433a8eae1bf7c14afd9d
+	Client_secret: XCwIRRobtLVkFzo4jrNPtA1dP9MGkw92McqEh4HNwm4
+
+
+	Google Map API Key (provided by Azham): AIzaSyDR3Xge_RKj0XiHUuyl3S7_ya8dh5Nd2QU (old: AIzaSyAsR7jKs1unCvSVVpQUy5OXuwqYadcNDWw)
+		https://www.google.com/maps/embed/v1/place?key=AIzaSyAsR7jKs1unCvSVVpQUy5OXuwqYadcNDWw&q=Space+Needle,Seattle+WA
+		https://maps.googleapis.com/maps/api/staticmap?center=40.714%2c%20-73.998&zoom=12&size=400x400&key=AIzaSyAsR7jKs1unCvSVVpQUy5OXuwqYadcNDWw
+
+	  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsR7jKs1unCvSVVpQUy5OXuwqYadcNDWw&callback=initMap"
+	  type="text/javascript"></script>
+	  
+	https://amasty.com
+	Registered email: saurabh.verma@bsigroup.com
+	Password: 0e62h0cac8 
+	========================
+richa.rana@bsigroup.com
+
+{
+    "ApiDetails": [
+        {
+            "ApiName": "CDS",
+            "ClientId": "b3bcafb53ee84a919f3c32b937ae5716",
+            "ClientSecret": "EFOVFQO2qwaq+L/g2tAXhJXadyLzDiZCNpY/wwPREGM=",
+            "ApiBaseURL": "http://cdsapippd.bsigroup.com"
+        },
+        {
+            "ApiName": "ECOM",
+            "ClientId": "b40ee6a060f5480aa64011618c6e5e95",
+            "ClientSecret": "jzX8lmvcaCunzlVaI2m4SbKQ8ywQnJZTeab1wvHpfaI=",
+            "ApiBaseURL": "http://ecommapippd.bsigroup.com"
+        }
+    ],
+    "UserDeails": "http://authapippd.bsigroup.com/api/APIAccounts/user/a1b561d5-4997-4e10-96bc-5d8b4e5fb0d8"
+}
+
+============
+saurabh.verma@bsigroup.com
+{
+    "ApiDetails": [
+        {
+            "ApiName": "CDS",
+            "ClientId": "b3bcafb53ee84a919f3c32b937ae5716",
+            "ClientSecret": "/a6wTt7kyQG/3GnlIbIYTXsZDMbrEphIygn8muNoOmQ=",
+            "ApiBaseURL": "http://cdsapippd.bsigroup.com"
+        },
+        {
+            "ApiName": "ECOM",
+            "ClientId": "b40ee6a060f5480aa64011618c6e5e95",
+            "ClientSecret": "aM3GxjuiB6N5oLKoGzjzFOVu4UAdUmi0hZoelB8xv5Y=",
+            "ApiBaseURL": "http://ecommapippd.bsigroup.com"
+        }
+    ],
+    "UserDeails": "http://authapippd.bsigroup.com/api/APIAccounts/user/72a73529-3192-4368-9191-b88c2cb6a2c0"
+}
+
+
+	UI Notes location:
+		From BSI -> Sprint1 -> Preliminary Wireframe Notes
+		
+	------------------------------------------
+	NEW Environments for QA and PPD:
+	https://standards-storeppd.bsigroup.com  	: Performance and content creation : Update with Sprint 3 latest UAT code
+
+	https://standards-storeqa.bsigroup.com 		: Dedicated QA environment : update with Sprint 4 latest code.
+
+
+	php -d memory_limit=8G bin/magento indexer:reindex
+
+	To get all Clusters/Index info (should be 'Green'): 	curl 'localhost:9200/_cat/indices?v'
+
+
+
+
+17 Sep meeting:
+To check for Order Migration:
+S-2205015
+
+update customer_entity set password_hash="7c6b5ddb4533988d2cc585dee0f81da4c47b08fada6bfd62661aac15abea633e:GbeCutpEntdRYPboBAjXc1zho17VbsyG:1" where email LIKE 'PT.User%';
+PT.User3@aol.co.uk;
+
+SELECT * FROM customer_entity where email LIKE 'PT.User%'; 
+813c13304ae830ac2a1071a31b409b3cbe8870e19a4132b3185c0c8755524d5b:ItpeMCf3DM1epMZgduBvB8tm8OhOYEYM:50
+
+
+"[{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"653\",\"Type\":\"E\",\"Message\":\"Postal code Teramooooo must have the length 5\",\"ProductId\":\"5\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"219\",\"Type\":\"E\",\"Message\":\"Sales document  was not changed\",\"ProductId\":\"5\"}]"
+
+
+	***************************************************************************************
+	Sanjib (New Version Notification - sp9): http://staging-standards.bsigroup.com/emailnotification/Index/productUpgradeNotification
+	=======================
+
+
+	4659 4453 8972 6293
+
+	10/20
+
+	676
+
+	UAT User Credentials:
+	
+	victoria.bell@bsigroup.com / Julyjuly2018!
+
+
+	============================================================
+	php bin/magento cache:clean
+	php bin/magento cache:flush
+	php bin/magento setup:upgrade
+	php bin/magento setup:static-content:deploy
+	php bin/magento setup:di:compile
+
+	9335817276
+
+
+
+	***************************************************************************************
+	SSH LOGINS:
+		INT:
+		ssh 7redg7uykvdko-int-g4h3wui--mymagento@ssh.eu.magentosite.cloud
+		
+		Dev:
+		ssh 7redg7uykvdko-dev-iayp4fi--mymagento@ssh.eu.magentosite.cloud
+		mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_DEV_29Aug18.sql.gz
+		mysql -h database.internal -u user
+		
+		DEVQA:
+		ssh 7redg7uykvdko-devqa-cdk55aq--mymagento@ssh.eu.magentosite.cloud
+
+		QA2:
+		ssh 7redg7uykvdko-qa2-dh6pqni--mymagento@ssh.eu.magentosite.cloud
+		
+		QA3:
+		ssh 7redg7uykvdko-qa3-xrqjsfa--mymagento@ssh.eu.magentosite.cloud
+		
+		QA4:
+		ssh 7redg7uykvdko-qa4-5rxefly--mymagento@ssh.eu.magentosite.cloud
+		
+		QA5:
+		ssh 7redg7uykvdko-qa5-cll2yhq--mymagento@ssh.eu.magentosite.cloud
+
+		-------------------------------------------------------------------
+		Production:
+		ssh ent-7redg7uykvdko-production-vohbr3y@ssh.eu.magentosite.cloud
+
+		mysql -h 127.0.0.1 -u 7redg7uykvdko -p
+		Pwd: wI452QqufjneF3s
+
+
+		HTTP Access control login (enabled on 11 Nov):
+		prod / 9hWz@jHcg#&P
+		-------------------------------------------------------------------
+
+		STAGING:
+		ssh ent-7redg7uykvdko-staging-5em2ouy@ssh.eu.magentosite.cloud
+			mysql -u7redg7uykvdko_stg -pFuhbRNVR7xogYi2 -h127.0.0.1   			 	(old: mysql -u 7redg7uykvdko_stg -p)
+			DB:  7redg7uykvdko_stg
+			Pwd: FuhbRNVR7xogYi2  (Old: FuhbRNVR7xogYi2bnm)
+
+		STAGING3 (QA):
+		ssh ent-7redg7uykvdko-staging3-nf5kgsq@ssh.eu.magentosite.cloud
+			mysql -u7redg7uykvdko_stg3 -pjKt4WkHmfrvRdYL -h127.0.0.1
+
+			Old: mysql -h 127.0.0.1 -u 7redg7uykvdko_stg3 -p
+			DB:  7redg7uykvdko_stg3
+			Pwd: jKt4WkHmfrvRdYL
+		
+		STAGING2 (PPD):
+		ssh ent-7redg7uykvdko-staging2-5zxmgzy@ssh.eu.magentosite.cloud
+			[Staging 2 - PPD]
+			mysql -u7redg7uykvdko_stg2 -pjN3vKuAMJyzpxvJ -h127.0.0.1 					(old: mysql -u 7redg7uykvdko_stg2 -p)
+			Pwd: jN3vKuAMJyzpxvJ
+
+			mysql -h 127.0.0.1 -u 7redg7uykvdko_stg2-p
+			Pwd: jN3vKuAMJyzpxvJ
+
+
+
+
+Deployment Log files:  
+	/var/log/platform/7redg7uykvdko_stg/deploy.log
+	/var/log/platform/7redg7uykvdko_stg2/deploy.log
+	/var/log/platform/7redg7uykvdko_stg3/deploy.log
+
+Flush Redis Cache:
+	redis-cli -h localhost -p 6374 -n 1 flushdb
+---------------------------------------------------------
+		curl -s -H "Fastly-Key: 9668087bc7c82d9eb7f2098b7152886e" https://api.fastly.com/service/5DytsKe6zd7v5zl3sAbfEb/version/active | json_pp
+
+
+
+
+
+		{"payment_methods":[{"code":"ops_cc","title":"Pay By Credit Or Debit Card"},{"code":"membercredit_gateway","title":"Pay By Invoice"}],"totals":{"grand_total":214,"base_grand_total":237.8,"subtotal":214,"base_subtotal":214,"discount_amount":0,"base_discount_amount":0,"subtotal_with_discount":214,"base_subtotal_with_discount":214,"shipping_amount":0,"base_shipping_amount":0,"shipping_discount_amount":0,"base_shipping_discount_amount":0,"tax_amount":23.8,"base_tax_amount":23.8,"weee_tax_applied_amount":null,"shipping_tax_amount":0,"base_shipping_tax_amount":0,"subtotal_incl_tax":214,"shipping_incl_tax":0,"base_shipping_incl_tax":0,"base_currency_code":"GBP","quote_currency_code":"GBP","items_qty":2,"items":[{"item_id":690266,"price":119,"base_price":119,"qty":1,"row_total":119,"base_row_total":119,"row_total_with_discount":0,"tax_amount":23.8,"base_tax_amount":23.8,"discount_amount":0,"base_discount_amount":0,"discount_percent":0,"price_incl_tax":119,"base_price_incl_tax":119,"row_total_incl_tax":119,"base_row_total_incl_tax":119,"options":"[{\"value\":\"PDF download\",\"label\":\"Format\"}]","weee_tax_applied_amount":null,"weee_tax_applied":null,"name":"BS ISO 13065:2015"},{"item_id":690276,"price":95,"base_price":95,"qty":1,"row_total":95,"base_row_total":95,"row_total_with_discount":0,"tax_amount":0,"base_tax_amount":0,"discount_amount":0,"base_discount_amount":0,"discount_percent":0,"price_incl_tax":95,"base_price_incl_tax":95,"row_total_incl_tax":95,"base_row_total_incl_tax":95,"options":"[{\"value\":\"Hard copy\",\"label\":\"Format\"}]","weee_tax_applied_amount":null,"weee_tax_applied":null,"name":"BS EN ISO 9000:2015"}],"total_segments":[{"code":"subtotal","title":"Subtotal","value":214},{"code":"shipping","title":"Shipping & Handling","value":0},{"code":"tax","title":"Tax","value":23.8,"extension_attributes":{"tax_grandtotal_details":[]}},{"code":"giftwrapping","title":"Gift Wrapping","value":null,"extension_attributes":{"gw_item_ids":[],"gw_price":"0.0000","gw_base_price":"0.0000","gw_items_price":"0.0000","gw_items_base_price":"0.0000","gw_card_price":"0.0000","gw_card_base_price":"0.0000","gw_base_tax_amount":"0.0000","gw_tax_amount":"0.0000","gw_items_base_tax_amount":"0.0000","gw_items_tax_amount":"0.0000","gw_card_base_tax_amount":"0.0000","gw_card_tax_amount":"0.0000","gw_price_incl_tax":"0.0000","gw_base_price_incl_tax":"0.0000","gw_card_price_incl_tax":"0.0000","gw_card_base_price_incl_tax":"0.0000","gw_items_price_incl_tax":"0.0000","gw_items_base_price_incl_tax":"0.0000"}},{"code":"grand_total","title":"Grand Total","value":237.8,"area":"footer"},{"code":"customerbalance","title":"Store Credit","value":-0},{"code":"reward","title":"0 Reward points","value":-0}],"extension_attributes":{"reward_points_balance":0,"reward_currency_amount":0,"base_reward_currency_amount":0}}}
+
+		---------------------------------------------------------------------
+
+		php bin/magento cache:clean
+
+		php bin/magento cache:flush
+
+		php bin/magento setup:upgrade
+
+		php bin/magento setup:static-content:deploy
+		
+		php bin/magento setup:di:compile
+		---------------------------------------------------------------------
+		
+	QA1:
+	ssh 7redg7uykvdko-qa1-lqxe7tq--mymagento@ssh.eu.magentosite.cloud
+
+
+	EventAdd_AddToCart schema: current version - 1.2.1, required version - 1.0.0
+
+
+Failed to validate service version: Undefined `acl allowlist` at: (input Line 794 Pos 18) if ( client.ip ~ allowlist ) { -----------------#########----
+
+
+
+-------------------
+
+Fastly:
+Ecample: to change Fastly version:
+curl -s -H "Fastly-Key: ${FASTLY_API_TOKEN}" https://api.fastly.com/service/${FASTLY_SERVICE_ID}/version/20/activate -X PUT | json_pp
+
+curl -s -H "Fastly-Key: 7e7acb62204a624ff6c9419572d08119" https://api.fastly.com/service/5IOwei9f2eIsYpSGtEhLQX/version/20/activate -X PUT | json_pp
+
+Example: To get Current Fastly version:
+curl -s -H "Fastly-Key: 7e7acb62204a624ff6c9419572d08119" https://api.fastly.com/service/5IOwei9f2eIsYpSGtEhLQX/version/active | json_pp
+
+
+----------------------------------------------------------------------
+Type recv: Priority: 5 VCL: if ( req.http.Fastly-Client-IP !~ allowlist ) { error 405; }
+
+Type recv: Priority: 5 VCL: if ( req.http.Fastly-Client-IP !~ allowlist_stg2 ) { error 405; }
+
+Type recv: Priority: 5 VCL: if ( req.http.Fastly-Client-IP !~ allowlist_stg ) { error 405; }
+
+if ( req.http.Fastly-Client-IP !~ allowlist_prod ) { error 405; }
+
+----------------------------------------------------------------------
+
+
+
+FASTLY Credentials (to put in Admin -> Configuration -> Syetem -> Built in cache):
+--------------------------------------------------------------------------------------------------
+
+Service: 7redg7uykvdko
+Service ID: 1EzQ2vL85CJkdshIiWdYhY
+API Token: b847bec34c3a5aa0ebfdf96988ef88de
+
+Service: 7redg7uykvdko_stg
+Service ID: 2Yy0J8u1KmjraQTLShuIWk
+API Token: 8f0b0b5094b8b0bc77d9a422fd8e79b5
+
+Service: 7redg7uykvdko_stg2
+Service ID: 5DytsKe6zd7v5zl3sAbfEb
+API Token: 9668087bc7c82d9eb7f2098b7152886e
+
+Service: 7redg7uykvdko_stg3
+Service ID: 5IOwei9f2eIsYpSGtEhLQX
+API Token: 7e7acb62204a624ff6c9419572d08119
+
+-----------------------
+
+
+Current Fastly version:
+curl -s -H "Fastly-Key: 9668087bc7c82d9eb7f2098b7152886e" https://api.fastly.com/service/5DytsKe6zd7v5zl3sAbfEb/version/active | json_pp
+Change Fastly version:
+curl -s -H "Fastly-Key: 9668087bc7c82d9eb7f2098b7152886e" https://api.fastly.com/service/5DytsKe6zd7v5zl3sAbfEb/version/20/activate -X PUT | json_pp
+
+
+Service: 7redg7uykvdko_stg3
+Service ID: 5IOwei9f2eIsYpSGtEhLQX
+API Token: 7e7acb62204a624ff6c9419572d08119
+
+Current Fastly version:
+curl -s -H "Fastly-Key: 7e7acb62204a624ff6c9419572d08119" https://api.fastly.com/service/5IOwei9f2eIsYpSGtEhLQX/version/active | json_pp
+Change Fastly version:
+curl -s -H "Fastly-Key: 7e7acb62204a624ff6c9419572d08119" https://api.fastly.com/service/5IOwei9f2eIsYpSGtEhLQX/version/20/activate -X PUT | json_pp
+
+
+
+--------------------
+Fastly testing:
+https://magento-tester.global.ssl.fastly.net/magento-tester/#https://staging-standards.bsigroup.com||c.7redg7uykvdko.ent.magento.cloud
+--------------------
+
+----------------
+User 7:
+
+Partner removed: 0047697390
+Partner Function Removed: AG
+----------------
+
+	================================================
+	Staging3 Read-only Access: https://support.magento.com/hc/en-us/requests/84632
+	Login via SSH and run this: echo $MAGENTO_CLOUD_RELATIONSHIPS|base64 -d|json_pp
+
+	mysql -u7redg7uykvdko_stg3 -pjKt4WkHmfrvRdYL -h127.0.0.1
+	mysql -u7redg7uykvdko_stg3-ro -p4s3C7XdKKsvKAsL -h127.0.0.1
+
+	"database-ro" : [
+      {
+         "port" : "3304",
+         "scheme" : "mysql",
+         "path" : "7redg7uykvdko_stg3",
+         "username" : "7redg7uykvdko_stg3-ro",
+         "password" : "4s3C7XdKKsvKAsL",
+         "query" : {
+            "compression" : true,
+            "is_master" : false
+         },
+         "host" : "127.0.0.1"
+      }
+
+	================================================
+	INSERT INTO `dev`.`core_config_data` (`scope`, `scope_id`, `path`, `value`) VALUES ('default', '0', 'catalog/search/engine', 'mysql');
+
+	================================================
+	Production (without Triggers - Working - USE THIS):
+	mysqldump --skip-triggers -h 127.0.0.1 -u 7redg7uykvdko -pwI452QqufjneF3s 7redg7uykvdko | gzip > var/db_dump_prod_sp10_uat_30Sep18_1045pm_wo_triggers.sql.gz
+
+	Production (With Triggers - can use this too):
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko -pwI452QqufjneF3s 7redg7uykvdko | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | gzip > var/backups/db_dump_staging2_sp10_05nov18_1527pm.sql.gz
+	
+	================================================
+	Staging (without Triggers - Working - USE THIS):
+	mysqldump --skip-triggers -h 127.0.0.1 -u 7redg7uykvdko_stg -pFuhbRNVR7xogYi2 7redg7uykvdko_stg | gzip > var/db_dump_staging_sp10_uat_07Sep18_1510pm_wo_triggers.sql.gz
+
+	Staging (With Triggers - working - can use this too):
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg -pFuhbRNVR7xogYi2 7redg7uykvdko_stg | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | gzip > var/backups/db_dump_uat_12nov18_1636pm.sql.gz
+
+
+	Staging DB Dump (main command - working):
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg -pFuhbRNVR7xogYi2 7redg7uykvdko_stg | gzip > var/backups/db_dump_staging_sp9_uat_07Sep18_1510pm.sql.gz
+
+
+	================================================
+	Staging3 (without Triggers - Working - USE THIS):
+	mysqldump --skip-triggers -h 127.0.0.1 -u 7redg7uykvdko_stg3 -pjKt4WkHmfrvRdYL 7redg7uykvdko_stg3 | gzip > var/db_dump_staging3_sp10_drop9_17oct18_1230pm_wo_triggers.sql.gz
+
+	Staging3 (With Triggers - working):
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg3 -pjKt4WkHmfrvRdYL 7redg7uykvdko_stg3 | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | gzip > var/backups/db_dump_staging3_sp10_drop9_17oct18_1230pm.sql.gz
+
+	================================================
+	Staging2 (without Triggers - Working - USE THIS):
+	mysqldump --skip-triggers -h 127.0.0.1 -u 7redg7uykvdko_stg2 -pjN3vKuAMJyzpxvJ 7redg7uykvdko_stg2 | gzip > var/db_dump_staging2_sp10_drop9_17oct18_1230pm_wo_triggers.sql.gz
+
+	Staging3 (With Triggers - working):
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg2 -pjN3vKuAMJyzpxvJ 7redg7uykvdko_stg2 | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | gzip > var/backups/db_dump_staging2_sp10_05nov18_1527pm.sql.gz
+
+
+	...................
+	Restore:
+	gzip -d var/backups/db_dump_staging_sp9_uat_30Sep18_1020pm.sql.gz
+	mysql -h 127.0.0.1 -u 7redg7uykvdko -pwI452QqufjneF3s 7redg7uykvdko < var/backups/db_dump_staging_sp9_uat_30Sep18_1020pm.sql
+
+	[mysql -uUSER -p DATABASE_NAME < /path/to/backup.sql]
+	...................
+
+
+	Skip trigger authentication (Did not work):
+	mysqldump -h 127.0.0.1 --user=7redg7uykvdko_stg3 --password=jKt4WkHmfrvRdYL --single-transaction 7redg7uykvdko_stg3  | sed -i 's/DEFINER=[^*]*\*\*/g' | gzip > var/db_dump_staging3_sp6_uat_29mar18_1650pm_backup.sql.gz
+
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg -pFuhbRNVR7xogYi2 7redg7uykvdko_stg | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | gzip > var/backups/db_dump_staging_sp9_uat_30Sep18_1020pm.sql.gz
+
+	
+
+	Staging3
+	mysqldump --skip-triggers -h 127.0.0.1 -u 7redg7uykvdko_stg3 -pjKt4WkHmfrvRdYL 7redg7uykvdko_stg3 | gzip > var/db_dump_staging3_bfr_UAT_update_03Sep18_1530pm_wo_triggers.sql.gz
+
+
+
+
+	Staging 2(PPD) DB Dump:
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg2 -pjN3vKuAMJyzpxvJ 7redg7uykvdko_stg2 | gzip > var/db_dump_staging2-sp4-uat_debajyoti_search_01Mar18_0200pm_backup.sql.gz
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg2 -pjN3vKuAMJyzpxvJ 7redg7uykvdko_stg2 | gzip > var/db_dump_staging2_sp7_12Jun18_1645pm_backup.sql.gz
+
+
+	Staging 3(QA) DB Dump:
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg3 -pjKt4WkHmfrvRdYL 7redg7uykvdko_stg3 | gzip > var/db_dump_staging3-sp4-uat_28feb18_1140am_backup.sql.gz
+
+
+	*************************************************
+	Dev server:
+
+	DB Dump: mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > var/db_dump_qa3_12nov18.sql.gz
+	
+	DB Restore: 
+	gzip -d var/backups/db_dump_uat_12nov18_1636pm.sql.gz
+	mysql -h database.internal -u user main < var/backups/db_dump_uat_12nov18_1636pm.sql
+
+	================================================
+	To run specific cron:
+	php bin/magento cron:run --group="import_products"
+
+	Hyperlink Cron:
+	php bin/magento cron:run --group=add_hyperlink_to_related_products	
+
+	Staging SSH: ssh ent-7redg7uykvdko-staging-5em2ouy@ssh.eu.magentosite.cloud
+	================================================
+	mysql -h 127.0.0.1 -u 7redg7uykvdko_stg -p
+	FuhbRNVR7xogYi2
+
+	mysql -h database.internal -u user
+
+	Latest hint for QA5 DB access (on 17 May 2018: https://support.magento.com/hc/en-us/requests/81988) :
+	mysql -h database.internal main
+
+	================================================
+
+	 To get elastic search configurations:
+	 php -r 'print_r(json_decode(base64_decode($_ENV["MAGENTO_CLOUD_RELATIONSHIPS"])));';
+	================================================
+
+	* Log File to refer (for staging):
+		/var/log/platform/7redg7uykvdko_stg/error.log  			[Suggested by cloud on #12599 on 26 Jan 2018]
+		/etc/platform/motd.sh
+
+
+=============================================
+Richa:
+
+Partner no: 10040 for Member - Send MoM to Balel - snapshot in mail?
+
+Send mail for NewRelic to offshore
+
+
+
+==========================
+
+- Performance - production deployment
+- StoreQa -> js file from UAT (pranabesh)
+
+- Nimish rent
+
+==========================
+
+Observers/Event -> Checkout_before_save -> check response of payment gateway
+----------------
+
+Performance
+Checkout -> Failed orders
+
+----------------
+Magento Interview Questions:
+
+Search, elastic search
+Checkout, how to manage failed payment
+Payment methods
+Migration
+Custom module, conflicts
+Knockout JS
+
+Performance:
+	Fastly
+
+Re-indexing (manual)
+
+IP blocking
+Security
+
+Re-indexing for specific product
+
+Huzefa Suggestions:
+---------------------------
+Do not call Anyquery in PHTMl (ONLY HTML & JAVASCRIPT) => Logic should come from BLOCK
+Fetch only specific data - fetch specific attributes, apply limit
+
+Varnish issue: Cache false but full page does not cache (Magento issue in 1.x)
+To check whether pages are caching from Fastly
+
+==============================================
+
+BSI - separate staging platform
+
+
+=============================================
+Remove unused Attributes
+flat catalog - category/product
+caching on modules
+
+
+
+Search: withdrawn attribute
+
+- Search not working on UAT
+- PPD -> content creation will not be done again during cut-over
+=============================================
+
+
+
+
+For Balel:
+	"[{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"382\",\"Type\":\"E\",\"Message\":\"Material 30350556 is not defined for sales org.2000,  distr.chan.10,  language EN\",\"ProductId\":\"30350556\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"248\",\"Type\":\"E\",\"Message\":\"Error in SALES_ITEM_IN 000010\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"219\",\"Type\":\"E\",\"Message\":\"Sales document  was not changed\",\"ProductId\":\"000010\"}]"
+	
+<br />
+<b>Parse error</b>:  syntax error, unexpected '-&gt;' (T_OBJECT_OPERATOR) in <b>/var/www/dev/extensions/Bsigroup/EcomApi/Model/Connector/Ecom/Request.php</b> on line <b>207</b><br />
+{"messages":{"error":[{"code":500,"message":"Fatal Error: 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in '\/var\/www\/dev\/extensions\/Bsigroup\/EcomApi\/Model\/Connector\/Ecom\/Request.php' on line 207","trace":"Trace is not available."}]}}
+	
+	Warning: Invalid argument supplied for foreach() in /app/7redg7uykvdko_stg/vendor/magento/module-media-storage/Model/File/Validator/NotProtectedExtension.php on line 86
+	
+	
+
+
+
+=========================================
+https://standards-storeppd.bsigroup.com/admin/cms/block/edit/block_id/795/key/d6f9383fbd9293b3ae2bfb390fdca367fb0d6e42023a077703fbc513fe2f7228/
+
+<p>{{widget type="CustomProduct\CatalogWidget\Block\Product\ProductsList" title="Useful resources" collection_sort_by="product_published_date" collection_sort_order="asc" show_pager="0" products_count="3" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="a:2:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]s:4:`1--1`;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Product`;s:9:`attribute`;s:3:`sku`;s:8:`operator`;s:2:`()`;s:5:`value`;s:74:`BSOL, Big data and Standards market research report , Cybersecurity Report`;]]"}}</p>
+
+Disabled it:
+
+https://standards-storeppd.bsigroup.com/admin/cms/block/edit/block_id/54/key/d6f9383fbd9293b3ae2bfb390fdca367fb0d6e42023a077703fbc513fe2f7228/
+
+=========================================
+
+	php bin/magento cache:clean
+	php bin/magento cache:flush
+	php bin/magento setup:upgrade
+	php bin/magento setup:static-content:deploy
+	php bin/magento setup:di:compile
+
+	php bin/magento cache:clean
+	php bin/magento cache:flush
+	php bin/magento setup:static-content:deploy
+	php bin/magento setup:upgrade
+
+	php bin/magento indexer:reindex catalogsearch_fulltext
+	php bin/magento indexer:reindex
+	php bin/magento indexer:show-mode  	(Update on Save or Schedule)
+	php bin/magento indexer:info   		(to get all index items)
+
+
+
+===============================================================================
+To Enable Magento Module:
+
+php bin/magento module:enable MageMojo_Cron
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy
+
+On Localhost:
+chmod 777 -R var
+chmod 777 -R pub/static
+===============================================================================
+
+
+	php bin/magento module:enable CustomProduct_Catalogwidget
+
+
+	php -d memory_limit=8G bin/magento indexer:reindex catalog_product_attribute catalogsearch_fulltext 
+		[Ref: https://support.magento.cloud/hc/en-us/requests/14529]
+
+php -d memory_limit=8G bin/magento indexer:reset
+php -d memory_limit=8G bin/magento indexer:reindex
+
+
+	Re-index for Search:
+		php bin/magento indexer:reindex catalogsearch_fulltext catalog_product_attribute
+		php -d memory_limit=8G bin/magento indexer:reindex catalogsearch_fulltext
+		
+
+	Reindex individual Items:
+		php -d memory_limit=8G bin/magento indexer:reindex catalog_category_product catalog_product_category catalog_product_price catalog_product_attribute catalogsearch_fulltext cataloginventory_stock catalogrule_rule catalogrule_product
+
+		php -d memory_limit=8G bin/magento indexer:reindex catalog_category_product catalog_product_category catalog_product_attribute catalogsearch_fulltext cataloginventory_stock
+
+		php bin/magento indexer:reset catalogsearch_fulltext
+
+		[old command backup]
+		php -d memory_limit=6G bin/magento indexer:reindex catalog_category_product catalogsearch_fulltext
+		php -d memory_limit=6G bin/magento indexer:reindex design_config_grid customer_grid
+		php -d memory_limit=6G bin/magento indexer:reindex design_config_grid customer_grid
+
+		php -d memory_limit=6G bin/magento indexer:reindex customer_grid
+
+	
+	Reset Indexing:
+	php bin/magento indexer:reset catalogsearch_fulltext
+
+
+	To enable specific module:
+	php bin/magento module:enable Custom_UpgradePageSchema
+	php bin/magento module:disable Custom_UpgradePageSchema
+		Or, php -f bin/magento module:enable --clear-static-content Custom_UpgradePageSchema
+
+
+		
+	php bin/magento setup:static-content:deploy
+
+	php bin/magento module:enable Experius_WysiwygDownloads
+	php bin/magento module:status Custom_UpgradePageSchema
+
+	php bin/magento module:status | grep "Bsigroup" 		.....php bin/magento module:status Email_Reminder 	[not working]
+
+	php bin/magento module:disable Email_Reminder
+	php bin/magento module:enable Email_Reminder
+	php bin/magento module:status Email_Reminder
+
+	php bin/magento module:disable Bsigroup_Elasticsearch
+	php bin/magento setup:di:compile
+
+	php bin/magento module:enable Bsigroup_EmailReminder
+
+
+
+	Check Magento maintenance mode (http://devdocs.magento.com/guides/v2.0/install-gde/install/cli/install-cli-subcommands-maint.html):
+		php bin/magento maintenance:status
+		php bin/magento maintenance:enable
+		php bin/magento maintenance:disable
+
+
+
+
+	---------------
+	To Get all Commands list: php bin/magento list
+
+	---------------
+	Set Magento Modes (default / developer / production):
+	php bin/magento deploy:mode:set production
+	php bin/magento deploy:mode:show
+	
+	php bin/magento deploy:mode:set developer
+	=========================
+
+	design_config_grid                       Design Config Grid
+	customer_grid                            Customer Grid
+	catalog_category_product                 Category Products
+	catalog_product_category                 Product Categories
+	catalog_product_price                    Product Price
+	catalog_product_attribute                Product EAV
+	cataloginventory_stock                   Stock
+	catalogrule_rule                         Catalog Rule Product
+	catalogrule_product                      Catalog Product Rule
+	catalogsearch_fulltext                   Catalog Search
+	targetrule_product_rule                  Product/Target Rule
+	targetrule_rule_product                  Target Rule/Product
+	salesrule_rule                           Sales Rule
+
+	php -d memory_limit=8G bin/magento indexer:reindex catalog_product_category
+	php -d memory_limit=8G bin/magento indexer:reindex catalogrule_product
+	php -d memory_limit=8G bin/magento indexer:reindex catalogsearch_fulltext
+	php -d memory_limit=6G bin/magento indexer:reindex
+	======================================
+	Magento Pending Tickets:
+
+	=========================================
+
+	Staging: 
+	ssh -A 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud
+
+	Git Clone INT:
+		git clone --branch INT 7redg7uykvdko@git.eu.magento.cloud:7redg7uykvdko.git bsi-uk
+
+
+	------------------------------------------
+	Export DB (resolved trigger issue) -- DID NOT WORK:
+	mysqldump -h <database host> --user=<database user name> --password=<password> --single-transaction main  | sed -i 's/DEFINER=[^*]**/*/g' | gzip > /tmp/database_no-definer.sql.gz
+
+	eg: Staging3
+	mysqldump -h 127.0.0.1 --user=7redg7uykvdko_stg3 --password=jKt4WkHmfrvRdYL --single-transaction 7redg7uykvdko_stg3  | sed -i 's/DEFINER=[^*]*\*\*/g' | gzip > var/db_dump_staging3_sp6_uat_29mar18_1650pm_backup.sql.gz
+
+	s\/DEFINER=[^*]*\*\*
+
+	mysqldump -h 127.0.0.1 --user=7redg7uykvdko_stg3 --password=jKt4WkHmfrvRdYL --single-transaction 7redg7uykvdko_stg3  | sed -i 's/DEFINER=[^*]**/*/g' | gzip > var/db_dump_staging3_sp6_uat_29mar18_1650pm_backup.sql.gz
+
+	sed 's/\*/t/g' test.txt > test2.txt
+	sed: -e expression #1, char 20: Invalid preceding regular expression
+
+	To skip triggers from Mysqldump:
+	mysqldump --skip-triggers
+
+	------------------------------------------
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg -pFuhbRNVR7xogYi2 7redg7uykvdko_stg | gzip > var/db_dump_staging_uat_sp7_11May18.sql.gz
+	
+
+	mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg3 -pjKt4WkHmfrvRdYL 7redg7uykvdko_stg3 | gzip > var/db_dump_staging_sp5_qa_11mar18_1020am_backup.sql.gz
+	------------------------------------------
+	
+	Exclude files/folder from merge:
+	
+	git reset HEAD -- app/code/Address
+	git checkout -- app/code/Address
+		
+	------------------------------------------
+	Magento Cloud Command Line DB Access:
+	mysql -h database.internal -u user
+
+	Dump a DB (sql file) from SSH:
+		mysqldump -h database.internal -u user main > /app/var/01Oct.sql
+
+
+	mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_DEV_29Aug18.sql.gz
+		
+	Dump a compressed DB file from SSH:
+		mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_qa2_14dec17.sql.gz						[DEVELOPMENT]
+		mysqldump --user=7redg7uykvdko_stg --password=FuhbRNVR7xogYi2 --single-transaction --triggers 7redg7uykvdko_stg | gzip - > var/db_dump_staging_uat_sp7_11May18.sql.gz   [STAGING]
+		
+		
+		mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_qa2_30dec17.sql.gz
+		mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_qa3_30dec17.sql.gz
+		mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_qa4_30dec17.sql.gz
+		mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_QA5_06mar18.sql.gz
+		
+	Restore a DB:
+		gzip -d /app/7redg7uykvdko_stg/var/db_dump_qa2_14dec17.sql.gz	[Uncompress zip sql file]
+		mysql -uUSER -p DATABASE_NAME < /path/to/backup.sql
+			eg(Development): 
+				gzip -d /app/var/db_dump_qa2_14dec17.sql.gz
+				mysql -h database.internal -uuser -p main < /app/var/db_dump_staging3_sp6_uat_16mar18_1916pm_backup.sql   [to from ssh directly without login to mysql prompt]
+
+				mysql -h database.internal -u user main < /app/var/db_dump_staging3_sp6_uat_16mar18_1916pm_backup.sql
+
+			
+			Or, source /app/var/backups/db_dump_qa2_13nov17.sql; [To Run from Mysql command prompt]
+			
+	------------------------------------------
+
+Debajyoti (Files for Search):
+------------------------------
+
+1. /app/code/NosearchQuery
+2. /app/code/Sorting
+3. /app/code/UpdatedResult  (remove restriction of 10k search results)
+4. /app/code/Webkul
+5. /app/design/frontend/Bsi/Shop/Magento_Catalog/templates/product/list.phtml
+6. /app/design/frontend/Bsi/Shop/Magento_CatalogSearch
+7. /app/design/frontend/Bsi/Shop/Magento_Search
+
+
+=======================================================
+DWH Address info (confirmed with Balel on 10 Jul 2018):
+
+BillTo -> AG
+ShipTo -> WE
+ContactPerson -> AP
+
+=====================================================
+Solution for Published date weight mismatch issue (19 Feb 2018):
+
+SELECT * FROM catalog_product_entity_int where store_id=0 and row_id=134 and attribute_id=325;
+SELECT * FROM catalog_product_entity_datetime where store_id=0 and row_id=134 and attribute_id=188;
+SELECT *, YEAR(value) FROM catalog_product_entity_datetime where store_id=0 and attribute_id=188 and value IS NOT NULL;
+
+SELECT * FROM eav_attribute_option_value where option_id=238;
+SELECT * FROM eav_attribute_option_value where value=2017;
+
+
+++++++++++++++++++++
+CREATE TABLE tmp_catalog_product_entity_int
+SELECT YY.value_id, YY.attribute_id, DD.store_id, YY.row_id,
+YY.value AS `YearId_OLD`,
+YYOPTION1.option_id AS `YearId_NEW`, YEAR(DD.value) AS Year_Old, YYOPTION.value AS Year_New
+
+-- SELECT DD.row_id, YEAR(DD.value), YY.value AS YEAR_ID, YYOPTION.value AS year_weight,DD.store_id,
+-- YY.value_id AS YEAR_ROW_ID, YYOPTION1.option_id AS YEAR_ID_CORRECT
+
+FROM catalog_product_entity_datetime AS DD
+LEFT JOIN catalog_product_entity_int AS YY ON (DD.row_id=YY.row_id and YY.attribute_id='325')
+LEFT JOIN eav_attribute_option_value AS YYOPTION ON YYOPTION.option_id=YY.value
+LEFT JOIN eav_attribute_option_value AS YYOPTION1 ON YYOPTION1.value=YEAR(DD.value)
+where DD.attribute_id='188' and DD.value IS NOT NULL and (DD.value > 0)
+AND YEAR(DD.value) <> YYOPTION.value;
+
+****************************************
+SELECT DD.row_id, YEAR(DD.value), YY.value AS YEAR_ID, YYOPTION.value AS year_weight,
+YY.value_id AS YEAR_ROW_ID, YYOPTION1.option_id AS YEAR_ID_CORRECT
+FROM catalog_product_entity_datetime AS DD
+LEFT JOIN catalog_product_entity_int AS YY ON (DD.row_id=YY.row_id and YY.attribute_id=325)
+LEFT JOIN eav_attribute_option_value AS YYOPTION ON YYOPTION.option_id=YY.value
+LEFT JOIN eav_attribute_option_value AS YYOPTION1 ON YYOPTION1.value=YEAR(DD.value)
+where DD.store_id=0 and DD.attribute_id=188 and DD.value IS NOT NULL
+AND YEAR(DD.value) <> YYOPTION.value;
+
+NOTE: re-run index for catalog_product_attribute, catalogsearch_fulltext. Then clean cache.
+
+..........................
+SELECT DD.row_id, YEAR(DD.value), YY.value AS YEAR_ID, YYOPTION.value AS year_weight FROM main.catalog_product_entity_datetime AS DD
+LEFT JOIN catalog_product_entity_int AS YY ON (DD.row_id=YY.row_id and YY.attribute_id=325)
+LEFT JOIN eav_attribute_option_value AS YYOPTION ON YYOPTION.option_id=YY.value
+where DD.store_id=0 and DD.attribute_id=188 and DD.value IS NOT NULL
+AND YEAR(DD.value) <> YYOPTION.value;
+
+
+- magento_theme/layouts/default.xml
+- magento_theme/js/
+---------------------------------------------------------------------------
+
+CMS Classes:  Made by Raka (mail dated: Tue 20/03/2018 16:21)
+Only below 5 classes developed as requested and working fine on development environment
+§  Redbutton-cms
+§  Redbutton-hover:cms
+§  Tealbackground-cms
+§  Gredybackground-cms
+§  Border-top10px-cms
+
+redbutton-cms
+redbutton-cms:hover
+tealbackground-cms
+greybackground-cms
+border-top-10px-cms
+sidebox-cms
+tealborder-cms
+
+----------------------------------------------------------------------------------------------
+Mention RCA in trello for the defect fixes:
+
+•	Configuration Changes
+•	Environment Issues
+•	Functions as Designed
+•	Inadequate Requirement
+•	Need Code Fix
+•	Need More Information
+•	Need to Investigate
+•	Not a Current Scope
+•	Not an Issue
+•	Product Limitations
+•	Test Data 
+•	User Awareness
+
+------------------------------------------------------------------------------------
+CDS API:
+http://cdsapici.bsiuat.com/Help
+
+
+Latest CDS API Info provided by Devi on 14 June 2018:
+	http://cdsapiqa.bsiuat.com/api/Cds/Document?materialnumber=000000000030281203&licenseName=Devi&publishedDate=08/06/2018&orderreference=Devi_7_5th_June_Pre_Non-Mem
+	http://cdsapiqa.bsiuat.com/api/Cds/DownloadAll?materialnumbers=000000000030281203,000000000030330194&licenseName=Devi&orderreference=Devi_7_5th_June_Pre_Non-Mem
+    
+
+CDS API QA End Points used by QA (Email: 08 JUne 2018):
+	http://cdsapiqa.bsiuat.com/api/Cds/Document?materialnumber={materialnumber}&licenseName={licenseName}&publishedDate={publishedDate}&orderreference={orderreference}
+	http://cdsapiqa.bsiuat.com/api/Cds/DownloadAll?materialnumbers={materialnumbers}&licenseName={licenseName}&orderreference={orderreference}
+	http://cdsapiqa.bsiuat.com/api/Cds/Preview?materialnumber={materialnumber}&pageNumber={pageNumber}
+	http://cdsapiqa.bsiuat.com/api/Cds/Thumbnail?materialNumber={materialNumber}
+	http://cdsapiqa.bsiuat.com/api/Cds/Length?materialnumber={materialnumber}
+
+------------------------------------------------------------------------------------
+
+------------------------------------
+LINUX Helps:
+------------------------------------
+Remove files before X days:
+find /path/to/files* -mtime +5 -exec rm {} \;
+
+
+------------------------------------------
+CLOUD SUPPORT HINTS:
+.....................
+	Install CA certificate on windows:
+	https://success.outsystems.com/Support/Enterprise_Customers/Installation/Install_a_trusted_root_CA__or_self-signed_certificate
+	
+	Staging issue solution:
+	Could you please disable Auto-redirect to Base URL in Magento Stores -> Configuration -> General -> Web, clear cache and reindex?
+------------------------------------------
+https://devqa-cdk55aq-7redg7uykvdko.eu.magentosite.cloud/admin/
+saurabhverma / admin123
+Admin / admin12
+
+===============================================================
+
+8299626964 - jio w
+
+
+===========================
+DEV Setting: https://dev-iayp4fi-7redg7uykvdko.eu.magentosite.cloud/admin/admin/system_config/edit/section/dev/key/fe9255ddcfa0cbb87e2c56e1f2812da32365134205ffc8da13700be57ce0ae61/
+Admin -> Configuration -> Developer -> Developer Client Restrictions
+14.141.73.76
+===============================================
+Staging SSH Url:
+
+ssh 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud
+===================================================
+
+
+Slution for theme (Static content) not loading:
+	sudo rm -rf pub/static
+	sudo rm -rf var/cache
+	sudo rm -rf var/composer_home
+	sudo rm -rf var/generation
+	sudo rm -rf var/page_cache
+	sudo rm -rf var/view_preprocessed
+
+Note: We can also set environment variable from configuration (magento cloud account): APPLICATION_MODE => developer
+----------------------------------------------
+
+ 	php bin/magento module:status # this will give us the status of each module. It'll show ours as disabled.
+    php bin/magento module:enable Ashsmith_Blog # this will enable our module
+    php bin/magento setup:upgrade # upgrade the system, essentially this will make sure any setup scripts have been run and the current module version saved to the setup_module table.
+    php bin/magento module:status # confirm our module has been enabled!
+
+--------------------------------------------
+------------------------------------------
+Install Cisco OpenConnect on Ubuntu: http://ubuntuhandbook.org/index.php/2014/11/connect-cisco-anyconnect-vpn-ubuntu/
+	sudo /sbin/modprobe tun
+	sudo apt-get install openconnect
+	sudo openconnect yourvpn.example.com
+
+-----------------------------------------
+ssh: connect to host git.eu.magento.cloud port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+SSH Error: ssh: connect to host ssh.eu.magentosite.cloud port 22: Connection timed out
+-----------------------------------------
+To Check:
+	"choosing a unique name for each address."
+
+- The user see the existing Shipping addresses with the options to: edit , delete or choose a default preferred address
+- Allow adding upto 10 addresses - user account
+- Members can not edit their billing address
+
+- under My Profile: the membership number and a current status should be displayed on My profile page,
+with a link to my page on the Member Portal.
+
+- Ecom 38A: PDF download links with the expiry date, the link will not  be accessible after expiry. Payment will be “COD” only.
+- Ecom 45A: 27, 28=>Allow adding upto 10 address (shipping addresses) => CUSTOMIZATION NEEDED, 29 => Dependent upon Membership (NOTE: Members can not edit their billing address),
+	Note: POST LOOKUP Option NOT needed => not a part of Sprint1.
+=================================================
+
+
+DWH Responses, Extract from DWH: https://app.box.com/s/c91k0w81xe6y4shrevy13cfw49tvlkq3   (Ref email dt 06 Oct 2017 by Richa)
+=================================================
+
+Magento Support Responses:
+---------------------------
+	- CMS customizations (eg: like ACM2): https://support.magento.cloud/hc/en-us/requests/8873
+		http://devdocs.magento.com/guides/v2.1/frontend-dev-guide/bk-frontend-dev-guide.html
+
+		
+		
+Membership (discussed on Richa on 10 Nov 2017): 
+	=> Customer will receive an email from SAP BAPI for membership_id, then he will update the membership_id from Magento -> Edit Profile. Then, magento batch process will update Membership Benefits data from DWH files
+=================================================================
+BSI Cron Files:
+	Email reminder for PDF Expiry after 13 days:	https://qa2-dh6pqni-7redg7uykvdko.eu.magentosite.cloud/mail/index/Email
+
+	Membership Data Import: 	http://qa2-dh6pqni-7redg7uykvdko.eu.magentosite.cloud/Memberdata/index/Data
+	
+	For cron Setup urls needs to be included are 
+	/mail/index/Email.
+	/Memberdata/index/Data.
+
+
+=================================================================
+Self R & D:
+------------
+git config --global user.name "Saurabh Verma"
+git config --global user.email saurabh.verma@bsigroup.com
+
+GIT issue bad index:
+	rm .git/index
+	git reset
+
+To keep source GIT copy: git checkout --theirs <FILE_PATH>
+	
+Magento Cloud Hints:
+	manage cloud projects: http://devdocs.magento.com/guides/v2.1/cloud/project/project-webint-basic.html
+	
+	Magento Cloud Environment Variables:
+	http://devdocs.magento.com/guides/v2.0/cloud/env/environment-vars_magento.html
+
+Check for JS issue on magento2: https://community.magento.com/t5/Hosting-Performance/CSS-and-JS-loading-WAY-too-slow/m-p/61770#M239
+	And try to change the LESS compilation mode to server-side under:
+	STORES > Configuration > ADVANCED > Developer > Front-end development workflow > Workflow type
+
+Setup Enterprize via Composer:
+	http://devdocs.magento.com/guides/v2.0/install-gde/prereq/integrator_install_ee.html
+	Generate Access Keys: https://marketplace.magento.com/customer/accessKeys/
+	- Install composer version 1.5.2
+	- Run below command on putty or windows cmd:
+		composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition m2composer
+		php -r "var_dump(openssl_get_cert_locations());"
+
+
+
+
+Run Custom Query in Magento:
+http://blog.chapagain.com.np/magento-2-run-custom-sql-query/
+http://navaneeth.me/magento2-direct-mysql-query-without-using-model/#.Wedw2GhSyHs
+https://webkul.com/blog/magento2-write-custom-mysql-query/
+
+Postcode Lookup Magento Extension:
+There is an extension available for this functionality which enables searching for addresses against a post code of UK. The extension is compliant for Enterprise Edition and has an associated cost with it. 
+URL: https://craftyclicks.co.uk/ 
+Demo: https://craftyclicks.co.uk/address-finder-from-postcode/ 
+Pricing: https://craftyclicks.co.uk/pricing 
+
+
+Search Auto-complete Extension: https://www.mageworx.com/sales/order/view/order_id/44163/%20class='link-view-order'   [login and go to view orders - saurabh.verma@bsigroup.com  -- M2...@]
+		mageworx_searchsuiteautocompletemeta_v2.1.2.zip
+
+Magento Data Migration tool: https://github.com/magento/data-migration-tool
+
+Magento2 Improved Import/Export extension: 
+	https://github.com/firebearstudio/importexportfree  [Free]
+	https://firebearstudio.com/the-improved-import.html [Paid - includes XML too]
+
+Magento Free extension with Ingenico Payment gateway:
+	[Suggested below 2 by Ingenico team - mail dated 06 Dec 2017]
+	https://payment-services.ingenico.com/be/en/support/magento-payment-gateway-extension  
+	https://marketplace.magento.com/ingenico-ingenico-epayments-ogn2.html
+
+	https://marketplace.magento.com/ingenico-ogone-epayments.html
+	
+			
+
+Order Export:
+https://www.xtento.com/magento-extensions/magento-order-export-module.html?gclid=EAIaIQobChMIh9KhobL61gIVjZztCh3hDQ_DEAAYASAAEgLIcfD_BwE
+
+Custom SMTP extension - Free: https://store.emizentech.com/magento2/magento2-custom-smtp.html
+
+Magento 2 - robots.txt :
+https://www.mageworx.com/wiki/magento-2-robots/
+https://support.hypernode.com/knowledgebase/create-robots-txt-magento-2/
+
+Magento 2 Product Import/Export ATTRIBUTES:
+https://magento.stackexchange.com/questions/11520/how-to-export-and-import-all-attributes-and-attribute-sets-from-one-magento-to-o
+https://bsscommerce.com/blog/how-to-export-custom-product-attributes-in-magento-2/
+https://bsscommerce.com/custom-product-attribute-export-for-magento-2.html
+
+Issues After DB migration (Import from other branch):
+-------------------------------------------------------
+=> 404 Not Found issue on All frontend pages:
+	Keep a backup of below tables:
+		catalog_url_rewrite_product_category
+		url_rewrite
+		and truncated them.
+	then ran below commands:
+	php bin/magento indexer:reindex
+	and flushed cache
+
+
+Localhost Issue: You did not sign in correctly or your account is temporarily disabled:
+1) UPDATE admin_user a SET a.`failures_num` = 0, a.`first_failure` = NULL, a.`lock_expires` = NULL WHERE a.`username` = 'admin';
+2) php bin/magento admin:user:unlock admin
+
+
+Create a new Admin User: php bin/magento admin:user:create --admin-user="saurabhverma1" --admin-password="M2n1shlko@" --admin-email="admin@example.com" --admin-firstname="Admin1" --admin-lastname="Admin1"
+
+----------------------------
+
+Checkout Customization in Magento:
+http://alanstorm.com/magento-2-uielement-object-features-and-checkout-application/
+
+http://inchoo.net/magento-2/knockout-js-in-magento-2/
+http://alanstorm.com/magento_2_knockoutjs_integration/
+
+----------------------
+Create Custom Magento Layout:
+https://webkul.com/blog/how-to-create-custom-layout-page/
+http://inchoo.net/magento-2/magento-2-custom-cms-page-layout/
+http://devdocs.magento.com/guides/v2.0/frontend-dev-guide/layouts/layout-types.html
+---------------------
+
+select * from core_config_data where path like '%base%url%';
+
+
+update core_config_data set value="http://devqa-cdk55aq-7redg7uykvdko.eu.magentosite.cloud/" where path="web/unsecure/base_url";
+update core_config_data set value="https://devqa-cdk55aq-7redg7uykvdko.eu.magentosite.cloud/" where path="web/secure/base_url";
+
+
+select * from core_config_data where path="web/secure/base_url";
+select * from core_config_data where path="web/unsecure/base_url";
+-----------------
+Error: customer or magento theme folder (design) - checkout
+	/var/www/mage_cloud/bsi-uk/app/design/frontend/Bsi/Shop/Magento_Theme/web/js
+
+
+PDF upload via CMS: http://www.verticalrail.com/kb/magento-pdfs-media-library/
+	..........................
+	https://github.com/experius/Magento-2-Module-Experius-WysiwygDownloads#markdown-header-change-log
+	https://blog.mdnsolutions.com/magento-2-enable-pdf-upload/
+
+	..........................
+
+Add Attribute in CMS: https://magento.stackexchange.com/questions/109632/magento-2-how-to-add-attribute-for-cms-page
+
+Magento Clod Doc: http://devdocs.magento.com/guides/v2.1/cloud/bk-cloud.html
+https://magento2-blog.com/magento-2-vargeneration-cannot-be-deleted-warning/
+
+Magento Cloud Dev Hints:
+http://devdocs.magento.com/guides/v2.0/cloud/basic-information/starter-develop-deploy-workflow.html
+=========================================================
+
+phani: 1132528 (9676899768) 
+mohan: 1288586
+
+
+
+
+	ENTERPRISE:
+	----------
+		- how to keep images
+
+====================================
+SSH Public Key Path on my Dell Laptop:
+
+- generate RSA-Key:
+	ssh-keygen -t rsa -C "sau742@gmail.com"
+
+
+- vi ~/.ssh/id_rsa.pub       [or,  /root/.ssh/id_rsa.pub]
+	---------------------
+	ssh-rsa AAAAB4NzaC1yc2EAAAADAQABAAABAQDkCU26yvpAUl8UqgKOcwNOJj8w4oubHIKQNioroekcylL9CdF8Tq5N7QE5kWhN0j21/Gf/0UJ1YZ6tiXJf38Apy5/F0detUdpBAWZKEDrWMc0EgApzTJLxRYgp5wzqMtm8HWSJu/cpKXzUyk6vi0mgqpoqyJlUyC9r7xQwUmZgvt0te+OPpUQIRS6XmKfviI+BvD6RYkMEBbmpWWCh3oQzGayHSBcXY816KmYWgnvA9wmpIDlZdqbxJ22qQ9CCefitmFYdMWAHckyE/eheJddnjoRjwHKmLr6FsQKwnHjEos0DG2+SdpKNNkVJEbzeLod4XGoUy9W3yYGWXkJrggJZ sau742@gmail.com
+	---------------------
+
+ADDED a SSH
+vim ~/.ssh/known_hosts
+
+TROUBLESHOOTINGS FOR SSH KEY:
+------------------------------------
+Hint: https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server
+	vi /etc/ssh/sshd_config, add below line:
+	PasswordAuthentication no
+	sudo service ssh restart
+
+	All product come from SCR (so data will be read-only)
+	- only Overview will be edited
+
+----------------------------------------------------
+Show Download Link on Order Confirmation page:
+https://github.com/magento/magento2/issues/3929
+
+--------------------------------------------------
+Cisco Anyconnect LAN Access: 
+	On windows -> Go to Cisco Anyconnect -> Preferences -> "Allow local (LAN) Access when using VPN(if configured)"
+				1. Allow LAN access while connecting to VPN - Checked
+				2. Block Connections to untrusted servers - unchecked
+--------------------------------------------------
+
+Webex Java Update (Screensharing issue):
+
+	sudo add-apt-repository ppa:webupd8team/java
+	sudo apt-get update
+	sudo apt-get install oracle-java8-installer
+	sudo apt-get install oracle-java8-set-default
+
+--------------------------------------------------
+Branches:
+	DEV
+	DEVQA
+
+	INT
+
+	QA2
+	QA3 (UAT now)
+
+	Staging
+
+
+===============================================
+ATU TEG CLOUD AZURE URL (Given by Talish):
+		http://tegbsipoc.cloudapp.net/magento_pos/pages/home/ 
+        http://tegbsipoc.cloudapp.net/magento_pos/pages/help/ 
+        http://tegbsipoc.cloudapp.net/magento_pos/pages/bsi-committee-member/
+
+
+===============================================
+Configuration Deloyment in Magento:
+
+
+Saurabh S mail on 1 Oct:
+
+I have verified the configuration management approach on DEV cloud instance and its working properly.
+We simply need to follow the example provided at URL - http://devdocs.magento.com/guides/v2.1/cloud/live/sens-data-initial.html and we will be able to move all Configuration changes from one environment to another.
+
+The overview of this concept is provided at URL - http://devdocs.magento.com/guides/v2.1/cloud/live/sens-data-over.html which can be referred before executing the example if there are any doubts.
+
+Just one change, YAML file based approach is used for Staging or Production deployment. For branch specific deployment we may use the above mentioned configuration management approach and setup file based data generation together.
+
+I will share the Setup file based module in sometime, currently working on that.
+
+===============================================
+Adding Multiple input values via textbox in admin (eg: put comma-separated):
+https://stackoverflow.com/questions/28281533/how-to-assign-multiple-values-to-an-attribute-through-text-field-in-magento
+================================================
+
+Cross Ref testing: https://devqa-cdk55aq-7redg7uykvdko.eu.magentosite.cloud/pd-iso-iec-tr-27019-2013
+================================================
+var/ => delete
+pub/generation => backup and delete
+
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+
+=========================
+For resolving GIT MERGE Conflict related issues from one branch to another:
+git reset --merge
+
+git commit -A
+	===================
+
+	Dev Setup
+	Sprint1 Acceptance criteria
+	SCR Data Analysis
+
+	=====================
+
+	@ToDo:
+	- Ask team about merged code
+	- Check for Phani's AC => Rename Addr => create a new Customer Attr or Check Saurabh S code for custom attribute
+	- Team daily task
+
+	====================
+
+	=========================================================
+	PRODUCT MAPPING (BSI):
+	=========================================================
+	Price => <nonMemberPrice>
+	Category: Default Category -> Buy Standard & Events -> standard
+	Publisher => <Originator>
+	Committee name & Number => <NationalCommitteeReference>IST/33/4</NationalCommitteeReference>
+	ISBN => <ISBN>978 0 580 79888 7</ISBN>
+	Published Date => <DateVersionPublishedValue>2016-11-30</DateVersionPublishedValue>
+	Confirmed Date => <DateEffectiveValue>
+	ICS Code => Taken from old site
+	Material Group ID => <salesMaterialGroupNumber>
+	Draft Superseded By => <isProgressionOf>
+	Cross References  => <isIdenticalNationalStandardOf>
+	Module Code => taxonomyName (?)
+	stockFilesize => <stockPhysicalSize>
+	Preview Availability => <documentPreviewFlag>
+	Amended Date => <lastModifiedDate>
+	Replaces => take from old site
+	Standard Number => <PrimaryDesignator>    [Also 'name' value is taken as this one]
+	Download Sample => #
+
+	
+	To Ask with Matt (XML SCR Mapping):
+	------------------------------------
+	Withdrawn Date => ?
+	Material Group ID => ?
+	ICS => Multiple Values?
+
+	Reinstated Date => 
+	Draft Expiry Date => 
+	Sector??
+	Standard Number => Primary Designator (we have given title)
+
+	
+Givekotak@#$5
+
+Givekof4pt2f
+
+	Session timeout =
+
+	==============================
+
+	=> mini cart
+
+	=========================
+	Richa - 26 Sep 2017
+	DevQA:
+		seach not working on QA
+
+	=========================
+	12-1 demo (Azham)
+	 - Devqa
+
+	 - mini cart => close
+	 - 	1.       Front page alignment
+		2.       Change format : adds two
+		3.       Search works
+		4.       Error message comes late
+		5.       On closing checkout window and on button re-click the functionality does not work
+		6.       Sorting works only once on search page
+
+==================================
+=> 36 products
+===================================
+
+
+
+***************************************************************************************
+
+Membership Logic:
+	- Membership Number and Postcode should be Unique and matched with User profile logic
+	-
+***************************************************************************************
+SSH LOGINS:
+	INT:
+	ssh 7redg7uykvdko-int-g4h3wui--mymagento@ssh.eu.magentosite.cloud
+	
+	Dev:
+	ssh 7redg7uykvdko-dev-iayp4fi--mymagento@ssh.eu.magentosite.cloud
+	
+	DEVQA:
+	ssh 7redg7uykvdko-devqa-cdk55aq--mymagento@ssh.eu.magentosite.cloud
+	
+	QA2:
+	ssh 7redg7uykvdko-qa2-dh6pqni--mymagento@ssh.eu.magentosite.cloud
+	
+	QA3:
+	ssh 7redg7uykvdko-qa3-xrqjsfa--mymagento@ssh.eu.magentosite.cloud
+	
+	QA4:
+	ssh 7redg7uykvdko-qa4-5rxefly--mymagento@ssh.eu.magentosite.cloud
+	
+	QA5:
+	ssh 7redg7uykvdko-qa5-cll2yhq--mymagento@ssh.eu.magentosite.cloud
+	
+	STAGING:
+	ssh ent-7redg7uykvdko-staging-5em2ouy@ssh.eu.magentosite.cloud
+	
+**************************************************************************
+
+https://standards-storeppd.bsigroup.com  : Performance and content creation : Update with Sprint 3 latest UAT code
+
+https://standards-storeqa.bsigroup.com : Dedicated QA environment : update with Sprint 4 latest code.
+
+**************************************************************************
+
+To get database etc. configuration details of magento environment (run below via SSH):
+echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+
+**************************************************************************
+
+To Run Elastic Search via console:
+
+Staging:
+---------------
+curl -i -XGET '127.0.0.1:9200/'
+curl -XGET 'http://127.0.0.1:9200/_count?pretty' -d '{"query": {"match_all": {}}}'
+
+------------------------------------------------------
+Cloud team suggestion to check product count:
+curl -XGET localhost:9200/_cat/indices
+------------------------------------------------------
+
+INT:
+---------------------
+curl -i -XGET '250.0.66.197:9200/'
+curl -XGET 'http://250.0.66.197:9200/_count?pretty' -d '{"query": {"match_all": {}}}'
+
+curl -XGET 'http://250.0.65.47:9200/_count?pretty' -d '{"query": {"match_all": {}}}'
+
+---------------
+Elastic Search Console for QA3:
+	php -r 'print_r(json_decode(base64_decode($_ENV["MAGENTO_CLOUD_RELATIONSHIPS"])));'
+	
+	[Search Result - for 'quality']
+	curl -XGET 'http://250.0.65.47:9200/_count?pretty' -d '{"query": {"multi_match": {"query" :"quality", "fields": ["_all"]}}}'
+	
+	[Search Analyser]
+	curl -XGET '250.0.65.47:9200/_analyze?pretty' -H 'Content-Type: application/json' -d' {"analyzer" : "custom", "text" : "quality"}'
+	
+
+To fetch Memory Limit setting of cloud:
+php -r "echo ini_get('memory_limit').PHP_EOL;"
+
++++++++++++++++++++++ Magento Cloud Credentials (INT) +++++++++++++++++++++++
+web@7redg7uykvdko-int-g4h3wui--mymagento:~$  php -r 'print_r(json_decode(base64_decode($_ENV["MAGENTO_CLOUD_RELATIONSHIPS"])));'
+stdClass Object
+(
+    [elasticsearch] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [service] => elasticsearch
+                    [ip] => 250.0.66.197
+                    [cluster] => 7redg7uykvdko-int-g4h3wui
+                    [host] => elasticsearch.internal
+                    [rel] => elasticsearch
+                    [scheme] => http
+                    [port] => 9200
+                )
+
+        )
+
+    [redis] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [service] => redis
+                    [ip] => 250.0.66.145
+                    [cluster] => 7redg7uykvdko-int-g4h3wui
+                    [host] => redis.internal
+                    [rel] => redis
+                    [scheme] => redis
+                    [port] => 6379
+                )
+
+        )
+
+    [database] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [username] => user
+                    [scheme] => mysql
+                    [service] => mysql
+                    [ip] => 250.0.66.186
+                    [cluster] => 7redg7uykvdko-int-g4h3wui
+                    [host] => database.internal
+                    [rel] => mysql
+                    [path] => main
+                    [query] => stdClass Object
+                        (
+                            [is_master] => 1
+                        )
+
+                    [password] =>
+                    [port] => 3306
+                )
+
+        )
+
+)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+SELF TO DOs:
+====================
+** Add more attributes for showing in SEARCH Option (Ecom 48 - AC 45)
+	 Year of publication
+	 Publisher
+	 ics_code
+	 Module
+	 Committee
+	 
+
+
+=> SHona Fee
+=> Mummy blank chq for CAR INS
+=> Car service
+=> Shifting of saman from one bag to other (23 KGs each)
+=> Check FOREX (call amit - also loading 2000 in card)
+=> FILL Insurance Sheet by Shailendra Sir, Call him for papers (signed by Prerna Mam)
+
+
+Jay:
+
+header not showing on CMS page
+Image not showing on CMS
+
+
+
+
+Image not showing on detail page but showing on search/list
+============================================
+Richa & Jay (26 Sep 2017):
+Ecom 48 - 45: Show all products
+
+=============================================================================
+IMP TO DOS BEFORE DEMO TOMMORROW (11:30 AM INDIA TIME):
+=============================================================================
+	1. Product detail page => Image loading issue (MAJOR TO FIX), ALIGNMENT issues for Status etc.
+			Note1: Remove IMAGE from Product Detail page if it not working (as that may be covered in later sprint)
+			Note2: Image not showing on detail page but showing on search/list.
+	2. Checkout page sometimes working (after adding to cart...showing blank page with footer...then after sometime Checkout page coming)
+			Scenario: CART => when add multiple products, remove/update => CHECKOUT DOES NOT WORK in this scenario
+	3. Product Addition => Manually for remaining 14 Products
+			Note: Also check only few products are showing not all the added products (showing in admin) => Check config in ADMIN
+	4. User Profile : Make default address => FATAL Error for 'AddressName' field
+====================================================================================================================
+
+
+=============================================================================
+TO DOS AFTER CUSTOMER DEMO TOMMORROW (depends upon currently assigned tasks):
+=============================================================================
+Product Detail:
+----------------
+- Change Format not coming  (design issue currently)
+- Change Format
+   https://dev-iayp4fi-7redg7uykvdko.eu.magentosite.cloud/index.php/bs-en-10305-3-2010.html
+- Alignment of Detail page
+
+
+Search:
+----------------
+=> Search => not working with Special Character (To check)
+		** not working with "bs" .... , "bs-"
+		*** remove some filters from Search
+=> Sort By dropdown not loading sometimes (including the sort arrow) => Scenario: Sort does not work after searching.
+
+Misc Changes:
+------------------
+=> LOGOUT => put that logout link after login  [Last Priority]
+=> RENAME Address function is not present
+
+CMS:
+------------
+=> CMS Page 'Header' not showing when viewing fron frontend
+=> Page Hierarchy from FRONTEND => eg: Breadcrumb etc.
+=> Select a Template?  - Functionality not developed
+=> Page versions?      - Functionality not developed
+
+
+
+================================================================
+Phani: DWH file locations:
+Following are the path locations of controller used to import dwh data. Today I changed to code base So now it will accept only pipe separated csv files.
+
+app/code/ImportData/Credittable/Controller/Index/Creditamount.php (used to import Credit_Limits_delta_upserts.csv file)
+app/code/ImportData/Credittable/Controller/Index/Index.php (used to import Membership_Credit_delta_upserts.csv file)
+app/code/ImportData/Invoice/Controller/Index/Index.php (used to import Outstanding_Invoices_delta_upserts.csv file)
+app/code/ImportData/Invoice/Controller/Member/Expiry.php (used to import Membership_contracts_delta_upserts.csv file)
+app/code/ImportData/Invoice/Controller/Member/Index.php (used to import Membership_Invoices_delta_upserts.csv file)
+app/code/ImportData/Membershiptable/Controller/Index/Index.php (used to import customer_delta_upserts.csv file)
+================================================================
+
+==========================
+Saurabh TO check later:
+==========================
+=> CMS: Keyword Search not working from page listing => eg: KEYWORD textbox which is added from custom module
+
+=> Remove IMAGE from Product Detail page (done with PD ISO/....)
+
+
+Richa to prepare a sheet (with below columns):
+CM
+Use case name
+Screenshot
+
+===========================================
+
+Please see below the details of your Certificate of Sponsorship (CoS):
+CoS ref no: C2I3W75987S
+Visa Category: Long Term  (Tier2 ICT Long Term)
+Associate Category: Experienced Worker
+Date of issue: 23-May-17
+Start date: 29-May-17
+End date: 28-May-19
+
+Name: Verma Saurabh
+Passport no: P5618306
+Role title: Technical architect
+Salary (£):42000
+Client:BRITISH STANDARDS INSTITUTION
+Working at address : 389, Chiswick High Road, Chiswick, London - W4 4AL
+
+WON: 2811866
+
+--------------
+Priyanka Verma:
+Passport: R0493023
+
+Shanaya Verma:
+Passport: R0483857

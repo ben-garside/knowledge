@@ -1,0 +1,100 @@
+
+============================================================================================================================
+============================================================================================================================
+
+
+---------------------------------------------------
+Ingenico transactions:
+Payment reconciliation
+Capturing payment failures
+
+Tickets:
+SS-1177, SS-1168, SS-1214 (Ingenico Payment Status)
+---------------------------------------------------
+
+SAP:
+Payment reconciliation
+VAT
+Errors at checkout
+
+Tickets:
+SS-1221: TO CHECK SELF - check payload
+SS-1215, SS-1220 - Promo Code Additional Call => Deferred?
+SS-1166, 1213  (Italy Codis Fiscale)
+---------------------------------------------------
+
+DWH customer updates – Customer details not consistently being updated in Magento
+Tickets:
+SS-1233 (To confirm with Yaqub - company_name => Customer Name1)
+---------------------------------------------------
+============================================================================================================================
+
+
+
+
+YAQUB:
+DWH
+Brazil - codis fiscale
+
+============================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+Day 2 - 14 Sep 2018:
+
+=> Invoice name does not contain actual magento order id.
+
+
+=> Order 434062 => Payment Review in ingenico (Pending with Inenico: CFT-2018-542768)
+	=> Phani/Mohan: In Order history, do not allow the 'Download PDF' when order not processed in Ingenico
+
+ => DWH: we need to change the cron schedule to run after we get DWH feed: 8AM with few mins gap (2-5 mins) in cron run
+ => Outstanding invoice -> Manual run the re-indexing
+
+
+
+===========================================================
+
+- Order Id: 000434062  (Order Status='Processing'), using 3DS, and Order time is also wrong ==> USER 8
+	=> TO check with Ingenico
+
+
+=============
+
+SS-1121
+SS-1153
+SS-747
+
+SS-694 - 19 Sep (we need to analyse)
+SS-547 - 
+
+Advance access
+
+==========================================
+bsiuattesting+2@gmail.com => Billing Address is not available => to check from DWH
+==========================
+
+
+bsiuattesting+4@gmail.com  => 216, 219
+
+==========================
+
+Membership discount not applied on Basket -> Member Price
+
+Order Status not changing for 'HardCopy'-> Shows Processing
+
+
+
+000432823
+
+=======
+
+Italy address - codic fiscali

@@ -1,0 +1,83 @@
+BSI Magento Hints:
+=======================
+
+To Apply Fixed Product Tax in Magento2: https://www.mageplaza.com/kb/how-to-setup-fixed-product-tax-magento-2.html
+-> Magento2 has option to set product based tax, refer to below. Hope this resolves out Invoice product tax issue using above link
+​
+- DWH (Phani): If you need to show the UAT users regarding member admin functionality in staging environment please update any email id in
+		Membership_Credit_delta_upserts  with the email ids of the UAT testers.
+
+================================================
+Online Canadian Marketplace:
+https://www.shopify.co.uk/
+
+==========================================
+Magento2 Library for International Telephone No:
+https://github.com/jackocnr/intl-tel-input
+
+o Allow Adding PDF to WYSIWYG editor: https://github.com/magento/magento2/issues/9850
+
+==========================================
+To implement Custom Shipping Rate:
+https://github.com/magepal/magento2-custom-shipping-rate
+================================================
+
+Post data to Microsoft Azure:
+https://stackoverflow.com/questions/39241302/how-can-i-upload-the-blob-in-azure-using-the-shared-access-signature-using-php
+
+================================================
+Improve Magento Performance: https://github.com/magento/magento2/issues/2999
+
+Magento 2 is not slow. Now you can make it fast following these steps.
+Update Magento Version
+Configure Memcached
+Optimize Javascript and CSS
+Use lightweight theme
+Images Should be Fully Optimized
+Server and System Requirements
+Enable Varnish Cache
+Enable Flat Categories and Products
+Content Delivery Network
+Bug-Free Extensions
+You can also follow this guide https://magenticians.com/why-magento-2-is-slow/
+================================================
+Set, get and delete data from cookie in magento 2:
+https://webkul.com/blog/set-get-data-cookie-magento2/
+================================================
+Changes to Admin Catalog Product Listing not showing updated attribute values saved via Edit Product:
+
+https://support.magento.com/hc/en-us/requests/73774
+Stores > Configuration > Advanced > Developer > Grid Settings and reverse the setting, 
+================================================
+
+
+Azure Access:
+	[Fetch folder contents]
+	https://cmtoshop.blob.core.windows.net/dwh?restype=container&comp=list&sv=2017-04-17&si=dwh-admin&sr=c&sig=QtPKuup2vOZ9%2FzSUSNVCdEyDx%2BqIFzMz96fWYNzs938%3D
+
+	https://cmtoshop.blob.core.windows.net/scr/Delta?sv=2017-04-17&si=scr-read&sr=c&sig=ycfRLgsAxpZ9ZIRUNLoEBpq%2B2RdajZRMTbWdPKO2EYc%3D&restype=container&comp=list
+
+	https://cmtoshop.blob.core.windows.net/scr?restype=container&comp=list&sv=2017-04-17&si=scr-read&sr=c&sig=ycfRLgsAxpZ9ZIRUNLoEBpq%2B2RdajZRMTbWdPKO2EYc%3D
+
+---------------------------------------------------------------
+Limit of 10k Search Results: https://support.magento.com/hc/en-us/requests/71564?page=3
+https://github.com/magento/magento2/issues/8477#issuecomment-278637744
+File Ref: vendor/magento/module-catalog-search/etc/search_request.xml
+
+Hint from Sukamal: http://www.credevator.com/magento2-how-to-override-the-product-list-limit-on-category-page-in-magento-2/
+
+================================================
+Debajyoti:
+
+For Module Extracting:
+
+ $sql = "select e.entity_id as product_id, e.sku as new_sku, eav.`value` as mod_this FROM catalog_product_entity e, catalog_product_entity_varchar eav where eav.`attribute_id`='198' and e.entity_id = eav.row_id and eav.`value` IS NOT NULL;";
+
+For Catalog Extracting:
+
+ $sql = "SELECT `e`.entity_id as product_id, `e`.sku, `at_category_id`.`category_id` FROM `catalog_product_entity` AS `e` LEFT JOIN `catalog_category_product` AS `at_category_id` ON (at_category_id.`product_id`=e.entity_id)";
+
+For Specific Committee Extracting:
+
+
+ $sql = "select `e`.entity_id as product_id, `e`.sku, `c`.category_id FROM `catalog_product_entity` e, `catalog_category_product` c where c.`product_id`= e.entity_id and `c`.category_id in ('55','56','57','58','59','60','61','62','63','64') limit 50;"

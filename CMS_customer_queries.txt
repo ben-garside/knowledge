@@ -1,0 +1,143 @@
+------ Pricilla Defect Meeting -----------
+- To keep all meta fields (under SEO) MANDATORY under CMS Page
+- To check in magento to keep 2 url_key (both the url accessible) - to keep under Magento CMS Page (SEP section)
+- To keep a robots.txt setting under CMS Page --> to check with Magento cloud
+- * Read-only permission for eg: Page Hierarchy (to disable checkbox etc so that user can not change hierarchy) --> to check with Magento cloud
+- ** (ToDO - Needed) To keep 'Parent Page' selection mandatory and remove default selection of 'Website Root'
+- ** (To do - needed for SECTOR PAGES) To keep Category as a mandatory field in Catalog product
+- * Switch between Edit Page to View page i.e.  show preview from Edit Page
+- * BLUEFOOT -> Upload PDF
+
+
+SELF:
+	- After uploading image/pdf => URL takes blank space (refer magento ticket)
+
+
+
+----------------------------------------------------------------------------------------------------
+28 Mar 2018: CMS Prioritization Review Meeting
+- Discuss with Plugin company (https://plugin.company/magento2-extensions/cms-revisions.html) for Deletion of Pages
+- Overview view_more/view_less HTML tags - TCS to provide
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+25 Mar 2018 (Priscilla CMS Meeting):
+
+- CSS Classes not reflecting on PPD:
+		$  Redbutton-cms
+		§  Redbutton-hover:cms
+		§  Tealbackground-cms
+		§  Gredybackground-cms
+		§  Border-top10px-cms
+
+- role-of-bsi: class redbutton not working
+
+- Issue in Custom Widget (Mohan) -> Key standards: not selecting if we give comma-separated SKUs
+
+----------------------------------------------------------------------------------------------------
+19 Feb 2018:
+	- 
+
+
+Created support ticket on : https://plugin.company/magento2-extensions/cms-revisions.html
+
+		Hi Team,
+
+		We are interested to purchase this extension. Please confirm if we can achieve below using this extension:
+
+		1) Our Major Req>> Will it be compatible with "Bluefoot CMS" extension.
+		2) Is it compatible with Magento cloud Enterprise ver. 2.1.8?
+		2) Will it handle the Deletion of media(images etc.), e.g. CMS user is going to delete one image, it shows a warning if that same image has been included on multiple pages.
+
+		Request your early response.
+
+		Thanks,
+		Saurabh
+----------------------------------------------------------------------------------------------------
+
+07 Feb 2018:
+	- To keep hyperlink on Bluefoot media -> Hyperlink (call to action), Images are coming broken
+	- To disable to 'Delete Page' for Marketting Team (keep it for 'Marketting Admin)
+	- Remove permission for main hierarchy section and keep under cms page
+	- CMS Page -> Hierarchy selection needs to be mandatory
+	- Create 2 urls like shortcut url (eg: bitly or google shortener)
+		CM01 - AC7 -> Redirect to 2 different urls for same page
+	- Add robots.txt setting to CMS Page:
+			Hint: For insance, in the admin, go to a CMS Page. Then go to the design tab, in the layout updates add this:
+				<head>
+					<meta name="robots" content="NOINDEX,NOFOLLOW"/>
+				</head>
+	- Show warning before deleting an image or changing anything in a hierarchy
+		- When delete the image, it should show what all pages it has been used
+	- Delete block => Show WARNING (as it might be included on many pages)
+	- Redirect to external url from Marketting -> Url Rewrite section
+	- Bluefoot -> textarea -> Add link -> sometimes the anchor/link icon is showing disabled => appearing randomly
+	- Sector Pages => as Product page and marketting team will create a CMS page and keep a URL in Sector product page
+	- * (Sridhar) Send a manual for creating RELATED PRODUCTS
+	
+				
+31/01:
+	To set hierarchy in Blocks (Berengerie)
+
+22/01:
+
+Need to Raise with Magento after discussion with Azham/Uma:
+- * BLUEFOOT -> MEDIA:  Resizing images -> cut/proportion 
+- * View only permission: eg for hierarchy so that users may not change -> raise a ticket to magento
+- To confirm with AZHAM: 2 urls for cms pages (promotional urls), Also check with Richa for AC for this
+- To show current page hierarchy from Bluefoot -> textarea when linking to a url
+- ** BLUEFOOT: TO UPLOAD IMAGES/PDFs (from rich text editor - working in Magento CMS but not in BLUEFOOT)
+	[Also bluefoot maintains files in separate folder - gene-cms i.e. NOT SHOWING INSIDE MEDIA SECTION IN ANY FOLDER]
+- * Show Warning message -> when a page is removed from Page hierarchy [Check with Magento Cloud] --> Change Request (as not present in ACs)
+- Versions of CMS Pages
+- Adding Blocks/Banners on Product Details Page ....is it feasible in Magento?  --- to check self (put block beneath Buy Now button)
+
+
+To check:
+	- How url rewrite will work for products. Also to add external url in url_rewrite
+	- Permission: To show only Shop Editors to Pricilla
+
+IMP POINTS:
+** CONSOLIDATE ALL CMS ISSUES BEFORE SENDING TO MAGENTO CLOUD -> FOR Bluefoot
+** BSI Gesta Font
+** What dimensions of images to upload
+
+----------- Demo Happened  on 09 Jan 2018 --------------------------------------
+
+Queries from CMS team:
+
+-> EDIT from frontend
+-> url_key => put ../pas3001  -> shud redirect to url_key (eg: /pid-243243434)  --> eg: from htaccess
+
+-> Editing images in Bluefoot
+-> Remove hierarchy permission from backend
+
+
+-> robots.txt setting (allow in shop editor role)
+=========================
+page navigation
+
+
+how to exclude sub menu from hide by default from hierarchy => check from page as well
+
+Recover deleted page
+
+---------------
+Hi Support Team,
+
+Please confirm about the below CMS functions in official Bluefoot CMS release. Also, please let us know the official launch date of Bluefoot (as we need to inform our customer)?
+
+1) Image cannot be directly added to a block via Bluefoot, the only option is add it via image url
+2) Resize of media files using Bluefoot (to change the size of the image within the page), it is there in default magento currently
+3) Unable to upload PDFs with bluefoot
+4) Bluefoot feature for Catalog pages (showing in bluefoot demo but not present with Magento 2.1.8)
+5) We can't hyperlink images using bluefoot media feature
+6) Hierarchy Feature for Blocks: Need to have a way to organize block in folders or groupings, in order to have a better order of them, and to be able to find them (there will be plenty created in the long run)
+7) Standard warning should be shown before deleting any file/folder
+8) Recycle bin for files: Deleted file should not be permanently deleted. It should go to some temp folder and we should be able to recover (i.e from the rubbish bin)
+9) Editors should not be allowed to move the items in the hierarchy
+Hyperlink Icon looks disabled though its not disabled. It works. But why the icon looks disabled
+10) SEO and Robots in the same place (when creating a page)
+
+Thanks,
+Saurabh

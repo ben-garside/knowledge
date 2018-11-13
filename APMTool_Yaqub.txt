@@ -1,0 +1,14 @@
+APM Tool (With Yaqub):
+=====================
+	[MoM - 18 June 2018]
+
+	[TCS to check]
+	- Capture newrelic log custom through code - check with magento support
+	- All errors should show on newrelic (including custom logs) -> check with magento
+		To show external integration errors like Ecom API, CDS etc.
+	- How to show Frontend errors too - e.g. client-side JS errors coming via frontend
+
+
+	- RUM (Real user metrics)
+	- Synthetic - Captures User journey
+	- yaqub using: Microsoft App insights (similar to Newrelic)

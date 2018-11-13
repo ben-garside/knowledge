@@ -1,0 +1,18 @@
+Berengere: UAT Defects (10 Oct 2017):
+----------------------------------------
+=> Captcha not coming after 3 login attempts
+=> checkout issue (configurable pro)
+
+=> While reseting password, says Wrong format for email address but the given email format is correct
+=> says Wrong format for postcode, still given correct format
+======================================================================================================
+
+UAT Triad (10 Oct 2017):
+------------------------
+=> QA should not have passed the basic defects as mentioned in ACs.
+=> UI guidelines to follow
+=> The design is completely not acceptanceIE having menu bar missing
+=> Billing address should be Non-editable for MEMBERS
+=> Few products are not still not Present (9000-2000....)
+=> CMS: Preview the page before publishing
+=> CMS: Movement of blocks on page

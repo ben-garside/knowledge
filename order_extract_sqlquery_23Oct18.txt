@@ -1,0 +1,52 @@
+SELECT 
+    orders.increment_id AS OrderId,
+    orders.created_at AS OrderDate,
+    orders.grand_total AS OrderTotal,
+    orders.subtotal AS OrderSubTotal,
+    orders.tax_amount AS OrderTaxAmount,
+    orders.shipping_amount AS OrderShippingAmount,
+    orders.total_qty_ordered AS TotalOrderItemQuantity,
+    orders.customer_firstname AS CustomerFirstName,
+    orders.customer_lastname AS CustomerLastName,
+    orders.customer_email AS CustomerEmail,
+    address.firstname AS BillToFirstName,
+    address.lastname AS BillToLastName,
+    address.email AS BillToEmail,
+    address.street AS BillToStreet,
+    address.city AS BillToCityOrTown,
+    address.country_id AS BillToCountry,
+    address.telephone AS BillToTelephone,
+    address.postcode AS BillToPostcode,
+    address.company AS BillToCompanyName,
+    address.vat_id AS BillToVatRegistrationNumber,
+    address1.firstname AS ShipToFirstName,
+    address1.lastname AS ShipToLastName,
+    address1.email AS ShipToEmail,
+    address1.street AS ShipToStreet,
+    address1.city AS ShipToCityOrTown,
+    address1.country_id AS ShipToCountry,
+    address1.telephone AS ShipToTelephone,
+    address1.postcode AS ShipToPostCode,
+    address1.company AS ShipToCompanyName,
+    address1.vat_id AS ShipToVatRegistrationNumber,
+    items.`name` AS ItemName,
+    items.sku AS SKU,
+    items.qty_ordered AS ItemQuantity,
+    items.price AS ItemPrice,
+    items.row_total AS ItemRowTotal,
+    items.tax_amount AS ItemTaxAmount
+FROM
+    sales_order AS orders
+        JOIN
+    sales_order_item AS items ON items.order_id = orders.entity_id
+        LEFT JOIN
+    sales_order_address AS address ON (orders.entity_id = address.parent_id
+        AND address.address_type = 'billing')
+        LEFT JOIN
+    sales_order_address AS address1 ON (orders.entity_id = address1.parent_id
+        AND address1.address_type = 'shipping')
+WHERE
+    1 AND orders.increment_id LIKE 'S%'
+        AND items.row_total > 0
+GROUP BY orders.increment_id , items.item_id
+LIMIT 5;

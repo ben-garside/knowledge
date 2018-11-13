@@ -1,0 +1,7 @@
+Magento2 Paid/Free Extensions:
+
+Free - CMS Page Import/Export: https://github.com/magespecialist/m2-MSP_CmsImportExport
+
+Magento2 Layered Navigation Extension (Free):
+	https://www.manadev.com/layered-navigation-filters-multiple-select-magento-2
+	Demo: http://m2-demo.manadev.com/multiple_select_layered_nav/women/tops-women/jackets-women.html

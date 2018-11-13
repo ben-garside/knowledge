@@ -1,0 +1,1025 @@
+To Dos:
+
+Localhost product (localhost/dev):
+=> http://localhost/dev/pid-000000000030300123   (BS EN 13779:2007)
+	http://dev.local/pid-000000000000295071-1    (BS 6068-6.10:1993)
+
+
+
+
+
+Home to Airport to Home transport for family visa processing travel to Delhi
+IBIS Hotel to TCS PTI Building for family visa processing travel to Delhi
+Meal for 03 Apr 2018 for family visa processing travel to Delhi
+*******************************************************************************
+
+Do you have any info that UAT users are ligned up to test UAT drop 3 tomorrow
+
+
+ [firstname] => 20
+    [middlename] => 
+    [lastname] => 25
+    [company] => 60
+    [street] => 30
+    [city] => 40
+    [region_id] => 100
+    [postcode] => 60
+    [country_id] => 50
+    [telephone] => 70
+    [vat_id] => 140
+
+    {"message":"An error occurred on the server. Please try to place the order again."}
+
+
+"[{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"382\",\"Type\":\"E\",\"Message\":\"Material 30350556 is not defined for sales org.2000,  distr.chan.10,  language EN\",\"ProductId\":\"30350556\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"248\",\"Type\":\"E\",\"Message\":\"Error in SALES_ITEM_IN 000010\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"219\",\"Type\":\"E\",\"Message\":\"Sales document  was not changed\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"382\",\"Type\":\"E\",\"Message\":\"Material 30358159 is not defined for sales org.2000,  distr.chan.10,  language EN\",\"ProductId\":\"30358159\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"248\",\"Type\":\"E\",\"Message\":\"Error in SALES_ITEM_IN 000010\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"219\",\"Type\":\"E\",\"Message\":\"Sales document  was not changed\",\"ProductId\":\"000010\"}]"
+
+*************************
+
+[Magento\Framework\Exception\FileSystemException]                                            
+  Directory "/app/7redg7uykvdko_stg3/var/view_preprocessed/html/vendor/magento/module-custome  
+  r-custom-attributes/view/adminhtml/templates/formtype/edit" cannot be created Warning!mkdir  
+  (): Input/output error 
+*************************
+
+Magento Tickets discussion with Support:
+
+
+
+-> Address gets saved when Order gets placed
+	send mail to Nick: Address gets saved only after place order
+
+Elastic Search Relevance
+
+**************************************************************************************************************
+
+git commit -m "Sprint7: checkout save new billing address"
+git commit -m "Sprint7(Checkout): Magento patch to Fix for saving of address twice"
+
+*********************************************************************************************
+
+-> Exclude items from OrderVerify VAT validation (standards, books)
+-> Exclude items from OrderCreate API
+
+
+**********************
+To ASK Azham:
+	=> When 1 item is there in download => Shall we disable 'Download All' for single PDF?
+		[Yes: Disable Download All' button]
+	- Go back button position: on Forgot Password
+
+
+	[07Jun18]
+	Ecom 20, 21 24: AC 84 - to send an email for order status or not?
+**********************
+
+************************************************************************************************
+********** SPRINT 8 ************
+ECom-44 AC25 (Membership Mgmt. - Renew membership)
+	https://trello.com/c/JLxCf08O/90-ecom-44-ac25-membership-mgmt-renew-membership
+
+49KMANOJPLOT11JUN18
+
+
+************************************************************************************************
+
+
+Hints for Exposure API
+:
+	o Dont call ecom_api_request 4 times (store value in var and restrict call)
+	o Make Curl params dynamic for customer number
+
+/var/www/dev/extensions/Bsigroup/EcomApi/Model/Connector/Ecom/Export.php
+/var/www/dev/extensions/Bsigroup/EcomApi/Model/Connector/Ecom/Request.php -> executeCreditExposure()
+
+/var/www/dev/extensions/Bsigroup/AccordionCheckout/src/view/frontend/web/js/view/ecom-api/ecom-request.js -> request_ecom_api_creditexposure()
+
+************************************************************************************************
+[Self tasks - IMP]
+	=> Upload search format popup files to PPD (Suvradip Email)):
+		list.phtml, searchRules.js
+
+	=> NewRelic logging via magento 
+	=> 
+
+
+464350
+
+
+	[Sprint 9]
+	=> Member credit exposure on Checkout and Benefit
+	=> Member Credit Ecom API - for order verify (check for Partner No - discuss with Devi as well)
+	=> Promo code (item wise distribution) -> Verify as as Order create
+
+	=> For new version notification:
+		change status : withdrawn
+		replaced by: valid product SKU
+
+	- Checkout defects and ASSIGN to pranabesh
+	-> show Subscription in Membership/Renew on checkout sidebar etc.
+
+	- IMP To check tomorrow:
+
+		1) (price for band product is taken same as other standard - exclude mem prod from SAP price update): /var/www/dev/extensions/Bsigroup/AccordionCheckout/src/Model/Tax/Calculation/AbstractAggregateCalculator.php -> calculateWithTaxNotInPrice()
+		=> To check: When no delivery address present => Shipping address takes as different values and showing Error on ecom API (user: saurabh.verma@bsigroup.co on storeqa)
+		2) [DONE] Do not call ECOM OrderCreate API when there is no standards/book in basket (same way done for ecom.js):
+			/var/www/dev/extensions/Bsigroup/EcomApi/Model/Connector/Ecom/Request.php -> execute() function -> for isOrder=true
+		=> Check subhrateja's SAVE BILLING ADDRESS Issue (saving sometimes but intermittant), Checkout screen gets blank => Pranabesh: may be due to ipinfo.js call
+		=> [DONE] DIsable Review Order when no payment method selected:
+			DONE: Do not upload file: /var/www/dev/extensions/Bsigroup/AccordionCheckout/src/view/frontend/web/js/action/select-payment-method.js
+			And, /var/www/dev/extensions/Bsigroup/AccordionCheckout/src/view/frontend/requirejs-config.js
+
+
+			// Saurabh on 08 June 2018: Overriden to enable 'Review Order' button when a payment method is selected.
+            //'Magento_Checkout/js/action/select-payment-method': 'Bsigroup_AccordionCheckout/js/action/select-payment-method'
+
+        Checkout Trello pending issues:
+        https://trello.com/c/K1H46spy/83-new-address-validations-issues-on-checkout-page-p1
+        https://trello.com/c/AD1q7PIF/130-for-bip-book-product-format-is-not-shown-in-check-out-page-p2
+        https://trello.com/c/sD2qSCY0/131-for-hard-copy-order-used-different-billing-and-delivery-address-but-on-review-order-page-the-billing-and-shipping-address-are-no
+
+        Functional Defect Tracker -> Performance trello card: check issues
+        Billing address does not gets saved (tentative behaviour)
+
+************************************************************************************************
+************************************************************************************************
+attach evidence
+pay by invoice => self to do
+
+-> Richa:	
+	to update Trello with new clarification
+	Confirm whether membership number will be 10 digit
+	Azure: The original/old folder?
+	Ecom 20, 21 24: AC 84 - to send an email for order status or not?
+
+-> Switch off the GA from staging
+
+-> attribute_set='membership' AND attribute_set='renew_membership'
+
+
+tcs_cs1 / testcs@123
+tcs_cs2 / testcs@123
+tcs_cms1 / testcms@123
+tcs_cms2 / testcms@123
+
+
+https://staging-standards.bsigroup.com/pid-000000000000192214
+https://staging-standards.bsigroup.com/pid-000000000030211643
+
+https://staging-standards.bsigroup.com/pid-000000000030211909
+
+ecommapippd.bsigroup.com
+
+
+
+"[{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"382\",\"Type\":\"E\",\"Message\":\"Material 2009\\\/03502 is not defined for sales org.2000,  distr.chan.10,  language EN\",\"ProductId\":\"2000\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"248\",\"Type\":\"E\",\"Message\":\"Error in SALES_ITEM_IN 000010\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"219\",\"Type\":\"E\",\"Message\":\"Sales document  was not changed\",\"ProductId\":\"000010\"}]"
+
+"[{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"382\",\"Type\":\"E\",\"Message\":\"Material 2009\\\/03502 is not defined for sales org.2000,  distr.chan.10,  language EN\",\"ProductId\":\"2000\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"248\",\"Type\":\"E\",\"Message\":\"Error in SALES_ITEM_IN 000010\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"219\",\"Type\":\"E\",\"Message\":\"Sales document  was not changed\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"382\",\"Type\":\"E\",\"Message\":\"Material 2009\\\/03571 is not defined for sales org.2000,  distr.chan.10,  language EN\",\"ProductId\":\"2000\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"248\",\"Type\":\"E\",\"Message\":\"Error in SALES_ITEM_IN 000010\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"219\",\"Type\":\"E\",\"Message\":\"Sales document  was not changed\",\"ProductId\":\"000010\"}]"
+
+[{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"382\",\"Type\":\"E\",\"Message\":\"Material 2009\\\/03502 is not defined for sales org.2000,  distr.chan.10,  language EN\",\"ProductId\":\"2000\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"248\",\"Type\":\"E\",\"Message\":\"Error in SALES_ITEM_IN 000010\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardHardCopy\",\"Number\":\"219\",\"Type\":\"E\",\"Message\":\"Sales document  was not changed\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"382\",\"Type\":\"E\",\"Message\":\"Material 2009\\\/03571 is not defined for sales org.2000,  distr.chan.10,  language EN\",\"ProductId\":\"2000\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"248\",\"Type\":\"E\",\"Message\":\"Error in SALES_ITEM_IN 000010\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"219\",\"Type\":\"E\",\"Message\":\"Sales document  was not changed\",\"ProductId\":\"000010\"}]
+
+
+"[{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"382\",\"Type\":\"E\",\"Message\":\"Material 2009\\\/03570 is not defined for sales org.2000,  distr.chan.10,  language EN\",\"ProductId\":\"2000\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"248\",\"Type\":\"E\",\"Message\":\"Error in SALES_ITEM_IN 000010\",\"ProductId\":\"000010\"},{\"ItemSource\":\"Bsi.Cloud.Shop.SapBapi.Bindings.Models.StandardSoftCopy\",\"Number\":\"219\",\"Type\":\"E\",\"Message\":\"Sales document  was not changed\",\"ProductId\":\"000010\"}]"
+
+****************************************************************************************************************************
+****************************************************************************************************************************
+
+if(customer.customerData.custom_attributes.membership_admin=='undefined'){return true;}
+if(customer.customerData.custom_attributes.membership_admin.value=='undefined'){return true;}else if(customer.customerData.custom_attributes.membership_admin.value=='0'){return true;}
+if(this.isEnabled()==0){return false;}
+
+
+**************************** Self To Dos (13 Aug 2018) ************************
+	=> Checkout (Event discount, Payload member credit)
+
+	=> COMPLETE ORDER NOT WORKING, Member Credit (UPDATE STORE CREDIT AMOUNT - to show Pay by PO)
+	=> Check -> Duplicate address saving Patch (update magento)
+
+	=> Checkout:
+		[IMP to ASK RICHA]
+		Ingenico error handling
+		Do we need to apply item wise discount for selected promo code RULE's condition/action values e.g. format?
+
+		[Deprecated - as per Tom's clarification on 24 Jul] Promo code for Verify (Member/Non Member)
+		Promo Code for OrderCreate (Member/Non Member)
+		Member Credit Ecom API change
+		TBD Richa: 
+			1) Order Verify promo code values to pass to CreateOrder (we can't handle this as Magento shows Basket level discount)
+			2) Show default credit amount present in magento (earlier imported via DWH) when Credit Exposure API returns no response.
+
+
+	==> [Due by 17 Jul 2018] Check that updating blocked countries is in the manual – If not, include
+
+	-> CONSOLIDATE ALL MoM EMAIL POINTS IN EXCEL
+	-> [Done] enable ssh of staging of Suvradip (Suvra@1234)
+
+	-> UAT drop:
+		Disable 'View Invoice' link
+		<GIVE FILES and DEFECT FIXES: Suvradip>
+		Mohan: MUNL pardot height fix
+
+	--> * Tom: To get possible synonyms from Balel and Import in Magento
+
+	-> Discuss with Richa (Mohan): check for Essentials which field to refer to create BSI essential (or we can identify with ISBN) (e.g. format)
+		Sample data for Pass 2030
+	-> tier price issue -> create ticket (make video)
+	-> * RSS Feed (Saurabh to check)
+
+	- Review trello for Functional defects for Checkout defects -> Update Trello
+****************************************************************************************************************************
+****************************************************************************************************************************
+
+ ********* Sprint 8 UAT: Defect Triage on 13 Jul 2018 ****
+ 	- Mobile version of logo (raise with Tom)
+
+ 	- Top Menu (Richa => Sprint 9?)
+ 	-> How many pages have been developed till now (is it in Sprint 9)
+
+ 	-> Check mail for updated link name (e.g. from UAT showcase):
+ 		"View Tracking Information" => need to rename
+ 	-> Membership product in basket -> Complete Order fails
+
+ 	-> * APM Tool: Send mail to Uma as a MoM
+
+
+
+, for example 4 defects have been logged for Promo codes which in turn is one defect related with the Format going wrong in SAP.
+
+
+"#0 [internal function]: Bsigroup\OrderExport\Model\VerifyRepository->verifyOrder(1624)↵#1 /var/www/dev/vendor/magento/module-webapi/Controller/Rest.php(307): call_user_func_array(Array, Array)↵#2 /var/www/dev/vendor/magento/module-webapi/Controller/Rest.php(216): Magento\Webapi\Controller\Rest->processApiRequest()↵#3 /var/www/dev/vendor/magento/framework/Interception/Interceptor.php(146): Magento\Webapi\Controller\Rest->dispatch(Object(Magento\Framework\App\Request\Http))↵#4 /var/www/dev/var/generation/Magento/Webapi/Controller/Rest/Interceptor.php(26): Magento\Webapi\Controller\Rest\Interceptor->___callPlugins('dispatch', Array, Array)↵#5 /var/www/dev/vendor/magento/framework/App/Http.php(135): Magento\Webapi\Controller\Rest\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))↵#6 /var/www/dev/vendor/magento/framework/App/Bootstrap.php(258): Magento\Framework\App\Http->launch()↵#7 /var/www/dev/index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))↵#8 {main}"
+
+"Verified order data could not be saved! Exception: Notice: Undefined variable: product in /var/www/dev/extensions/Bsigroup/OrderExport/Model/Data/Quote.php on line 385 in /var/www/dev/vendor/magento/framework/App/ErrorHandler.php:61↵Stack trace:↵#0 /var/www/dev/extensions/Bsigroup/OrderExport/Model/Data/Quote.php(385): Magento\Framework\App\ErrorHandler->handler(8, 'Undefined varia...', '/var/www/dev/ex...', 385, Array)↵#1 /var/www/dev/extensions/Bsigroup/OrderExport/Model/Data/Quote.php(262): Bsigroup\OrderExport\Model\Data\Quote->getFormat(Object(Magento\Quote\Model\Quote\Item), false)↵#2 /var/www/dev/extensions/Bsigroup/OrderExport/Model/Payload/OrderExport.php(124): Bsigroup\OrderExport\Model\Data\Quote->getItems()↵#3 /var/www/dev/extensions/Bsigroup/EcomApi/Model/Connector/Ecom/Export.php(124): Bsigroup\OrderExport\Model\Payload\OrderExport->setExportData('quote', Object(Magento\Quote\Model\Quote\Interceptor))↵#4 /var/www/dev/extensions/Bsigroup/OrderExport/Model/VerifyRepository.php(90): Bsigroup\EcomApi\Model\Connector\Ecom\Export->ProcessOrder('quote', Object(Magento\Quote\Model\Quote\Interceptor))↵#5 [internal function]: Bsigroup\OrderExport\Model\VerifyRepository->verifyOrder(1624)↵#6 /var/www/dev/vendor/magento/module-webapi/Controller/Rest.php(307): call_user_func_array(Array, Array)↵#7 /var/www/dev/vendor/magento/module-webapi/Controller/Rest.php(216): Magento\Webapi\Controller\Rest->processApiRequest()↵#8 /var/www/dev/vendor/magento/framework/Interception/Interceptor.php(146): Magento\Webapi\Controller\Rest->dispatch(Object(Magento\Framework\App\Request\Http))↵#9 /var/www/dev/var/generation/Magento/Webapi/Controller/Rest/Interceptor.php(26): Magento\Webapi\Controller\Rest\Interceptor->___callPlugins('dispatch', Array, Array)↵#10 /var/www/dev/vendor/magento/framework/App/Http.php(135): Magento\Webapi\Controller\Rest\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))↵#11 /var/www/dev/vendor/magento/framework/App/Bootstrap.php(258): Magento\Framework\App\Http->launch()↵#12 /var/www/dev/index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))↵#13 {main}"
+
+
+No action is needed from our side as per below clarification:
+
+ ******** Offshore to ask: ******
+ 	- [NO] As soon as I enter the membership number..member benefit tab reflects immediately
+ 	- 
+
+ 		
+	- Offshore:
+
+
+		[Queries]
+		=> 
+
+		Phani:
+
+			https://standardsstoreproject.atlassian.net/browse/SS-538 (Order status change CS email)
+			
+
+		Mohan:
+			To change Advance Access Product UPI when actual product is available - Victoria asked on 20-Aug?
+			Implement CACHING for THUMBNAILS (real-time: store locally to e.g. redis as current shop is doing that - Balel)
+			
+
+		Pranabesh / Suvradip:
+			Advance Access -> 
+			* SP 9: warning message to change the item bought or to abort the action (from search page for Newly added products)
+
+			PROMO CODE Validation (from provided sheet)			
+			* Newrelic logging via PHP function
+ 			
+
+		Sanjib:
+			- Testing of a new version
+			- Promo code defects
+			- Update magento ticket for Order migration
+			- Search issue (to update tom + Numeric Fuzzy logic)
+			-> Jira defects:
+				https://standardsstoreproject.atlassian.net/browse/SS-528 
+				https://standardsstoreproject.atlassian.net/browse/SS-547 (export promo code)
+				https://standardsstoreproject.atlassian.net/browse/SS-546 (start/expiry promo)
+
+			Pre-order AC check - to reingest xmls for Pre-order and Advanced Access
+			New version notification
+
+			Order data migration (Ticket: https://support.magento.com/hc/en-us/requests/94749)
+			* For promo code Bundled product on default theme (QA3 magento ticket pending)
+			SEARCH ISSUES (mentioned by TOM) - Sort by alphabetically
+			
+
+		Suvradip:
+			To update price when membership product is there in basket (Azham: We can show notice on Checkout when there is price change)
+
+		=> can we have 2 promo codes applied in magento? -> suvradip: NO
+
+
+		[Old: Offshore]
+		membership form2 => Given space between "forAgm" on nominate checkbox text
+
+=====================================================
+Self:
+	=> to check self: CDS API thumbnail to put in Redis etc. cache
+		
+
+
+	- [Done] Place order in storeQA and send screenshot to pranabesh
+	- [Done - follow up with Mohan] CDS => Share customer credentials to Mohan
+	- Membership form posting - check via salesforce credentials (place membership order and check)
+
+	- * ASK Balel: For membership item -> do we need to pass 'TreatAsMember' => true for OrderCreate() SAP call ??
+
+
+
+
+11 Jul 2018:
+	- 
+
+	
+25 June 2018:- To ask 
+	- 
+	- offshore about the pending demo defects and requirement sheet
+
+18 June 2018:
+	- 
+
+14 June 2018: Richa taken it
+
+12 June 2018:
+	- Don't show format and qty for membership product
+	- Disable 'Review Order' until Ingenico Submit
+
+11 June 2018:
+	[Self Tasks:]
+	- Membership product checkout (excluded other types from OrderCreate)
+	- 
+
+	[Offshore]
+	Pranabesh: For Token Generation script
+	-> to check requirement spec for 2 feeds.
+
+
+08 June 2018:
+	- Fixed issue: Review order will be disabled until payment method is selected
+
+07 June 2018:
+	[Self tasks]
+	-> * Checkout: handle case when only one product is there in BASKET
+
+	- UPDATE TRELLO for Ecom API and SSO
+	- [done] Create ticket: for promo rules for bundle product:
+		raise it to magento on weekly call (Friday)
+	- Reply to priscilla
+	- Reply to Lucy: For renew membership email
+
+	[Offshore]
+	- Phni: Membership number
+	- 
+
+06 June 2018:
+	[Self tasks]
+	- Generate Token API for Ecom (daily cron)
+	- Promo code: send uma abt pending clarifications
+	- IMP To check: /var/www/dev/extensions/Bsigroup/AccordionCheckout/src/Model/Tax/Calculation/AbstractAggregateCalculator.php -> calculateWithTaxNotInPrice()
+
+	- [done] Give PULL access to everyone on staging
+	- Give phani: admin access of DWH
+
+
+
+	[Offshore]
+	Mohan: adding 'preview' in generate PDF (ECom-53 , Ecom-55 -> AC 69) [Doable]
+	CALL Suvradip: How membership product is added to basket
+
+	
+
+	apiauth b40ee6a060f5480aa64011618c6e5e95:tskfFMuQYIIGGYDGvnsfwMmUySOjxDi8T3e2Gqe/weg=:f5c919ed997948029f09d3bbb67b5e85:5807a213-59b5-41e9-b1c5-f87091a7c146:1528278761
+05 Jun 2018:
+	- Offshore call:
+		Mohan: CDS api orderreference param, DPC defect (SAP Project ID)
+		Suvradip: SCR mapping for cross ref done
+
+04 June 2018:
+	- Offshore call:
+		Raise an issue with magento - storeQA
+
+01 June 2018:
+	Apply patch to storeqa - delivery address twice
+	Deploy changes to UAT + send mail to uma and all with all fixes + Known issues
+
+31 May 2018:
+	To give to Pranav
+		GA (check xls)
+		Overall effort + team
+		removal of bsol
+
+	[Pranav]
+
+	[Uma]
+		Reply to Uma:
+		Search count (magento) and iso 9002 (as withdrawn products)
+
+	[Priscilla]
+		Reply for CMS issues (Footer is coming from footer block, For Download now issue - team will fix)
+
+
+	[BSI]
+	VIES service is taking time to load
+
+
+	To check self:
+		- https://trello.com/c/bBWfjInw/121-new-address-not-getting-saved-even-after-completing-the-order-with-new-address-it-not-reflected-in-the-drop-down-as-well-as-in-m
+		- For a Product added with Soft copy I am able to see Billing and Shipping address in the review order section.--> Open 
+
+
+		- Complete order not working
+			-> Save new address not working (Billing & Delivery)
+		- Delivery Address form should be same as billing => FIELD ORDER
+
+		[Priscilla]
+		check for PPD free download product
+
+
+*****************************************************************************************************************
+Sau S:
+	- band (pranav has sent email)
+	- Removal of BSOL
+
+Offshore team:
+
+	=> Mohan: free download url
+
+
+	=> To check with Sanjib: Why simple and virtual product has catalog,search visibility and they are set withdrawn
+
+	=> Phani: All DWH data ingestion as Paul provided
+	=> Suvradip: Vat validation on checkout -> Add Billing/Delivery Address
+
+	=> Progress on Magento upgrade ?
+	=> Anybody can pick checkout fixes: either add/edit addr or VIEW validation
+
+	- SANJIB:
+		T & C (checkout_agreements.html to check)
+	- Mohan:
+		Files for logic of Download PDF and Zip (magento_sales/items.phtml)
+
+
+	-
+
+	- Suvradip: PPD product import (manual if cron not working)
+	- Pranabesh: Magento2.2 upgrade: Webkul and Pagebuilder (EAP)
+	- Debajyoti: 
+		Customer Data Migration: To automate via module, keep a log of failures
+
+
+Self to do (24 May):
+	[30 May]
+	- New Address not saving
+	- Complete order: {"message":"An error occurred on the server. Please try to place the order again."}
+	
+
+	Show below setting of magento cloud to YAQUB and Send email to Him/Uma/Richa:
+	UAT / StoreQA / PPD (indexing by search engines)
+
+	[29 May]
+	- Phani: To check DWH files -> does not have all records (NEED TO CHECK)
+
+	- Run composer update on QA5 (and inform Sanjib)
+	- Order analysis: [** Check sanjib's email and Ask Richa] Order extract: to quantify the issues
+	
+	- (done) Staging -> disable minification and content redeploy
+	- Staging -> reindexing (inprogress)
+	- (to deploy on devqa)Apply Patch: for url rewrite
+
+
+	Todo in checkout:
+		- disable apply vat form and show message
+		- Apply VIES validation using: http://dev.local/billingaddress/index/editbilling/id/3/
+
+		- check issue mentioned by Subhrateja and Pranabesh Email
+		- Ask Pranabesh to do VAT UI change
+
+*******************************************************************************
+
+
+Design Changes to Inform Richa:
+------------------------------
+The other types of products like BSI essentials, KIT are not integrated from SCR, they are supposed to be maintained via DWH
+VAT calculation done from SAP via Ecom API
+Order processing to SAP in batch (proposed solution by BSI as SAP does not handles batch currently)
+Codis Fiscally implementation for Italy and Brazil countries
+Member credit flow for SAP (For newly created customers & addresses from magento) as we need to use 'Partner ID' of billing address and 'Customer ID'
+Newsfeed to integrated with RSS feed
+
+Sector Pages as Product
+Sector & Topics mappings via ICS code
+
+*******************************************************************************
+TO do tomorrow:
+
+	-> Upgrade magento 2.2: https://devdocs.magento.com/guides/v2.2/cloud/project/project-upgrade.html
+	-> CMS review for pagebuilder
+
+
+	Search defect: BS 8888:2017
+
+	Checkout:
+
+	[Customize error message]
+	/var/www/dev/extensions/Bsigroup/OrderExport/Model/VerifyRepository.php  :  line #102
+
+
+	c2d0207622f4d27f0e2af9e30c7467c7
+	2018-05-03 12:07:29
+	46d14ecf8c038410219b4efbe6b78f17
+
+
+	Gabriela.Santos@customer851.co.uk
+	RP: ca4fe1591e9c1add977c5b3bed68d010  (2018-05-03 10:06:49)
+	Confi: 42808b0cc041488e68ac13242de39a15
+
+	sau742
+	RP Token: 38111d2eb576a8aace7686e21346cad0
+	Confirmation: e1e953c1a84718953cfbbb4c4dedc48b
+
+
+	'du377797@gmail.com'
+*******************************************************************************
+
+- Update below file from DEV to DEVQA:
+	/var/www/dev/app/design/frontend/Bsi/Shop/Magento_Catalog/templates/product/view/gallery.phtml
+
+- Virtual Host:
+	sudo a2dissite 000-default.conf
+	sudo a2ensite 000-default.conf
+
+- IP: 192.168.100.30
+
+===========================================================
+Self:
+	Raise wife's Travel Claims: TB Test and Visa expenses
+
+	Transfer Referral Codes:
+	http://remit.ly/w3grdr  [Remitly transfer share link: 10 Apr 2018]
+	https://secure.xendpay.com/signup/ur/A903985    [transferred 100 on 10 Apr 2018] - got discount of £100]
+
+===========================================================
+
+M2 News Feed (19 Apr 2018)
+===========================================================
+	RSS Feed
+		Contains all xmls?
+		Format of feed
+	Tagging for sector Pages (how can they be tagged to Sector Pages)
+
+
+Order & Customer Extract Hints (Yaqub): 03 Apr 2018
+===================================================
+
+General: We have to develop a custom extension as the data is not provided in given magento format
+
+UsersWithOrders.csv:
+------------------------
+Title: It has some irrelevant values so we will skip those as discussed (keep blank)
+CreatedDate & ModifiedDate: Date format issue
+JobTitle: We do not keep it in magento
+Department: We do not keep it in magento
+PhoneExtension: We do not keep it in magento
+Active: We only keep active users in magento
+
+
+OrderDetailsFromJan2013.csv:
+------------------------------
+OrderStatus: Contains other values too
+DataCashReference: Is it Ingenico ref number?
+EvidenceId: What is this?
+MembershipPurchase: This contains Miscellaneous values combinations like G/I/M/N and sometimes Integer values.
+ShippingCost: Contains wrong values for some records: eg: Mr./Mrs. etc.
+All columns between "PurchaseOrderNumber" till "NonMemberPrice": Contains some irrelevant values
+All Columns between "Currency" and "NonMemberPrice": Contains some irrelevant values
+All Columns between "TransactionResponseId" and "ShipToCodiceFiscalNumber": Contains some irrelevant values
+All Columns between "MembershipPercentDiscount" and "DepositAccountId": Contains some irrelevant values
+PaymentIndicator:  What is this and what all are possible values?
+ProductId: This seems existing shop's primary Key, magento can not refer this
+Unit: What is this?
+ItemType: What is this?
+Message: What is this?
+ItemDiscriminator: What is this and what all are possible values?
+DepositAccountId: What is this?
+PaymentId: This seems existing shop's primary Key, magento can not refer this
+TransactionResponseId: This seems existing shop's primary Key, magento can not refer this
+BillToIsEUCountry: What is this?
+BillToBusinessSector: What is this?
+BillingAcountNumber: What is this?
+ShipToIsEUCountry: What is this?
+ShipToBusinessSector: What is this?
+ShipToAcountNumber: What is this?
+ShipToDiscriminator: What is the value in case of Billing/Membership Address?
+There are few blank columns after "ShipToCodiceFiscalNumber"
+
+
+
+APM Tool (18 june 2018):
+========================
+	- Capture newrelic log custom through code - check with magento support
+	- All errors should show on newrelic including custom logs -> check with magento
+
+	- RUM (Real user metrics)
+	- Synthetic - Captures User journey
+
+
+	- yaqub using: Microsoft App insights (similar to Newrelic)
+===================================================
+SCR:
+===================================================
+
+http://staging-standards.bsigroup.com/catalogsearch/result/?q=BS <http://staging-standards.bsigroup.com/catalogsearch/result/?q=BS>  EN&#10;12326-1:2014
+    
+
+Richa Rana
+04:38 PM
+000000000030363558
+    
+
+0208-5835555
+
+
+Name: Subhrateja Satapathy 
+Email: subhrateja.satapathy@tcs.com
+
+---------------------------------------------------
+Martin Meeting (salesforce meeting on 28 Mar 2018 @ 12:00 PM):
+
+Contact Us Form:
+----------------
+	Contact Us form Received: should be checked for SHOP always
+
+	Web to Lead (W-2-L)
+	Web to Case (W-2-C)
+---------------------------------------------------
+
+add_sector_mapping_to_products
+
+Self:
+
+-> Brijesh bhaiya - 24k
+-> ask wife abt Manoj last chq amt
+
+
+
+
+5sdfgfd[{"carrier_code":"tablerate","method_code":"bestway","carrier_title":"Best Way","method_title":"Table Rate","amount":5,"base_amount":5,"available":true,"error_message":"","price_excl_tax":5,"price_incl_tax":5}]
+
+
+git commit -m "Sprint3,4,5: Checkout changes (also, Rubic changed to AccordianCheckout), SCR fixes (including sector mapping)"
+
+
+
+
+{"message":"Evidence data could not be saved!","trace":"#0 [internal function]: Bsigroup\\AccordionCheckout\\Model\\EvidenceRepository->saveEvidence(1549, Object(Bsigroup\\AccordionCheckout\\Model\\Data\\Evidence))\n#1 \/var\/www\/dev\/vendor\/magento\/module-webapi\/Controller\/Rest.php(307): call_user_func_array(Array, Array)\n#2 \/var\/www\/dev\/vendor\/magento\/module-webapi\/Controller\/Rest.php(216): Magento\\Webapi\\Controller\\Rest->processApiRequest()\n#3 \/var\/www\/dev\/vendor\/magento\/framework\/Interception\/Interceptor.php(146): Magento\\Webapi\\Controller\\Rest->dispatch(Object(Magento\\Framework\\App\\Request\\Http))\n#4 \/var\/www\/dev\/var\/generation\/Magento\/Webapi\/Controller\/Rest\/Interceptor.php(26): Magento\\Webapi\\Controller\\Rest\\Interceptor->___callPlugins('dispatch', Array, Array)\n#5 \/var\/www\/dev\/vendor\/magento\/framework\/App\/Http.php(135): Magento\\Webapi\\Controller\\Rest\\Interceptor->dispatch(Object(Magento\\Framework\\App\\Request\\Http))\n#6 \/var\/www\/dev\/vendor\/magento\/framework\/App\/Bootstrap.php(258): Magento\\Framework\\App\\Http->launch()\n#7 \/var\/www\/dev\/index.php(39): Magento\\Framework\\App\\Bootstrap->run(Object(Magento\\Framework\\App\\Http\\Interceptor))\n#8 {main}"}
+
+{"message":"Warning: json_decode() expects parameter 1 to be string, object given in \/var\/www\/dev\/extensions\/Bsigroup\/AccordionCheckout\/src\/Model\/Carrier\/Customshipcost.php on line 95","trace":"#0 [internal function]: Magento\\Framework\\App\\ErrorHandler->handler(2, 'json_decode() e...', '\/var\/www\/dev\/ex...', 95, Array)\n#1 \/var\/www\/dev\/extensions\/Bsigroup\/AccordionCheckout\/src\/Model\/Carrier\/Customshipcost.php(95): json_decode(Object(Bsigroup\\OrderExport\\Model\\Verify), true)\n#2 \/var\/www\/dev\/extensions\/Bsigroup\/AccordionCheckout\/src\/Model\/Carrier\/Customshipcost.php(235): Bsigroup\\AccordionCheckout\\Model\\Carrier\\Customshipcost->getSAPReponse('1549')\n#3 \/var\/www\/dev\/extensions\/Bsigroup\/AccordionCheckout\/src\/Model\/Carrier\/Customshipcost.php(181): Bsigroup\\AccordionCheckout\\Model\\Carrier\\Customshipcost->getSAPShippingCost('1549')\n#4 \/var\/www\/dev\/vendor\/magento\/module-shipping\/Model\/Shipping.php(293): Bsigroup\\AccordionCheckout\\Model\\Carrier\\Customshipcost->collectRates(Object(Magento\\Quote\\Model\\Quote\\Address\\RateRequest))\n#5 \/var\/www\/dev\/vendor\/magento\/module-shipping\/Model\/Shipping.php(209): Magento\\Shipping\\Model\\Shipping->collectCarrierRates('tablerate', Object(Magento\\Quote\\Model\\Quote\\Address\\RateRequest))\n#6 \/var\/www\/dev\/vendor\/magento\/module-quote\/Model\/Quote\/Address.php(995): Magento\\Shipping\\Model\\Shipping->collectRates(Object(Magento\\Quote\\Model\\Quote\\Address\\RateRequest))\n#7 \/var\/www\/dev\/vendor\/magento\/module-quote\/Model\/Quote\/Address.php(936): Magento\\Quote\\Model\\Quote\\Address->requestShippingRates()\n#8 \/var\/www\/dev\/vendor\/magento\/module-quote\/Model\/Quote\/Address\/Total\/Shipping.php(162): Magento\\Quote\\Model\\Quote\\Address->collectShippingRates()\n#9 \/var\/www\/dev\/vendor\/magento\/module-quote\/Model\/Quote\/TotalsCollector.php(265): Magento\\Quote\\Model\\Quote\\Address\\Total\\Shipping->collect(Object(Magento\\Quote\\Model\\Quote\\Interceptor), Object(Magento\\Quote\\Model\\ShippingAssignment), Object(Magento\\Quote\\Model\\Quote\\Address\\Total))\n#10 \/var\/www\/dev\/vendor\/magento\/module-quote\/Model\/ShippingMethodManagement.php(273): Magento\\Quote\\Model\\Quote\\TotalsCollector->collectAddressTotals(Object(Magento\\Quote\\Model\\Quote\\Interceptor), Object(Magento\\Quote\\Model\\Quote\\Address\\Interceptor))\n#11 \/var\/www\/dev\/vendor\/magento\/module-quote\/Model\/ShippingMethodManagement.php(257): Magento\\Quote\\Model\\ShippingMethodManagement->getShippingMethods(Object(Magento\\Quote\\Model\\Quote\\Interceptor), Array)\n#12 \/var\/www\/dev\/vendor\/magento\/module-quote\/Model\/ShippingMethodManagement.php(235): Magento\\Quote\\Model\\ShippingMethodManagement->getEstimatedRates(Object(Magento\\Quote\\Model\\Quote\\Interceptor), 'GB', 'w11rf', '0', Object(Magento\\Customer\\Model\\Data\\Region))\n#13 [internal function]: Magento\\Quote\\Model\\ShippingMethodManagement->estimateByAddressId(1549, 495)\n#14 \/var\/www\/dev\/vendor\/magento\/module-webapi\/Controller\/Rest.php(307): call_user_func_array(Array, Array)\n#15 \/var\/www\/dev\/vendor\/magento\/module-webapi\/Controller\/Rest.php(216): Magento\\Webapi\\Controller\\Rest->processApiRequest()\n#16 \/var\/www\/dev\/vendor\/magento\/framework\/Interception\/Interceptor.php(146): Magento\\Webapi\\Controller\\Rest->dispatch(Object(Magento\\Framework\\App\\Request\\Http))\n#17 \/var\/www\/dev\/var\/generation\/Magento\/Webapi\/Controller\/Rest\/Interceptor.php(26): Magento\\Webapi\\Controller\\Rest\\Interceptor->___callPlugins('dispatch', Array, Array)\n#18 \/var\/www\/dev\/vendor\/magento\/framework\/App\/Http.php(135): Magento\\Webapi\\Controller\\Rest\\Interceptor->dispatch(Object(Magento\\Framework\\App\\Request\\Http))\n#19 \/var\/www\/dev\/vendor\/magento\/framework\/App\/Bootstrap.php(258): Magento\\Framework\\App\\Http->launch()\n#20 \/var\/www\/dev\/index.php(39): Magento\\Framework\\App\\Bootstrap->run(Object(Magento\\Framework\\App\\Http\\Interceptor))\n#21 {main}"}
+
+
+**************************************************
+UMA to RICHA: 05 Apr 2018
+
+-> How do you want to provide the daily extract for the failed orders (may be in csv format)
+-> Customer Data migration + Order data migration
+	Format will be different from magento
+	Do we need additional customer data apart from UserwithOrders.csv
+	Take only data before JAN 2013
+-> Newsfeed article page migration (as discussed with Azham - confirm with Richa)
+**************************************************
+
+[MAGENTO SUPPORT RELATED]
+	-> Install screen command on All Dev environments
+
+[To sync code]
+--> [From DEV] app/code/Bsi/Config/etc/config.xml
+
+
+====================================================================================
+******************* To dos: ********************
+	[Checkout]
+	- SHIPPING COST update 
+		HINT: /var/www/dev/extensions/Bsigroup/AccordionCheckout/src/Plugin/Quote/Address/Total/ShippingPlugin.php  -> aroundCollect()
+	- SAP ORDER ID in Order table
+	- Check URL of logo on checkout
+
+	- issue to check:
+		https://trello.com/c/JccOoQ46/2-not-able-to-place-orders-during-check-outp1
+
+	- Check BACKEND(ADMIN) is calling SAP BAPI?
+	- Check Failed orders....also check Ingenico for failed orders
+	- (done on 17 apr) Format is not going correct
+
+	[To check Self]
+	to check: Order verify menu is not opening (copied below file from DEVQA)
+				devqa/extensions/Bsigroup/OrderExport/etc/adminhtml/routes.xml
+
+
+	[SCR]
+	-> Publishedweight => should take value from published date (XSLT change)
+	-> Sector Mappings
+		. in title (English) -> to check
+	-> Price check (few CSVs does not have price)
+
+	-> Hyperlink Crons
+
+====================================================================================
+
+
+-> Phani: How to get PARTNER NUMBER
+
+-> DEPLOY on STAGING:
+	Upload attributes.phtml, view/relatedproducts.phtml (on STAGING)
+	Upload magento.app.yaml (for GA)
+
+-> check QA4 issues
+-> Check GA - magento deploy suggestion
+-> * check Mohan's CDS API exception email, Ask Richa to prioritise CDS
+-> handle . in title (NOT FIXED In Staging)
+=> Change For to for:
+	/var/www/bsi-uk/lib/bsigroup/scr/xslt/generate_csv.xsl
+
+
+=> ** Check CRON for import_products => MageWorx_AlsoBought and MageWorx_AttributeSet
+
+-> check cron issue -> order export
+	Mar 30 15:45:35 i-026fcdaeb2a67a1ee cron-7redg7uykvdko_stg-7redg7uykvdko_stg: PHP Fatal error:  Uncaught Error: Call to a member function getDataModel() on null in /app/7redg7uykvdko_stg/extensions/Bsigroup//OrderExport/Model/Export.php:102
+
+--> Notice: Undefined index: PDFFlag in /app/app/code/CheckoutRule/MemberRule/Observer/CheckoutBefore.php on line 39
+
+--> ** Staging product import
+--> DEVQA to QA5
+----> Check Sharmillee's email
+
+=> to follow up on https://support.magento.com/hc/en-us/requests/76343
+=> check CSS classes on PPD
+
+*******************************************************************************
+[SAJID KT]
+	=> Remove MODULE config from DB
+	=> Ecommerce setting to ask from Sajid (with new payload)
+	=> Latest codebase from Sajid
+
+	=> To Check: Sajid's XSLT code
+	=> Prepare Azure connectivity code (check cron/importxml.php)
+	=> Checkout (start doing modifications)
+
+	=> To prepare a HOLDING PAGE in Maintenance Mode (Pranabesh)
+	=> Enable FLAT CATALOG from Backend
+
+	-------------------------------------------------------------------
+	To Do Later:
+	/var/www/bsi_staging3/extensions/Bsigroup/AccordionCheckout/src/Model/BalanceManagement.php -> remove()
+		To Do: Remove below line and check.
+		$quote->setIwdUseCustomerBalance(false);
+
+*******************************************************************************
+
+
+=> TO CHECK: Configurable product changes reflect for all its associated simple products as well.
+
+=> To CHECK LATER: Implement below ticket for retaining GA account setting
+	https://support.magento.com/hc/en-us/requests/76343
+
+=> update https://trello.com/c/bKllx62T  (EMAIL)
+
+=> Offshore Call: SAURBAH to check: 
+	user login is not working (DEVQA)
+	Postcode lookup for 2 places
+
+=> (done on DEVQA) Deploy patch: https://support.magento.com/hc/en-us/requests/73774?page=1
+
+=>(Done) Suvradip => CURL request for Salesforce
+
+=> (done) Send email to sukamal, richa, pranav -> for Task List
+
+
+-> Set: all FROM EMAILs in Staging and Staging2, 3
+
+-> To deploy changes on DEVQA (checkout + DWH + Bsi_Config)
+
+-> How to connect Magento through EpiServer
+-> update DB from storeqa to QA4:
+		ERROR 1227 (42000) at line 396: Access denied; you need (at least one of) the SUPER privilege(s) for this operation
+
+=> SPF mail to yaqub
+=> Emails are triggering
+
+
+ERROR 1227 (42000) at line 396: Access denied; you need (at least one of) the SUPER privilege(s) for this operation
+
+
+Call with Adam (Salesforce) - 12 Mar 2018:
+------------------------------------------
+	Send Membership fields
+	Send Contact Us fields
+
+=> Send Related products to Azham
+
+
+-> https://support.magento.com/hc/en-us/requests/73774
+
+
+-> Ben/Yaqub: Folder access from azure
+-> SSO: To built logic for Login captcha (keep failed attempts), checkout login and register.
+
+o SCR import
+o Cname update in ticket - SPF (Yaqub)
+
+o Azure:
+	change phani's code to get Dwh Files
+	Admin config
+o Order Import - to check
+o CMS pages import via custom DB tables data
+
+
+-> * Check ticket for Pending CMS issues: Pranav
+
+- Sridhar:
+	Membership form and logic
+	Related products and Marketting materials block: How many prducts to show
+
+- UAT deployments:
+	app/design/frontend/Bsi/Shop/Magento_Catalog/templates/product/list.phtml
+	app/design/frontend/Bsi/Shop/Magento_Catalog/templates/product/view/attributes.phtml
+- Deployment to PPD (Tk from staging3)
+- Disable MageWorx_AlsoBought and check again on staging3
+
+
+-------------------------------
+SELF R & D:
+-------------------------------
+Enable PHPCS like did for Drupal
+Please confirm if we can achieve below using your extension:
+Do not delete CMS files (images,PDF etc.) permanently and move them in a recycle bin?
+
+magento2+call curl using helper
+-----------------------------------------
+
+- Azure Connectivity:
+	Use this in SAS Url (Admin access): 
+	[scr]
+	https://cmtoshop.blob.core.windows.net/scr?sv=2015-12-11&si=scr-admin&sr=c&sig=SRnDOOzgSyi3F%2FZ4pFSW%2BrzaWxy0Hj6QrRNq4HTpmV4%3D
+
+	[Dwh]
+	https://cmtoshop.blob.core.windows.net/dwh?sv=2017-04-17&si=dwh-admin&sr=c&sig=QtPKuup2vOZ9%2FzSUSNVCdEyDx%2BqIFzMz96fWYNzs938%3D
+
+	scr-admin
+	SRnDOOzgSyi3F/Z4pFSW+rzaWxy0Hj6QrRNq4HTpmV4=
+	SRnDOOzgSyi3F%2FZ4pFSW%2BrzaWxy0Hj6QrRNq4HTpmV4%3D
+
+- * Deploy on DEV & Staging:
+	- metatag changes (Suvradip)
+	- Cloud patch for CMS
+
+		1: /app/code/EventAdd
+		2: loginpost.php
+		3: cart.phtml (removed from staging3)
+		4: checkoutRule module
+		5: success.phtml
+		6: membersCredit module
+
+
+-> Customer login n register on Checkout -> SSO
+
+- Crontab.xml: change this file as abondoned cart is working on DEVQ
+- Give All magento product data extract to MATT
+- ABondoned Basket Email
+
+- [Ticket created] YAQOOB: SPF record setting on magento cloud - for Spam mail filter
+- Deploy on Staging3 + IE change (Suvradip mail)
+
+- 
+
+- [Later] Richa: Books with Latest pages - import on Staging
+- Start Customer data migration on StoreQA -> 10k
+
+- mail to Phani for | separated DWH files
+- Check Bharat;s email for Customer data migration on PPD
+- Deploy loginPost.php from staging to DEVQA/StoreQA
+- Deploy debajyoti blanksearch module file in Staging
+- Give richa -> order export csv
+- CMS Export (PPD)
+- To check - how to remove Blank option from Prefix
+
+-> Update on DEVQA:
+	m2-hotfixes
+	extensions/abondoned_cart, productimportexport
+
+
+
+TO check Self (Later):
+	# Understand the CMS heirarchy
+	# Admin catalog changes not showing on Listing (Until we save it in Default Store View): https://support.magento.com/hc/en-us/requests/73774
+	# CMS: Role of BSI page does not show under Hierarchy
+========================================================================
+
+
+Staging To Dos:
+---------------
+- SCR: Trim spaces from Cross references
+
+- Add below patch for CMS:
+	MDVA-1630_EE_2.1.4_composer_v2.patch
+
+- Please update this line in Magento_Theme/layouts/default.xml at line no 9 in storeqa. The change is highighted in red.
+	<meta name="x_ua_compatible" content="IE=edge"/>
+
+
+========================================================================
+
+loginPost.php
+success.phtml
+app/code/Registration
+
+===========================================================================
+- BRP, Account statement - Wife
+- Call Brijesh Bhaiya
+
+app/design/frontend/Bsi/Shop/Magento_Checkout/templates/success.phtml
+app/code/Customer/Redirect/Controller/Rewrite/Account/LoginPost.php
+
+	Follow up on Below Cloud Tickts:
+		https://support.magento.com/hc/en-us/requests/73085
+		https://support.magento.com/hc/en-us/requests/70091
+
+	=> Raise a ticket for limitation of 10 filter options on left side
+	=> ivolve 302713
+
+
+	=> Abondoned Cart Email bug
+	=> SSO Register -> Store User GUID
+
+	To discuss with Jhon:
+		ForgotPwd, Logout
+		UpdateUserProfile --> to implement in edit profile --> Discuss Devi
+
+	=> Check How to configure Promo Codes
+
+	******** Staging To Dos *************
+	- Apply latest magento patch (https://support.magento.com/hc/en-us/requests/70091)
+	- Put app/code/PasswordChange into app/code/Customer/Changepassword
+
+
+
+=> Remove unwanted magento hooks from .magento.app.yaml
+
+=> Store QA -> check blank search issue, ICS search (Minimum Search query length is 1)
+	https://standards-storeqa.bsigroup.com/catalogsearch/result/?q=&cat=19
+=> StorePPD -> check -1 issue
+-> check if all 
+-> update import/export code to DEVQA:
+		/var/www/bsi_qa5/app/design/frontend/Bsi/Shop/Magento_Customer/templates/address/book.phtml
+		/var/www/bsi_qa5/app/code/Customer/Register/Controller/CreatePost.php
+		/var/www/bsi_qa5/app/code/Customer/Redirect/Controller/Rewrite/Account/LoginPost.php
+		/var/www/bsi_qa5/app/code/Bsi/Sso/etc/adminhtml/system.xml
+=> register customer to SSO
+
+=> check for SCR Import anomallies
+
+=> upload sso code to staging3
+
+=> SSO:
+	-> SSO login & register via checkout
+	-> check captcha for failed login attempts
+	-> Do not allow user to login if he has not registered via SSO
+	-> After registration, send user to login page
+	-> Show message to activate account via Email after registration
+	- Disable registration, Change pwd, forgot pwd emails from Magento
+
+
+	- Check loginPost.php
+	--> later: 
+		store all config values via config.xml -> all configs + customer attribute (sso_token)
+		Add SSO under Permission
+		-> DONT store login info in magento -> to be stored in SSO only.
+=> Azure connectivity
+
+
+=> Send Email to Ingenico Support  if CSS is not reflecting (iframe payment)
+
+
+=> https://support.magento.cloud/hc/en-us/requests/12599
+
+=> TO DISCUSS WITH JHON/SIROUS => What status we get when request success in REGISTER API
+
+=> Give data to Paul: Mysql dump with relevant tables
+
+=> Richa: Check Paul's 2 emails and ask reply with Richa
+- Mohan: DPC link as per new statuses by Azham
+
+- Staging3 deployment:
+- Checkout on Staging3 (shownig exception) -> to show Download PDF to AZHAM
+- Check Sanjib's product TAX class issue -> not reflecting on frontend
+
+
+- [Done] Send mail to Paul for:
+	o Membership (existing and Renewal csv -same?) - Membership_contracts_delta_upserts.csv
+	o Customer_ID is 5 digits in Outstanding_Invoices_delta_upserts.csv
+	  Customer_ID is 8 digits in Membership_contracts_delta_upserts
+
+
+
+
+====================================================
+
+
+SSO : customer update profile
+/var/www/devqa/app/code/Customer/Profile/Controller/Index/Updateprofile.php
+
+DELETE FROM `catalog_url_rewrite_product_category` WHERE (url_rewrite_id in ((SELECT `url_rewrite`.`url_rewrite_id` FROM `url_rewrite` WHERE (`entity_id` IN ('646831')) AND (`entity_type` IN ('product')) AND (`redirect_type` IN (0)) AND (`store_id` IN ('0')))))

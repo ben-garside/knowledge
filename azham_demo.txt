@@ -1,0 +1,865 @@
+https://standards-storeqa.bsigroup.com/pid-000000000030327474
+https://devqa-cdk55aq-7redg7uykvdko.eu.magentosite.cloud/pid-000000000030214797-1  [Related products]
+
+send mail to azhjam for licensing
+
+scrollbar - horizontal
+
+Preview Page 6 of 9 -> center align, check font
+
+=============================
+
+Pending For clarifications from business:
+
+- searchable weight
+- Google map key
+- Gesta font
+
+- Pardot and GA script (from existing shop)
+
+- Alex: Existing shop's GA script -> different Account ID
+
+
+TBD - RICHA:
+=================
+	[Discussed with Azham on 04 Apr 2018]
+	Article Pages - via newsfeed, then keep 15 blocks (as per Sector CMS pages)
+	Which Requirement/AC is this, also what is the priority
+
+TO Discuss with Azham:
+-------------------------
+
+	* [Sanjib] For mow much time, we have to check past orders to show the new version notification coming from SCR
+
+CXRPS4340B
+
+cxrps4340b15061984
+==========================================================================================================================
+Send mail to Azham for Gesta Font in Checkout (not feasible)
+https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+
+
+=> (done) SEND MOM MAIL Containing screenshots of Basket and Mini Basket pages for MEMBERSHIP and RENEW MEMBERSHIP
+
+=> Azham / Tom:
+
+===================================================
+Search:
+
+- Regex 
+- BIP 000007
+
+===================================================
+	Self to do: Prepare a consolidated sheet for all points discussed.
+
+	[** To check]
+
+
+To check with Richa:
+
+
+
+Check with Priscilla (for Suvradip):
+Suvradip
+
+=============
+
+Trial 4 migration: Whether we need to take it up
+
+
+
+04 Oct 2018:
+---------------
+Payment Failed:
+
+[TCS to check the feasibility and confirm]
+- Instead of Basket => Redirect to Checkout in case of Failed order
+- Don't show Failed orders on Order History
+- Bug => When User clicks on 'Reorder' => Basket shows more than 1 quantity for PDF
+
+Price Mismatch:
+---------------------
+
+Show VAT on Basket (only when coming from checkout page), remove text 'Vat may be added later'
+Show Delivery Cost (only when coming from checkout page)
+No changes are needed in Mini-Basket - as it is showing the 'Subtotal'
+
+
+- [NA] When User Reorder => Payment successful => Then 'Reorder' link should not be visible on Order History
+- [NA] Show Order Status in Order Detail
+
+=============================
+21 Aug 2018:
+"Review and update your marketing preferences" => Camel case?
+
+20 Aug 2018:
+
+Tom to provide => Search patterns
+
+Descriptor Change Request (ChangeRequest_SEO_Page_Optimisation.v2.docx):
+Tom: This will be a part of Trial-4 migration, TCS need to incorporate the logic to ingest the descriptor meta data value for all the available 95k records (as provided by SCR) in Meta Keywords
+
+Tom: Login details and Change Your Password beneath Your Details => TCS to check
+
+Search by Numerical keyword (Fuzzy logic is applied)
+
+ECom-04 & ECom-19  ---  Pre-order
+"Given… a hardcopy product has a ‘pre-order’ availability flag 
+When… the pre-order item becomes available 
+Then…  the system should notify the CS team to complete the shipping process of the item. Another notification will be sent end users to let them kn"
+Azham Clarification: Not required to send email to CS. AR will use reports from Ingenico to reconcile with SAP as per the current process with Datacash.
+
+
+16 Aug 2018:
+	Show delete CMS page feature to Azham
+	Advanced Access => Download Your Document button names?
+	Email template for Pre-order
+
+
+15 Aug :
+
+	Cookie policy link: https://www.bsigroup.com/en-GB/about-bsi/legal/cookie-policy/
+	DOI Alignment on product detail page: DOI doi.org/10.3403/00591322
+
+	[Azham/Tom To confirm]
+	Coupan or Discount or Promo Code => Text confirmation by Azham/Tom
+
+
+
+
+[Tom To confirm]
+	=> Customer Address Data Migration:
+		1: Country_id field does not match with any of the magento field.
+		2: AddressTypeId field does not match with any of the magento field.
+		3: ContactCompany field does not match with any of the magento field.
+
+		
+	
+	=> customer_delta_deletions.csv => Delivery address is also coming, do we need to take it from DWH
+	=> Promo code text to show under Order Summary?: e.g. Discount 'test'
+	=> Ecom 06 / Ecom 19 (AC#11: Preorder) To check UI for Preorder message
+	=> RSS NewsFeed:
+		Do we need to create multiple CMS pages => CMS SIZE will be bigger, Do we need to delete historical data
+		When a new feed comes next day => Do we need to create new pages or any scenario to update the newsfeed
+		Tom: <AssetTag> and Title of CMS Feed will be unique
+		UI for CMS feed article Page:
+		Tom: Publication Date: .... open in same window
+
+
+[Saurabh to do]
+	create account for Alex, Tom, Julie -> Admin
+	Send screenshot of Essential datail => data not correct
+	Advanced Access => to check with Mohan (WILL BE SOFTCOPY ALWAYS)
+
+
+
+	
+
+	
+	
+	
+Defects:
+	Subscription Box - mobile view having isue
+
+
+
+
+
+	====================[OLD]==============================
+
+	- How many news to show on corrousell - 5
+	- … a clear message is shown to notify the user that this item is not available to download yet, however it will be shared when available.
+
+	[Paul to confirm]
+	For deletion of DWH files e.g. membership invoices: To make them as PAID rather than deleting invoice product
+	What should be the mapping for deletion csv files
+	Which file to refer to import Membership Addresses from DWH: customer_delta_upserts.csv?
+
+
+		
+	=> Order Extract: Issue with Membership Product (eg: name is 'Membership Item' so we can not match), Invoices, Renew Membership Also. (Sanjib)	
+		[Paul to confirm]
+	
+	=> Synonyms demo shown for (Total 419 synonyms added as per regex Permutations XML for "BS EN ISO 6070-4-7:1981" - provided by Balel)
+		[Tom to review it and check for options of getting optimal results from Regex to be added as a synonym in magento]
+
+	=> SAP Error message when Ecom API token gets expired:
+		[Pick any randon unique number for distinguishing magento error and inform SAP]
+
+
+	=> ‘View Tracking Information’ link is present on Order detail page (Blank CMS page).
+		BSI To Provide link text: ‘View Tracking Information’ Link need to be renamed.
+		https://trello.com/c/qTCTrRrS/17-spring-5-view-tracking-information-in-order-history-tab-is-not-workingp2-03-02-2018
+		[Tom: ‘View Tracking Information’] 
+		[TCS to fix: ‘> View Tracking Information’ => Left alignment need to correct]
+		[Matt to check: There is a '?' in description: https://standards-storeqa.bsigroup.com/pid-000000000030212830
+			"Ships and marine technology. Ship?s mooring and towing fittings. Steel rollers."]
+
+
+	=> MENTION ABOUT PROMO CODE RULES SHOWCASE
+	=> Invoices:
+		Show which short description (different as per Line Item ID)
+		Tom: Change invoice description to 'Member Credit Invoice'
+
+		[Tom to Confirm]
+		Mobile version of logo: Need SVG logo image so that it adjust accoringly
+		Payment option: 'Pay By Invoice' => to be changed to 'Pay By Member Credit'
+		‘View Tracking Information’ => 'View Delivery FAQ' ?
+
+	
+
+
+	- * Mobile/Tablet view: Will it include third level menu (e.g. on Sector Pages)
+		[Tom to confirm]
+	- Membership number validation with postcode => we are not considering partner (AG (sold-to party), RE (bill-to party), RG (payer), WE (ship-to party))
+	
+	
+	- please get the error message to display when incorrect promocode added - get it from Tom:
+		Tom to confirm this error msg
+	- Shall we consider events, invoices, renew,  membership etc. to consider for basket total
+		[Tom: Yes]
+		- Promo Codes (feasibility):
+		-> To discuss about Whole basket amount: to consider other item types
+			Tom: We need to consider Events (created manually in SAP as a Sundry Order), Standards, Books, Essentials in Basket total
+				 And, exclude Outstanding invoices, Renewal Membership Invoices, Membership Product from total for Promo code condition
+				 Magento UI will show Basket level Discount
+				 Tom to provide the text to show to the user on Basket page for exclusion of items
+		-> 
+	
+	- Invoice product detail: Buy This Standard => what text to show for Outstanding invoices and Renew Membership invoices
+
+	
+	=> Outstanding invoices (Richa to prioritize - not required for Sprint 9): Outstanding Invoice to sum price and show in Member Benefits (Send MoM)
+		Show consolidated invoice price
+		Invoice title would be (on Member Benefit and detail): Invoice Summary <invoice_number>
+		Invoice Detail Page: Show collapsible menu (as on product detail) and show MATERIAL_DESCRIPTION & NET VALUE as imported from DWH
+
+
+	-> All Buttons should be left aligned (e.g. Edit Profile), Find Address on Edit Profile need to be Left Aligned
+
+	=> Checkout -> Pay By Invoice -> Telephone number -> Country flag will be populated by default as per the IP address
+	=> Promo code for Value discount (to discuss with Tom):
+		Tom: To divide value discount equally and apply item-wise. If any of the Item is less than discount division value then consider next higher value item.
+	- Phani: To get SAP invoice id for order with only PDF
+		[Tom: TBD with Uma/Paul Bonner]
+	
+	- * Sorting of Search
+	- Search Synonmyms - with Balel (show generated xml to Tom)
+		[Tom to confirm]
+	- Promo Code not applicable on membership purchase or membership renewals and Outstanding invoices
+		Tom: You can use promo codes in addition to your membership discount. You cannot use a promo code to get a discount on the purchase/renewal of your membership
+	=> News Feed and Sector Mapping (News feed-Sector pages_M2 agency (updated April2018).xlsx)
+
+		Azham:
+			To show newsfeeds to a matching sector page [Azham to confirm], linked to news feed
+			Marketing has capability to put that block anywhere on sector page
+
+	=> Order data migration for all types below:
+		.		BSOLAccountTopUp -- IGNORE
+		·       RenewalMembershipItem
+		·       StandardHardCopy
+		·       StandardSoftCopy
+		·       DepositAccountAdjustment -- IGNORE
+		·       EventItem
+		·       MembershipItem
+
+
+		Ques:#
+		If Product UPI does not exist ==> Raise to BSI
+		Product price is changed in new shop
+
+	- ECOM-51/ECOM-60 AC63 Products Page - PAS2030: Same as essentials?
+		[Tom: It will be similar to Standards with Hard Copy and Soft Copy formats]
+	- Invoice: To show hard-coded '20%' in 'View Invoice' pdf:
+		Tom: Now 'View Invoice' will not be shown...Old: Manipulate VAT % and calculate it from VAT VALUE
+	=> We won't be showing 'View Invoice'
+	- * To show 'Membership No' to the Non-Member
+		[Tom: Yes, Show that]
+	- * Password default message:
+		"Your password must contain at least 6 characters,1 capital, numeral and special character"
+		Suggestion from NewRelic: "At least 6 characters, with at least 1 number, 1 uppercase and 1 special character."
+	- [Left aligned] Phani: Alignment of buttons on Edit Address
+	- [Given by Tom on 09 Jul] Need icon image for 'Subscription': https://standards-storeqa.bsigroup.com/catalogsearch/result/?q=bsol&withdrawn=700
+	- [CR: Uma/Victoria to prioritize] New version notification changes - TOM (suggestion: to give 'unsubscribe' link in the email)
+	- Edit Event from Basket: Remove all delegates -> (Tom 05 Jul: Do not add that event to basket)
+	- To show different error when membership no < 8 digit:
+		[Tom: 02/07]
+		- Tooltip: just show the 'Membership Number' - similar to other tooltips
+		- Show error message under Membership textbox for 8- digit validation
+
+	- PDF renaming for single PDF: : or / gets replaced with '_':
+		 "BS 7584-2:1992.PDF" => "BS 7584-2_1992.PDF"
+		 Azham: Fine
+	- Registration: When we click on postcode textbox then only country and other textboxes appear:
+		Azham: Show country dropdown all the time and blank out postcode on county selection
+	- Please confirm the text for checkbox of new version notification
+	- (Optional) for Address Name and Address Line 1
+	- Registration -> Default country selection should be UK => depending upon IP address of country
+
+	
+	* To confirm below:
+	- Search synonyms (as per Balel's email)
+	- GDPR: My Preferences
+	- [Azham: this will be a CR] Telephone number validation on Membership Form
+		https://trello.com/c/cGO556d9/37-ecom-05-ac19-membership-mgmt
+
+
+	=> DOI CR
+	=> Ask about Membership product price update to happen via XML only and not using Ecom API to update Price
+	=> Promo code for Membership purchase (Tom to confirm)
+	=> Multiple Discounts for UI (Tom to confirm)
+	=> Reset password page (to create new password) -> we are using magento default password strength feature (Tom to confirm the error messages - below is magento default set of error messages)
+			Minimum of different classes of characters in password is 3. Classes of characters: Lower Case, Upper Case, Digits, Special Characters.
+			Minimum length of this field must be equal or greater than 8 symbols. Leading and trailing spaces will be ignored.
+	=> Renew Invoice email values doubts -> Emailed to Liby earlier
+
+
+	- Inline error message for membership number
+	- already registered user error (Tom: Magento error message is OK: 'If there is an account associated with saurabh.verma@bsigroup.com you will receive an email with a link to reset your password.')
+	
+	=> Band > 8 => Not calling Ecom API and sending data to Salesforce (Tom: No need to send data to salesforce for higher band)
+	=> Remove Download box if 'Download Url' is not available:
+		Search & widgets: To Hide button when download url is not present (Tom: Hide 'Download Now' button when download url is not present)
+
+
+	=> Show the magento default error message when user is already registered (Tom: Magento error message is OK)
+		https://trello.com/c/oDoY5MBh/65-ecom-35-ac11-registration-cannot-create-another-account-with-same-email
+
+	=> Country and phone number format is not same everywhere (Tom: It should be same everywhere and should show the full country name like 'United Kingdom'.)
+	=> Seaches with special character (: / -) is shown during demo and it was working fine as per expectation, few samples from UAT below:
+
+
+============================================================================
+
+Richa:
+	- Mixed basket: If membership product is there => Basket is not updating membership price
+		[Ask richa to inform Azham about this]
+
+	- SCR deployment - to check in UAT
+
+	
+
+==========================================================================================================================
+
+
+
+We can show invoice:
+	https://standards-storeqa.bsigroup.com/Invoice/index/index/order-id/792/invoice-type/2/oID/792_Invoice
+	Checkout
+
+
+Showcase:
+	CDS
+	Member benefits:
+		Status etc.
+		Outstanding Invoices
+		Renew Membership
+
+=====================
+
+Priscilla:
+		- Suvradip: Meta fields will be overriden by TITLE in next SCR import [Suvradip to check if not to update product when contains some value in meta]
+
+[TO show]
+	- Show Permission extension, Robots to Priscilla (suggested by Pranabesh)
+	- 
+
+
+Self To DO:
+	Discount test - label to show in checkout? ==> NO
+
+07 Aug 2018:
+	- To check with Team:
+		Recently viewed: Is it specific for session
+			[Alternate sol: Implement ajax for pagination of ]
+
+		Recently viewed: What is the rule
+
+06 Aug 2018:
+	=> Show search to Tom on Monday
+	https://qa3-xrqjsfa-7redg7uykvdko.eu.magentosite.cloud
+
+03 Aug 2018:
+	Online access - disable visibility of single license
+	Essential product detail: Hide Price label
+	Mini Basket: Essential License(Format) is not showing
+	Basket: Remove gap from top for 'Want to share documents? Request a Multi-User License'
+	Basket (Event): Remove bold from .....Members' Price £104.00	
+	Basket (Event): Alignment of values
+	Bakset (Event): CSS for 23 September 2018 should be same as Published date
+	Event Detail Page -> Delegate page: Normal Price to be shown in second column when member price not available, Normal price and value right gap
+
+02 Aug 2018:
+	Discount test - label to show in checkout?
+
+01 Aug 2018:
+	courses_delta_upserts.csv => VAT_RATE will be used separately
+
+	Events:
+	AVAILABLE_PLACES: how we are using
+	VAT_RATE: Is it included in Event prices
+
+	[TCS to check:]
+	- Search autocomplete: Mouse hover and click 'Search' => Taking selected value of autocomplete
+
+31 Jul 2018:
+
+[Clarifications provided by Tom]
+Pas 2030 will be Online access product similar to Essentials with licenses i.e. Single license products will be imported in magento, then marketing will create master product and associate those single products to master product.
+
+[Tom/Victoria to confirm]
+Sample data for Pas 2030 to be imported in magento
+More sample data for Advance Access products with current status
+
+[Tom to review]
+As per the confirmation, latest magento patch deployed on UAT for resolving search relevance issue. Please review.
+
+
+24 July 2018:
+[Uma to confirm]        
+​For deletion of DWH files e.g. membership invoices: Do we need to delete the respective invoice product in magento?
+Order Extract: Do we need to import Events, MembershipItem and RenewalMembershipItem, as there is no matching key between magento and Order data
+
+
+[Tom to review and confirm]
+
+​​Search intelligence: To confirm for the implementation of Regex via any of the below options:
+1) To use Synonyms i.e. to ingest regex data for all products as synonyms in magento
+2) To get all Regex combinations for products in an additional meta data field to be imported via SCR, magento will import field data of that additional field and make it searchable to get search results based on that field data.
+
+
+​[Clarifications provided by Tom/Azham:]
+
+​SAP Error message when there is an error from Magento e.g. Ecom API token gets expired in magento:
+	   [Tom/Azham: Pick any random unique number (different from provide SAP error codes) for distinguishing magento error and inform SAP/Customer Service Team]
+​Exclude Promo code call from Ecom API OrderVerify call on 'Review Order' in checkout, to avoid discrepancy with Item price and basket total. As per discussion with Balel: The item price gets changed via OrderVerify Ecom API call as per provided Promo code discount codes which will in turn affect the Basket Total amount due to Discount already applied in magento.
+
+17 July 2018:
+	-> All Buttons should be left aligned (e.g. Edit Profile), Find Address on Edit Profile need to be Left Aligned
+
+	=> Checkout -> Pay By Invoice -> Telephone number -> Country flag will be populated by default as per the IP address
+	=> Promo code for Value discount (to discuss with Tom):
+		Tom: To divide value discount equally and apply item-wise. If any of the Item is less than discount division value then consider next higher value item.
+	=> Synonyms demo shown for (Total 419 synonyms added as per regex Permutations XML for "BS EN ISO 6070-4-7:1981" - provided by Balel)
+		[Tom to review it and check for options of getting optimal results from Regex to be added as a synonym in magento]
+
+12 July 2018:
+	- Pranabesh: Event Delegate page - To add additional field (Address line 2) - will take huge effort (Priority with Richa)
+		[To be prioritized with Richa - Tom: Not needed in sprint 9]
+
+05 July 2018 (Sprint 9: Edit Profile, Event Delegate, Real-time call for membership Exposure BAPI call):
+	Add / Edit Address:
+	=>  Correct below labels:
+		Contact Information [Remove this]
+
+		Add new address Page => Add New Address (all should be camel case)
+		City => Town / City
+		Zip / Postcode => Postcode
+		Address Name, Address Line 1 => add '(optional)' text
+	=> Remove 'Fax (Optional)'
+	=> Keep 'VAT Number' at left side (in place of Fax)
+	=> Alignment of Address Name => should be aligned to Address Line1
+	=> Correct left side alignment of labels with heading 'Add New Address'
+	=> Find Correct alignment is not coorrect
+	=> Buttons should be left aligned
+	=> Clear => Cancel (should work as 'Back' button), Remove 'Back' link
+
+
+	Events Delegate Page:
+	=> Correct below labels (take ref from Edit Address):
+		City => Town / City
+		Zip / Postcode => Postcode
+		Rename Street => Address Line 1, Add Address Line 2 as well
+		Address Name, Address Line 1 => add '(optional)' text
+
+	=> Remove Delegate => Change this to 'Button', Make it 'Left Aligned'
+	=> Add Delegate To This Date => 'Add Delegate' & Change this to 'Button', Put this at bottom of Each Dates (after all delegates info), Make it 'Left Aligned'
+
+
+04 July 2018:
+	- [Phase 2] To log error message on review order
+
+	- MoM:
+		[Tom/Azham: 04/07]
+		- IP based Country dropdown selection on registration form
+
+02 July 2018:
+	- To show different error when membership no < 8 digit:
+		[Tom: 02/07]
+		- Tooltip: just show the 'Membership Number' - similar to other tooltips
+		- Show error message under Membership textbox for 8- digit validation
+
+	- Order History:
+		'Online Enquiry Form' button is not left aligned
+
+	- Checkout: Error when changing Billing Address: "Evidence data could not match"
+
+
+29 June 2018:
+	- Member Benefit:
+		Middle align the Invoice text & price to the 'Add to Basket' button
+		Invoice description needs to be wrapped
+
+	- Event:
+		Alignment of price value: Keep Normal price in same column, when member price not present show 'NA'
+		Remove * and put (Optional)
+		Alignment of buttons and Labels are not correct
+		'Add Delegate To This Date'
+
+
+28 June 2018:
+	My Profile -> order history:
+	Alignment should be corrected: "You have placed no orders."
+
+	Registration:
+		Please enter a valid email address (Ex: johndoe@domain.com) => change Ex to Eg.
+		Alignment of error messages: Should use full right side space
+
+		Right side block: CSS Style, should not be justified
+
+
+	[Self]		
+	=> [To check later] When member credit amount is lesser => Disable review order button ("Insufficient funds, please call customer service.")
+	=> Ecom API response issue -> put sticky
+
+
+
+27 June 2018:
+	- [Tom: CDS API Error] Product Detail thumbnail issue: Showing distorted image ('Gallery Image')
+		https://standards-storeqa.bsigroup.com/pid-000000000030213441  [ASTM E256 - 09]
+
+	[CDS API Response time issue]
+	- Order Detail -> PDF download is taking time (CDS API)
+	- Order Detail -> Button length inceases when we click on 'Download Your Document' & 'Download All Documents'
+
+	- Order Status shouls show: 'In Progress' & 'Complete' (currently showing 'Processing')
+
+	- Contact Us: 
+		Alignment should be same as breadcrumb: "Your request has been submitted."
+
+	- Invoice detail page: Remove the Status & Publisher
+
+	- Basket:
+		BS ISO 9772:2012: Shows different member price £85 (actual was £82)
+
+	- checkout:
+		with saurabh.verma@bsigroup.com
+		Payment-information: {"message":"An error occurred on the server. Please try to place the order again."}
+		Ingenico error
+		Review Order -> Payment method shows blank
+
+
+
+26 June 2018:
+	Registration:
+	- Wrap terms & cond text
+	- Breadcrumb hides after registration
+	- VAT validation failed => retain the vat value
+
+
+	Order History:
+	- Download your document -> should disable only current button
+
+	Membership Form2:
+	- Alignment -> of Nominate checkbox
+
+	Basket:
+	- Font & size is not same: Format text is not same: PDF download & Subscription
+	- Font & size is not same: Unit Price and Final Price
+
+	Checkout:
+	- Review Order button gets disabled
+
+
+	CDS:
+		https://standards-storeqa.bsigroup.com/pid-000000000030360884 : Preview watermark text coming in 2 lines
+
+25 June 2018:
+	- To check Zip Renaming [Check with Richa]
+	- * Check with Balel for PDF documents are not present [to be prepared for Showcase]
+
+21 June 2018:
+	[TCS to fix]
+	- Membership form 1 (Quote):	https://standards-storeqa.bsigroup.com/Memberdata/index/Membershipproduct
+		- Turnover(to the nearest £m)  => Turnover (to the nearest £m) 
+		- Number of Employees -> tooltip: remove extra ) from last
+
+	- Membership form2 (Add to Basket): https://standards-storeqa.bsigroup.com/Memberdata/index/Membershipproducttwo/
+		- Left side gap should be same as home page and membership form1
+		- Back to my profile => Left Alinged (camelcase)
+		- Already => already in message text
+
+	- Order detail:
+		- Top menu gets disturbed when we change browser resolution and click browser back button, after page refresh is gets corrected
+		- "Download your document" => "Download Your Document"
+
+20 June 2018:
+	- 
+		"Membership Number and Billing Address don't match."
+
+19 June 2018:
+	- lOOK iNSIDE:
+		- Click on 'x' button and then pagination is not working correctly
+
+	- Contact Us form:
+		- Keep a blank cms page url for marketting to change it later
+		- to open in same window (form target='')
+
+	- Membership Form:
+		- Alignment after get quote button submit is not correct
+		- Hide 'Band' info
+		- For above band 8 => alignment of notice text need to be corrected:
+				Correct text for higher membership: ‘We can arrange for one of our Product Specialists to call and discuss your requirements. Please arrange a call back for me. Alternatively call us on +44 345 086 9001 or email subscriptions@bsigroup.com to arrange a call’
+		- If user is already a 'Member' => Add a condition and show below text when user opens directly via url https://standards-storeqa.bsigroup.com/Memberdata/index/Membershipproduct (Note: Apply check on Membership Form Two as well):
+			'You Already have active BSI membership. If you would like to make changes to your membership, please contact us on +44 345 086 9001 or email subscriptions@bsigroup.com.'
+
+		- Membership Form Two:
+			- Checkboxes below are not aligned (Terms & condition)
+			- Terms & conditions page should open in new window
+
+	- Basket:
+		Disable qty textbox for Membership product
+	
+
+18 June 2018:
+	Tom to confirm
+	- To show Membership 'Band' info on shop
+	- Where to show 'Industry' on registration
+
+	TCS
+	- Mini basket shows everytime even after login - Should only show when item added to basket
+	- My profile: Membership Number appears then show invalid membership number message
+
+
+14 June 2018:
+
+	- Wrap invoice number, and description in one line (eg: Membe and ship)
+
+	- Renew Membership -> Product detail page (https://standards-storeqa.bsigroup.com/renew-membership-94817418)
+		Remove below fields for invoices:
+		Status	No
+		Publisher	No
+
+		Date format to be similar to other dates
+
+	- Basket:
+		Check the screenshot -> price is not coming correct for standard
+
+	- Forgot Pwd:
+		Go back => "Go Back"
+
+	- Tom to confirm:
+		User Profile -> Tabs to be left aligned
+		Renew Membership -> Product detail page (https://standards-storeqa.bsigroup.com/renew-membership-94817418):
+			To concatenate the Invoice Bill Ty Id similar to outstanding invoices name
+
+
+
+12 June 2018:
+	- PDF preview lightbox dimension -> Tom to confirm
+	[Order detail]
+	- Remove the text 'Your download link has expired' for single PDF (beneath Download All)
+	- checkout:
+		Dont enable Review Your Order until 'Submit' is clicked
+
+03 May 2018:
+	- Ingenico Iframe:
+		Check option for adding gesta font, If not feasible then provide list of available fonts for BSI to confirm
+		Make dropdown of 'Card Country' of Same size as Credit card type dropdown
+		Alignment not correct: Your payment data is ready to be processed by Ingenico ePayments. You can reset it or still select another payment method.
+
+		Rename 'Credit Card Type' to "Card Type"
+		Card Country => Card Billing Country, put an *
+		Capture Evidences before blocking user for restricted billing country in case of softcopy item purchase
+
+	- Registration form: field lengths are not proper: https://standards-storeqa.bsigroup.com/customer/account/login/f/r
+
+
+30 Apr 2018:
+	[Payment Ingenico Iframe:]
+	- Spacing within Saved cards values is not proper
+	- Saved Cards: Remove border or put grey border with rounded corner (as per bsi UI guidelines)
+	- Card Country in white background (similar to other dropdown styles)
+	- Blank box (ingenico payment): Need to put relevant text e.g. Card Type (refer the trailing email)
+	- Expiry Date dropdowns should be in white color (as per BSI dropdown style)
+	- Alignment for card type box
+	- Font size seems not same within payment iframe
+
+	[Checkout: Right sidebar]
+	- [Edit] link should be changed in right sidebar for Edit basket
+
+
+27 Apr 2018:
+	[Checkout]
+	Show Ingenico text in ingenico block (earlier was showing)
+	Remove extra space from top
+
+24 Apr 2018:
+	[Business Demo]
+	Order Confirmation Page:
+		- Show extra field for Member Credit amount
+		- IN Custoomer Service Backend: Card issuing Country => -1
+
+	Checkout:
+		---------- Pranabesh Comments ------------
+
+		Remove the card images (Pay by Credit or Debit Card) => Done 
+·        Apply CAML case for text ‘Pay by Credit or Debit Card’ =>   WIP 
+·        Remove the Notice text when Pay by credit is been chosen (Please complete the above info) =>  Done 
+·        Apply styling on the Phone number error message when its an invalid number been captured. Also place the help text below. => Error message done. 
+·        Checkout Your Basket – Please validate the Font size for Total and Subtotal => Will be changed through CSS 
+·        Pay by PO – alignment should be adjusted => Done 
+·        Member Credit - Country code vanishes after remove button been used.(Defect) => Not able to replicate. 
+
+		  Review your order button should be placed outside of section 3. Currently its placed inside the frame of Payment window => Template Change 
+	 
+		We will also analyse whether the below suggestions provided today is achievable before the UAT period since it involves challenges and time.
+		 
+		Remove the ‘Is Billing country same as Card country’
+
+23 Apr 2018:
+	Checkout:
+		[Saurabh to check]
+		By Default uncheck: Is biling country same as Card Country
+		If basket contains a softcopy -> Do not show Shiping Address in checkout, also do not show shipping address checkbox
+		Delivery Cost: 'To be calculated'
+		Check Tax is calculated correctly
+
+
+		Raka/Pranabesh: to check via Ingenico CSS:
+			Alignment of Message below ingenico iframe: 'Your Payment C...'
+			Ingenico Saved Card: Alignment is not proper
+			Ingenico: Iframe, how to remove additional White square box using CSS/Template
+
+			[Review Order: Title with ... should cover full space available. We are using same sidebar item template - ASK Pranabesh
+
+		Phani: [Order Confirmation Page]
+			Font sizes are not proper
+			Right side blocks (Camel Case: 'learn more' -> 'Learn More', 'Online enquiry form' -> 'Online Enquiry Form', 'Download your document' -> 'Download Your Document'
+			Alignment between copyright block and Download your documents (remove extra space)
+
+		Suvradip: Your Basket page is not showing any items when we move from 'Edit' basket from checkout
+
+		
+
+16 Apr:
+	- Demo of Invoice generation
+	- Gesta Font
+	- Thumbnail in Widgets
+
+04 Apr:
+	Latest standards:
+		spacing
+		published date (also add in events)
+		Members' Price £299.50 -> should be in next line
+		Font looks different
+
+	Related Standards:
+		Font is different
+
+	Recently Viewed:
+		Price: unbold
+		Alignment of event : button and image
+
+30 Mar:
+	o Also Bought Ext: When tot execute the cron (per day)
+	o SANJIB: Sector CMS Page: How to map Sector CMS page with Product page urls?
+	o SANJIB: Merge Basket -> When Same format for a product is added, what should be the message to show
+
+-----------------------------------
+
+28 Mar:
+	o PHANI: Check Email of Membership Sharing Email => What will be the Colleague Name, Company Name
+
+26/03:
+o Basket Page: Membership Product - where to redirect page1 or page2?
+
+	.....
+	Labels need to be bold
+	Spelling corrections
+	Get Quote seems disabled when selected all options - bug
+
+------------------------------------
+Remove 'Customer' from everywhere
+Show tooltip for Customer with '?'
+Space before ..(optional)
+
+
+=> Related products -> To apply rules for Add to basket button (as done on search)
+
+
+o Rep-01 AC1 (Reporting - BSI Member Sales):
+	Orders placed by Customer Service
+o Rep-01 AC2
+
+To Do Self:
+	- Check how to show Customer Service Orders in Admin
+=============================
+
+
+
+
+
+14 Mar 2018 (Azham Demo):
+Multi-filter:
+	Clear All need to be removed for single filter selection
+	Clear All to be moved to Right
+	Remove This Item => 'X' (to be there at first line - filter text may go to next line if long)
+	Remove 'Sector Page' bottom slider as that will be stores as products
+
+Checkout:
+	Your basket on right side: 'PDF Download' in black text, follow the wireframe
+	Remove 'Building' from address
+	Remove 'New Address' text
+	Reduce spacing as much as possible (vertical) so that page does not go long, make same gap between textboxes (vertical)
+	Top header need to be corrected: Same as in wireframe
+
+Azham: Send email for Removing 'Remember Me'
+------------------------------------------------
+
+13 Mar 2018 (Azham Demo):
+=> Enter New Card
+=> Change Payment Card (link)
+=> Card Country to Dropdown
+=> change the placement of Apply Discount Code and Member Credit
+
+
+01 Mar 2018:
+--------------
+	CHECKOUT (Sajid to review and fix below):
+	- Signin block: Show both Email and Password always
+	- Extra gap at bottom in Payment iframe (need to correct via payment_iframe.css - ingenico)
+	- Member credit positioning in checkout -> show on top in payment section
+	- 2 Review Your Order buttons: Sajid to check along with Ingenico
+	- Review Your Order: Remove 'View Details', show short desc, Format not showing, payment method not showing (to check if we can show last 4 digits)
+	- Move 'Newsletter' checkbox from payment to Review Your Order
+	- Order Confirmation Page: Change 'Download your document' => to link (To check in later sprint - Azham)
+	- Remove/Disable 'Check Money Order' and Gift Card block from Payment
+	- Add New Address: The gap is not consistent between address fields, remove 'New Address' text
+					   Remove 'Save' button as 'Enter Payment Details' button should save Address and go to Payment step
+	- Member Credit: Apply does not work properly, Should also show 'Estimated Credit'
+					 To Check and confirm Azham: Total is showing '0' when Member Credit is applied
+	- VAT to be shown for both the Shipping and Billing Address
+	- When country is 'Itally' and All evidences have been captured then Capture a value in Review Order for 'Codice Fiscale' (Mandatory Field)
+
+	-> To check with Yaqub -> about validation of Codice Fascale for Itally Order
+
+=============================
+Shob By => Filter By
+
+Shopping Options => Remove
+
+=============================
+
+Azham:
+	- To track when the customer service has updated the membership -> as this has not been purchased
+	- 
+
+Yaqub:
+	- Salesforce access
+	- Azure access to PHP
+
+	- Discount in SAP?
+		zper, zdays, zval
+	- APM tool - newrelic credentials

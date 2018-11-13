@@ -1,0 +1,17 @@
+Additional Attributes => in separate columns
+----------------------------------------------------------
+Direct connection 
+-----------------------------------------------------------
+New attribute not showing in export?
+
+
+API => For ORDER (POC - For Magento API to export Order Data in CSV)
+Check Existing CSV for event data => Import
+
+-----------------------------------------------------------
+
+Send sample CSV exports to Paul
+
+-----------------------------------------------------------
+
+Direct MySQL connection?

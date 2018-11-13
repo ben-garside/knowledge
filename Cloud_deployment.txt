@@ -1,0 +1,478 @@
+﻿Cloud Staging Panel Hints:
+        http://devdocs.magento.com/guides/v2.1/cloud/trouble/pro-env-management.html#restricted
+        
+Cloud Deployment Hints: https://support.magento.cloud/hc/en-us/requests/11614
+        http://devdocs.magento.com/guides/v2.1/cloud/live/stage-prod-migrate.html
+        http://devdocs.magento.com/guides/v2.1/cloud/deploy/continuous-deployment.html
+        http://devdocs.magento.com/guides/v2.1/cloud/welcome/discover-workflow.html
+====================================================
+I have followed the steps mentioned in the provided deployment url from Cloud support (http://devdocs.magento.com/guides/v2.0/cloud/live/stage-prod-migrate-prereq.html):
+•        Merged DEV to Master (so that master branch have the updated code)
+•        Created a support ticket for implementation of migration hook via .magento.app.yaml file (For technical reasons, neither staging nor production environments use .yaml files. To make these changes in a staging or production environment, you must create a Support ticket) ==> https://support.magento.cloud/hc/en-us/requests/8410?flash_digest=1fe70dd8fc14e2228f84d29732f179100bca2558
+•        Generated SSH key and created a support ticket to add it for Staging environment for SSH access ==> https://support.magento.cloud/hc/en-us/requests/8394
+
+
+Once I get the SSH keys added by Support we can get access to staging access url....ssh 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud, then I will perform below steps:
+•        Set up of remote Git repositories for Staging: git remote add staging git@git.ent.magento.cloud:7redg7uykvdko_stg.git
+•         Deploy on Staging:
+                                git checkout master
+                                        git pull
+                                git fetch origin
+                                git push staging master
+•        Migration of static files from the pub/media directory to Staging:
+                             a) Open an SSH connection to your Staging using below command:
+                                      ssh -A 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud
+                             b) Use the rsync command to migrate the file contents of the pub/media directory:
+                                      rsync -azvP pub/media/ 
+                                                                          
+        From Staging: rsync -azvP pub/media/ 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud:pub/media/
+ 
+•        Deployment of code (code has already been merged in Master branch as in step 1 above)
+•        Dump and migrate the database:
+                   a) SSH into the environment where to create a database dump from:
+                             ssh -A 7redg7uykvdko-dev-iayp4fi--mymagento@ssh.eu.magentosite.cloud
+                   b) Created a Database DUMP using below command:
+                             mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_03oct17.sql.gz
+                   c) Transfer the database dump to Staging with an rsync command:
+                             Staging: rsync -azvP /app/var/db_dump_03oct17.sql.gz 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud:/app/var
+                                                                        From Staging:         rsync -azvP 7redg7uykvdko-qa3-xrqjsfa--mymagento@ssh.eu.magentosite.cloud:/app/var/backups/1508404047_db_db_qa3_19102017_bfr_uat_drop1.sql /app/var/
+                                                                                rsync -azvP 7redg7uykvdko-qa3-xrqjsfa--mymagento@ssh.eu.magentosite.cloud:/app/var/backups/1508404047_db_db_qa3_19102017_bfr_uat_drop1.sql.gz /app/var/
+                                                                        From Local:         rsync -azvP /c/Users/vermasa/Downloads/db_qa3_19102017_bfr_uat_drop1.sql 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud:/app/var
+
+
+                   d) Terminate the SSH connection.
+•        Open an SSH connection to the Staging environmen to migrate the database:
+                   ssh -A 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud
+•        Import the database dump with the following command:
+                   zcat /app/var/db_dump_03oct17.sql.gz | mysql -u user -p main
+ 
+•        Test via below staging url:
+                                http://staging.standards.bsi-group.com/
+                [Old]  http://staging.standards.bsi-group.com.c.7redg7uykvdko.ent.magento.cloud
+
+****************************************************************************************************
+* Cloud team's suggestion for Mysql DUMP:
+  mysqldump -h <database host> --user=<database user name> --password=<password> --single-transaction main  | sed -i 's/DEFINER=[^*]**/*/g' | gzip > /tmp/database_no-definer.sql.gz
+
+  Staging:
+  mysqldump -h 127.0.0.1 --user=7redg7uykvdko_stg --password=FuhbRNVR7xogYi2 --single-transaction 7redg7uykvdko_stg  | sed -i 's/DEFINER=[^*]**/*/g' | gzip > var/db_dump_staging3_sp6_uat_16mar18_1916pm_backup.sql.gz
+  mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg -pFuhbRNVR7xogYi2 7redg7uykvdko_stg | gzip > var/db_dump_staging3_sp6_uat_16mar18_1916pm_backup.sql.gz 
+****************************************************************************************************
+
+rsync -azvP var/backups/1508404047_db_db_qa3_19102017_bfr_uat_drop1.sql 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud:/app/var
+
+
+rsync -azvP var/backups/1508404047_db_db_qa3_19102017_bfr_uat_drop1.sql 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud:/app/var
+
+                                   
+mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_INT_Webkul_01mar18.sql.gz
+mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_INT_05mar18_0110pm_backup.sql.gz
+
+mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > var/db_dump_INT_manadev_left_filter_22jan18.sql.gz
+
+
+mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > var/db_dump_11dec17.sql.gz
+
+
+mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > var/db_dump_DEV_22mar18.sql.gz
+
+DEVQA:
+mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > var/db_dump_DEVQA_Sprint5_22Feb18.sql.gz
+
+mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > var/db_dump_qa5_25Jan17-aft-404-issue.sql.gz
+mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > var/db_dump_qa3_12nov18.sql.gz
+
+
+mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > var/db_dump_qa2_26jan18.sql.gz
+mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > var/db_dump_qa4-bfr-staging_QA2_replica_05jan18.sql.gz
+
+
+DB IMPORT:
+gzip -d var/db_dump_INT_Webkul_01mar18.sql.gz
+mysql -h database.internal -u user main < var/db_dump_INT_Webkul_01mar18.sql
+mysql -h database.internal -u user main < var/db_dump_INT_05mar18_0110pm_backup.sql
+mysql -h database.internal -u user main < var/db_dump_qa2_07dec17.sql
+mysql -h database.internal -u user main < var/db_dump_qa5_21dec17.sql
+
+
+******************************************************************************
+LOCALHOST Import DB:
+gzip -d db_dump_DEVQA_Sprint5_16Feb18.sql.gz
+[USE THIS] 
+mysql --user=root --password=root staging3 < db_dump_staging3-sp4-uat_28feb18_1140am_backup.sql
+mysql --user=root --password=root bsi_mage2 < db_dump_DEVQA_Sprint5_16Feb18.sql
+
+
+
+mysql --user=root --password=root staging_12nov < /home/saurabh/Desktop/DB_Exports/Staging/db_dump_uat_12nov18_1636pm.sql
+
+
+
+mysql -h localhost -u root bsi_mage2 < db_dump_DEVQA_Sprint5_16Feb18.sql
+
+
+
+mysql -h database.internal -u user main < var/db_dump_qa3_07jan18.sql
+
+
+mysql -h database.internal -u user main < var/db_dump_INT_22jan18.sql
+
+
+mysql -h database.internal -u user main < var/db_dump_staging-sp3-uat_16jan18_1841pm_backup.sql
+
+
+==================================================
+Staging New Interface:
+ssh ent-7redg7uykvdko-staging-5em2ouy@ssh.eu.magentosite.cloud
+
+
+Magento Cloud Command Line DB Access:
+         mysql -u 7redg7uykvdko_stg -p
+         FuhbRNVR7xogYi2
+==================================================
+
+
+Dev DB connection: mysql -h database.internal -u user
+
+
+Rsync of Static Files and DB done on 28th Oct:
+
+
+saurabh.verma@bsigroup.com
+
+
+rsync -azvP 7redg7uykvdko-qa2-dh6pqni--mymagento@ssh.eu.magentosite.cloud:/app/var/files_qa2_28oct17.tar.gz /app/7redg7uykvdko_stg/var/
+rsync -azvP 7redg7uykvdko-qa2-dh6pqni--mymagento@ssh.eu.magentosite.cloud:/app/var/db_dump_qa2_28oct17.sql.gz /app/7redg7uykvdko_stg/var/
+
+
+/app/var/db_dump_qa2_28oct17
+tar -cvzf /app/var/files_qa2_28oct17.tar.gz media/
+
+
+* Staging DB Dump (CHECK THIS):
+mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg -pFuhbRNVR7xogYi2 7redg7uykvdko_stg | gzip > var/db_dump_staging_sp6_uat_16mar18_1916pm_backup.sql.gz
+
+
+* Staging3 DB Dump (CHECK THIS):
+  [Main: Export DB]
+  
+
+  [OLD]
+  mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg -pFuhbRNVR7xogYi2 7redg7uykvdko_stg | gzip > var/db_dump_staging3_sp6_uat_16mar18_1916pm_backup.sql.gz
+  mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg3 -pjKt4WkHmfrvRdYL 7redg7uykvdko_stg3 | gzip > var/db_dump_staging_sp5_qa_11mar18_1020am_backup.sql.gz
+
+
+WITHOUT TRIGGERS:
+mysqldump --skip-triggers -h 127.0.0.1 -u 7redg7uykvdko_stg3 -pjKt4WkHmfrvRdYL 7redg7uykvdko_stg3 | gzip > var/db_dump_staging3_sp5_20mar18_1020am_backup.sql.gz
+
+
+OLD: mysqldump -h 127.0.0.1 -u 7redg7uykvdko_stg -p 7redg7uykvdko_stg --single-transaction --triggers 7redg7uykvdko_stg | gzip - > var/db_dump_staging-sp3-uat_25feb18_1154am_backup.sql.gz
+
+mysqldump --user=7redg7uykvdko_stg --password=FuhbRNVR7xogYi2 --single-transaction --triggers 7redg7uykvdko_stg | gzip - > var/db_dump_staging-sp3-uat_18feb18_1625pm_backup.sql.gz
+Staging Pwd:         FuhbRNVR7xogYi2
+FuhbRNVR7xogYi2
+
+
+Staging2 DB Dump: mysqldump --user=7redg7uykvdko_stg2 --password=jN3vKuAMJyzpxvJ --single-transaction --triggers 7redg7uykvdko_stg2 | gzip - > var/db_dump_staging2_ppd_11feb18_0917pm_backup.sql.gz
+
+Dev DB Dump: 
+        mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_QA4_bfr_Staging3_DB_update_16mar18_1910pm_backup.sql.gz
+
+        mysqldump -h database.internal --user=user --password= --single-transaction --triggers main | gzip - > /app/var/db_dump_QA4_bfr_Staging3_DB_update_20mar18_1256pm.sql.gz
+
+
+        mysql -h database.internal -u user main < var/db_dump_staging-sp4-uat_06mar18_0345pm_backup.sql
+        mysql -h database.internal -u user main < var/db_dump_staging3-sp4-uat_28feb18_1140am_backup.sql
+
+        mysql -h database.internal -u user main < var/db_dump_staging3_sp6_uat_16mar18_1916pm_backup.sql
+        mysql -h database.internal -u user main < var/db_dump_QA4_bfr_Staging3_DB_update_20mar18_1256pm.sql
+                                        
+Staging DB Name: 7redg7uykvdko_stg
+
+
+New Staging Interface: ssh ent-7redg7uykvdko-staging-5em2ouy@ssh.eu.magentosite.cloud
+                                
+#Old:
+ssh -A 7redg7uykvdko_stg@7redg7uykvdko.ent.magento.cloud
+                                
+Magento Cloud Command Line DB Access:
+        
+        [Staging]
+         mysql -u 7redg7uykvdko_stg -p
+                        Or, mysql --user=7redg7uykvdko_stg --password=FuhbRNVR7xogYi2
+         FuhbRNVR7xogYi2
+        
+        [Staging 2 - PPD]
+        mysql -u 7redg7uykvdko_stg2 -p
+                Pwd: jN3vKuAMJyzpxvJ
+        
+        [Staging 3 - QA]
+        mysql -u 7redg7uykvdko_stg3 -p
+                DB:  7redg7uykvdko_stg3
+                Pwd: jKt4WkHmfrvRdYL
+
+
+DB Restore on Development:
+        gzip -d var/db_dump_staging-sp3-uat_6feb18_1618pm_backup.sql.gz
+        mysql -h database.internal -u user main < var/db_dump_staging-sp4-uat_06mar18_0345pm_backup.sql
+                
+Db Restore on Staging:
+        gzip -d /app/7redg7uykvdko_stg/var/db_dump_staging-sp3-uat_6feb18_1618pm_backup.sql.gz
+        mysql --user=7redg7uykvdko_stg --password=FuhbRNVR7xogYi2 7redg7uykvdko_stg < /app/7redg7uykvdko_stg/var/db_dump_staging-sp3-uat_6feb18_1618pm_backup.sql
+        
+        [Staging3 - Mysql Import]
+        mysql --user=7redg7uykvdko_stg3 --password=jKt4WkHmfrvRdYL 7redg7uykvdko_stg3 < /app/7redg7uykvdko_stg3/var/db_dump_staging-sp3-uat_5feb18_1852pm_backup.sql
+        
+        mysql --user=7redg7uykvdko_stg --password=FuhbRNVR7xogYi2 7redg7uykvdko_stg < var/db_dump_staging-sp3-uat_26jan18_1031am_backup.sql
+        
+        [Staging 2 - PPD]
+        mysql --user=7redg7uykvdko_stg2 --password=jN3vKuAMJyzpxvJ 7redg7uykvdko_stg2 < var/db_dump_staging-sp4-uat_11feb18_0925pm_backup.sql
+        
+        use 7redg7uykvdko_stg;
+        source /app/7redg7uykvdko_stg/var/db_dump_qa4_uat_23nov17.sql;                  [run this command after login to Mysql command prompt]
+        
+        
+        ...........
+        gzip -d /app/7redg7uykvdko_stg/var/db_dump_qa2_07nov17.sql.gz        [Uncompress zip sql file]
+        mysql -h database.internal -u user main < var/db_dump_staging-sp3-uat_23jan18_1617pm_backup.sql
+        mysql -h database.internal -u user main < var/db_dump_staging_sp4_uat_debajyoti_search_01Mar18_0200pm_backup.sql
+        
+        [mysql -uUSER -p DATABASE_NAME < /path/to/backup.sql]
+
+
+---------------
+
+
+Hi Jeremy,
+
+
+After changing the base_urls, the site is working now: http://staging-standards.bsigroup.com
+
+
+Thanks.
+        
+---------------
+Run below After DB Import as above:
+        
+
+        // PRODUCTION:
+        update core_config_data set value="http://standards.bsi-group.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://standards.bsi-group.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/secure/base_url";
+        
+        // STAGING:
+        update core_config_data set value="http://staging-standards.bsigroup.com/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://staging-standards.bsigroup.com/" where path="web/secure/base_url";
+        
+        select * from core_config_data where path="web/unsecure/base_url";
+        
+        // STAGING3 (QA):
+        update core_config_data set value="http://standards-storeqa.bsigroup.com/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://standards-storeqa.bsigroup.com/" where path="web/secure/base_url";
+        
+        update core_config_data set value="http://standards-storeqa.bsigroup.com/" where path="web/unsecure/base_url";
+        update core_config_data set value="http://standards-storeqa.bsigroup.com/" where path="web/secure/base_url";
+        
+        update core_config_data set value="http://standards-storeqa.bsigroup.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="http://standards-storeqa.bsigroup.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/secure/base_url";
+        
+        STAGING2 (PPD):
+        update core_config_data set value="http://standards-storeppd.bsigroup.com/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://standards-storeppd.bsigroup.com/" where path="web/secure/base_url";
+        
+        update core_config_data set value="http://standards-storeppd.bsigroup.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="http://standards-storeppd.bsigroup.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/secure/base_url";
+        
+        
+        //update core_config_data set value="http://standards-storeqa.bsigroup.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/unsecure/base_url";
+        //update core_config_data set value="https://standards-storeqa.bsigroup.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/secure/base_url";
+        
+        DEVQA:
+        update core_config_data set value="http://devqa-cdk55aq-7redg7uykvdko.eu.magentosite.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://devqa-cdk55aq-7redg7uykvdko.eu.magentosite.cloud/" where path="web/secure/base_url";
+        
+        DEV:
+        update core_config_data set value="http://dev-iayp4fi-7redg7uykvdko.eu.magentosite.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://dev-iayp4fi-7redg7uykvdko.eu.magentosite.cloud/" where path="web/secure/base_url";
+        
+        INT:
+        update core_config_data set value="http://int-g4h3wui-7redg7uykvdko.eu.magentosite.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://int-g4h3wui-7redg7uykvdko.eu.magentosite.cloud/" where path="web/secure/base_url";
+        
+        QA2:
+        update core_config_data set value="http://qa2-dh6pqni-7redg7uykvdko.eu.magentosite.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://qa2-dh6pqni-7redg7uykvdko.eu.magentosite.cloud/" where path="web/secure/base_url";
+        
+        QA3:
+        update core_config_data set value="http://qa3-xrqjsfa-7redg7uykvdko.eu.magentosite.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://qa3-xrqjsfa-7redg7uykvdko.eu.magentosite.cloud/" where path="web/secure/base_url";
+        
+        QA4:
+        update core_config_data set value="http://qa4-5rxefly-7redg7uykvdko.eu.magentosite.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://qa4-5rxefly-7redg7uykvdko.eu.magentosite.cloud/" where path="web/secure/base_url";
+        
+        QA5:
+        update core_config_data set value="http://qa5-cll2yhq-7redg7uykvdko.eu.magentosite.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://qa5-cll2yhq-7redg7uykvdko.eu.magentosite.cloud/" where path="web/secure/base_url";
+        
+
+        LOCALHOST:
+        update core_config_data set value="http://dev.local/" where path="web/unsecure/base_url";
+        update core_config_data set value="http://dev.local/" where path="web/secure/base_url";
+
+        update core_config_data set value="http://staging.local/" where path="web/unsecure/base_url";
+        update core_config_data set value="http://staging.local/" where path="web/secure/base_url";
+
+        
+        Old: Staging
+        update core_config_data set value="http://staging.standards.bsi-group.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://staging.standards.bsi-group.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/secure/base_url";
+        update core_config_data set value="http://staging.standards.bsi-group.com.c.7redg7uykvdko.ent.magento.cloud/" where path="web/secure/base_url";
+        update core_config_data set value="http://staging.standards.bsigroup.com/" where path="web/unsecure/base_url";
+        update core_config_data set value="https://staging.standards.bsigroup.com/" where path="web/secure/base_url";
+        
+---------------
+Staging Database connection config:
+        'default' =>
+      array (
+        'host' => '127.0.0.1',
+        'dbname' => '7redg7uykvdko_stg',
+        'username' => '7redg7uykvdko_stg',
+        'password' => 'FuhbRNVR7xogYi2',
+        'model' => 'mysql4',
+        'engine' => 'innodb',
+        'initStatements' => 'SET NAMES utf8;',
+        'active' => '1',
+      ),
+----------------------------------------------------------------------------------------------------
+Error: [Composer\Downloader\TransportException]
+  The "https://repo.magento.com/packages.json" file could not be downloaded: SSL operation failed with code 1. OpenSS
+  L Error messages:
+  error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed
+  Failed to enable crypto
+  failed to open stream: operation failed
+  
+  ...............
+   Failed to download guzzlehttp/ringphp from dist: The "https://api.github.com/repos/guzzle/RingPHP/zipball/dbbb91d7f6c191e5e405e900e3102ac7f261bc0b" file could not be downloaded: SSL operation failed with code 1. OpenSSL Error messages:
+        error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed
+        Failed to enable crypto
+        failed to open stream: operation failed
+                Now trying to download from source
+  ...............
+  
+  
+Solution: Download cacert.pem file from https://curl.haxx.se/docs/caextract.html
+
+
+======================== LIVE Key (Mike) ====================
+M2EE_BSIUK   
+Public Key: 5bbb2b07d91a9a061b02253c0631edf3
+Private Key: 4c92c68cdce7d7f64e6310033360a794
+
+
+FASTLY Credentials (to put in Admin -> Configuration -> Syetem -> Built in cache):
+--------------------------------------------------------------------------------------------------
+Service: 7redg7uykvdko
+Service ID: 1EzQ2vL85CJkdshIiWdYhY
+API Token: b847bec34c3a5aad0ebfdf96988ef88de
+
+
+Service: 7redg7uykvdko_stg
+Service ID: 2Yy0J8u1KmjraQTLShuIWk
+API Token: 8f0b0b5094b8b0bc77d9a422fd8e79b5
+
+
+Service: 7redg7uykvdko_stg2
+Service ID: 5DytsKe6zd7v5zl3sAbfEb
+API Token: 9668087bc7c82d9eb7f2098b7152886e
+
+
+Service: 7redg7uykvdko_stg3
+Service ID: 5IOwei9f2eIsYpSGtEhLQX
+API Token: 7e7acb62204a624ff6c9419572d08119
+
+
+--------------------
+Fastly testing:
+https://magento-tester.global.ssl.fastly.net/magento-tester/#https://staging-standards.bsigroup.com||c.7redg7uykvdko.ent.magento.cloud
+--------------------
+
+
+To Resolve DNS error (eg: ):
+------------------------------
+        https://github.com/fastly/fastly-magento2
+        http://devdocs.magento.com/guides/v2.0/cloud/access-acct/fastly.html
+        http://devdocs.magento.com/guides/v2.1/cloud/trouble/trouble_fastly.html
+        https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains
+        
+        /mnt/shared/fastly_tokens.txt
+        Domain name issue. staging.standards.bsi-group.co is Fastly subdomain, please make sure Fastly module is installed and configured in Magento. Then, you need to create subdomain staging.standards.bsi-group.com and point it to Fastly either via CNAME or A record (point to 4 Fastly IP addresses). CNAME alias and ip addresses are provided in On-boarding spreadsheet (Fastly tokens can be found in this text file - /mnt/shared/fastly_tokens.txt). Please note: in order to use https (TLS), you need to submit a separate ticket with all the domain names you'd need SSL working on, our team will provide you TXT record for validation.
+        
+* For CNAME (Domain mapping on Staging) - As replied by Nick on 20 Nov - Example link from godaddy.com:
+        https://documentation.unbounce.com/hc/en-us/articles/203687274-Setting-Up-Your-CNAME-with-GoDaddy
+        
+        
+        151.101.192.204
+        
+                C:\Users\vermasa>nslookup nonssl.global.fastly.net
+                Server:  uk-ch-dc02.bsi-global.net
+                Address:  10.103.100.3
+
+
+                DNS request timed out.
+                        timeout was 2 seconds.
+                DNS request timed out.
+                        timeout was 2 seconds.
+                Non-authoritative answer:
+                Name:    nonssl.global.fastly.net
+                Addresses:  151.101.0.204
+                                  151.101.64.204
+                                  151.101.128.204
+                                  151.101.192.204
+--------------------------------------------------------------------------------------------------------------------------------
+MAGENTO DEPLOYMENT HINTS:
+http://devdocs.magento.com/guides/v2.0/cloud/project/project-webint-snap.html
+
+
+Follow these instructions for Staging and Production deployment: http://devdocs.magento.com/guides/v2.0/cloud/live/stage-prod-migrate-prereq.html 
+and for static files and DB migration: http://devdocs.magento.com/guides/v2.0/cloud/live/stage-prod-migrate.html
+
+
+---------
+Add SSH Key on local:
+        eval $(ssh-agent)
+        ssh-add /c/Users/vermasa/.ssh/id_rsa
+        
+---------
+To run rsync on local:
+/c/MinGW/msys/1.0/bin/rsync --version
+
+
+Install rsync on Windows: https://github.com/AlanBarber/jbh/wiki/Installing-RSync-on-Windows
+                also, check to set Windows Environment Variable: PATH=$PATH:/MINGW/msys/1.0/bin     [Windows-> System->advanced Setings->Environment Variables]
+---------------
+
+
+Also, added my SSH keys at last in : vi known_hosts
+        
+----------------------------------------------------------------------------------------------------
+
+
+DEV: ssh 7redg7uykvdko-dev-iayp4fi--mymagento@ssh.eu.magentosite.cloud
+
+
+Enterprise setup on local:
+------------------------------
+        http://devdocs.magento.com/guides/v2.0/install-gde/prereq/integrator_install_ee.html
+
+
+        Generate Private and Public Auth Keys:
+        http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html
+        
+        
+        chk: https://github.com/composer/composer/issues/3346
+        
+====================================
+
+
+[Self R & D] Check below:
+        http://devdocs.magento.com/guides/v2.2/cloud/before/before-workspace-magento-prereqs.html

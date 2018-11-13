@@ -1,0 +1,93 @@
+﻿HLD NotesThursday, October 05, 2017
+2:11 PMSection 1: High Level Requirement Overview
+The Shop consists of four logical modules namely User Management, Shopping, Key 
+Functions and Content Management. These four categorized modules consists of 
+functional requirements which directly or indirectly supports in fulfilment of a 
+customer lifecycle or transactional journey in the application.
+ 
+In the diagram, you can point to various functionalities and correlated them 
+with various business requirements being implemented in BSI Shop platform. 
+Similarly some non-functional requirements are also mentioned under this 
+section.
+ 
+Section 2: BSI Shop to-be Reference Architecture (BSI Artefact)
+This section is not required to go in detail. We just need to mention that this 
+is the reference architecture for Shop solution which has been put up by BSI 
+(Ivan) and the solution design is based on this reference architecture.
+ 
+Section 3: BSI Shop Solution
+High Level Functional Solution
+BSI Shop application is the component which provides core e-Commerce 
+functionalities along with other supporting features such as content management, 
+user management etc. This Shop application is hosted on Magento public cloud.
+Another key part is the set of BSI applications which supports multiple internal 
+activities and transactional data management. These applications are hosted on 
+BSI private cloud apart from a few such as Google Analytics which is a third 
+party offering.
+ 
+Just highlight the category wise applications shown in the right hand side box.
+ 
+Detailed Functional Solution
+This is the lifecycle view of the Shop platform where various uses such as 
+customers, business, admin etc. will act based on their assigned privileges and 
+need.
+ 
+Just highlight the category wise features listed in the diagram with a little 
+bit explanation
+ 
+Key Architecture Principles  
+The points mentioned are self-explanatory, we just need to highlight key 
+messaging here under each point.
+ 
+Magento Technical Architecture
+This section explains the Magento based BSI shop application's technical 
+architecture.
+ 
+The key messaging is that Magento will provided the core e-commerce features 
+with supporting functionalities such as content management etc. This application 
+in turn will interact with multiple BSI applications and services to fulfil the 
+transactional needs which are shown on the right hand side of the diagram.
+Also explain the tech stack and tools for Magento.
+ 
+Magento Solution Integration Architecture
+This is the most critical section in this discussion. The diagram displays 
+various integrations with BSI applications.
+Summary is - SCR for products data, DWH for transactional and master data (list 
+is mentioned), SAP for created order related data, E-Commerce API is the channel 
+or interface to fulfil the integration with SAP BAPI interface, DRM (digital 
+rights management) for rules management of assets (CDS - (content delivery 
+service) API can also come into picture), Payment gateway for payments, VAT 
+services for validations and applying rules to calculate tax amount (this will 
+be recommended from TCS side and will be a Magento extension), Pardot and SFDC 
+for sales/marketing analytics information (these are mainly embedded forms at 
+multiple places on the Shop application which will capture customer infromation 
+and trends related data), google analytics for web analytics and BSI SSO 
+application is an OAuth protocol based single sign on application.
+Please go through the details about each interface in section 5. Some tools and 
+services which we are using as part of the Magento cloud platform are also 
+mentioned over here.
+ 
+Key Solution Decisions
+The points mentioned are self-explanatory, we just need to highlight key 
+messaging here under each point.
+ 
+Key Security Considerations
+The points mentioned are self-explanatory, we just need to highlight key 
+messaging here under each point.
+ 
+Section 4: Magento Configurations
+This section describes various configurations and setup which we need implement 
+to have the platform setup.
+ 
+Section 5: Detailed Integration Design
+The table represents all the interfaces with details of services for each 
+interfaces that will be implemented to integration Magento Shop applications 
+with BSI applications. 
+ 
+Please go through this list in detail. Also read the comments by Ivan and Azham 
+and its responses. They may ask some queries around these.
+The section further contains sequence diagram which I think can be discussed in 
+detail, please go through each of these to get detailed knowledge.
+ 
+ 
+Created with Microsoft OneNote 2013.
